@@ -2,11 +2,11 @@ speechToText: \
   /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/Scrt1.o \
   /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o \
   /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o \
-  CMakeFiles/speechToText.dir/main.cpp.o \
+  CMakeFiles/speechToText.dir/src/main.cpp.o \
   CMakeFiles/speechToText.dir/src/audio.cpp.o \
   CMakeFiles/speechToText.dir/src/transcription.cpp.o \
   CMakeFiles/speechToText.dir/src/speechToText.cpp.o \
-  whisperCXX/src/libwhisper.so.1.8.2 \
+  whisperCXX/src/libwhisper.so.1.8.3 \
   whisperCXX/ggml/src/libggml.so.0.9.5 \
   whisperCXX/ggml/src/libggml-cpu.so.0.9.5 \
   whisperCXX/ggml/src/libggml-base.so.0.9.5 \
@@ -47,7 +47,7 @@ speechToText: \
 
 /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o:
 
-CMakeFiles/speechToText.dir/main.cpp.o:
+CMakeFiles/speechToText.dir/src/main.cpp.o:
 
 CMakeFiles/speechToText.dir/src/audio.cpp.o:
 
@@ -55,7 +55,7 @@ CMakeFiles/speechToText.dir/src/transcription.cpp.o:
 
 CMakeFiles/speechToText.dir/src/speechToText.cpp.o:
 
-whisperCXX/src/libwhisper.so.1.8.2:
+whisperCXX/src/libwhisper.so.1.8.3:
 
 whisperCXX/ggml/src/libggml.so.0.9.5:
 

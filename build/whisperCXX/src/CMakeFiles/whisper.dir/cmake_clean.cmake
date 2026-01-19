@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "libwhisper.pdb"
   "libwhisper.so"
   "libwhisper.so.1"
-  "libwhisper.so.1.8.2"
+  "libwhisper.so.1.8.3"
 )
 
 # Per-language clean rules from dependency scanning.

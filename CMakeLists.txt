@@ -17,7 +17,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 add_subdirectory(whisperCXX)
 
 add_executable(speechToText
-    main.cpp
+    src/main.cpp
     src/audio.cpp
     src/transcription.cpp
     src/speechToText.cpp

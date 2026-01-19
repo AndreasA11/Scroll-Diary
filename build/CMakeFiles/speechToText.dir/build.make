@@ -72,19 +72,19 @@ include CMakeFiles/speechToText.dir/flags.make
 CMakeFiles/speechToText.dir/codegen:
 .PHONY : CMakeFiles/speechToText.dir/codegen
 
-CMakeFiles/speechToText.dir/main.cpp.o: CMakeFiles/speechToText.dir/flags.make
-CMakeFiles/speechToText.dir/main.cpp.o: /home/dredre/DevStuff/cyberpet/speechToText/main.cpp
-CMakeFiles/speechToText.dir/main.cpp.o: CMakeFiles/speechToText.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dredre/DevStuff/cyberpet/speechToText/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/speechToText.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/speechToText.dir/main.cpp.o -MF CMakeFiles/speechToText.dir/main.cpp.o.d -o CMakeFiles/speechToText.dir/main.cpp.o -c /home/dredre/DevStuff/cyberpet/speechToText/main.cpp
+CMakeFiles/speechToText.dir/src/main.cpp.o: CMakeFiles/speechToText.dir/flags.make
+CMakeFiles/speechToText.dir/src/main.cpp.o: /home/dredre/DevStuff/cyberpet/speechToText/src/main.cpp
+CMakeFiles/speechToText.dir/src/main.cpp.o: CMakeFiles/speechToText.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dredre/DevStuff/cyberpet/speechToText/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/speechToText.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/speechToText.dir/src/main.cpp.o -MF CMakeFiles/speechToText.dir/src/main.cpp.o.d -o CMakeFiles/speechToText.dir/src/main.cpp.o -c /home/dredre/DevStuff/cyberpet/speechToText/src/main.cpp
 
-CMakeFiles/speechToText.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/speechToText.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dredre/DevStuff/cyberpet/speechToText/main.cpp > CMakeFiles/speechToText.dir/main.cpp.i
+CMakeFiles/speechToText.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/speechToText.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dredre/DevStuff/cyberpet/speechToText/src/main.cpp > CMakeFiles/speechToText.dir/src/main.cpp.i
 
-CMakeFiles/speechToText.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/speechToText.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dredre/DevStuff/cyberpet/speechToText/main.cpp -o CMakeFiles/speechToText.dir/main.cpp.s
+CMakeFiles/speechToText.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/speechToText.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dredre/DevStuff/cyberpet/speechToText/src/main.cpp -o CMakeFiles/speechToText.dir/src/main.cpp.s
 
 CMakeFiles/speechToText.dir/src/audio.cpp.o: CMakeFiles/speechToText.dir/flags.make
 CMakeFiles/speechToText.dir/src/audio.cpp.o: /home/dredre/DevStuff/cyberpet/speechToText/src/audio.cpp
@@ -130,7 +130,7 @@ CMakeFiles/speechToText.dir/src/speechToText.cpp.s: cmake_force
 
 # Object files for target speechToText
 speechToText_OBJECTS = \
-"CMakeFiles/speechToText.dir/main.cpp.o" \
+"CMakeFiles/speechToText.dir/src/main.cpp.o" \
 "CMakeFiles/speechToText.dir/src/audio.cpp.o" \
 "CMakeFiles/speechToText.dir/src/transcription.cpp.o" \
 "CMakeFiles/speechToText.dir/src/speechToText.cpp.o"
@@ -138,13 +138,13 @@ speechToText_OBJECTS = \
 # External object files for target speechToText
 speechToText_EXTERNAL_OBJECTS =
 
-speechToText: CMakeFiles/speechToText.dir/main.cpp.o
+speechToText: CMakeFiles/speechToText.dir/src/main.cpp.o
 speechToText: CMakeFiles/speechToText.dir/src/audio.cpp.o
 speechToText: CMakeFiles/speechToText.dir/src/transcription.cpp.o
 speechToText: CMakeFiles/speechToText.dir/src/speechToText.cpp.o
 speechToText: CMakeFiles/speechToText.dir/build.make
 speechToText: CMakeFiles/speechToText.dir/compiler_depend.ts
-speechToText: whisperCXX/src/libwhisper.so.1.8.2
+speechToText: whisperCXX/src/libwhisper.so.1.8.3
 speechToText: whisperCXX/ggml/src/libggml.so.0.9.5
 speechToText: whisperCXX/ggml/src/libggml-cpu.so.0.9.5
 speechToText: whisperCXX/ggml/src/libggml-base.so.0.9.5

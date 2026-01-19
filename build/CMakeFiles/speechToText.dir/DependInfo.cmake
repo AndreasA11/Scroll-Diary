@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dredre/DevStuff/cyberpet/speechToText/main.cpp" "CMakeFiles/speechToText.dir/main.cpp.o" "gcc" "CMakeFiles/speechToText.dir/main.cpp.o.d"
   "/home/dredre/DevStuff/cyberpet/speechToText/src/audio.cpp" "CMakeFiles/speechToText.dir/src/audio.cpp.o" "gcc" "CMakeFiles/speechToText.dir/src/audio.cpp.o.d"
+  "/home/dredre/DevStuff/cyberpet/speechToText/src/main.cpp" "CMakeFiles/speechToText.dir/src/main.cpp.o" "gcc" "CMakeFiles/speechToText.dir/src/main.cpp.o.d"
   "/home/dredre/DevStuff/cyberpet/speechToText/src/speechToText.cpp" "CMakeFiles/speechToText.dir/src/speechToText.cpp.o" "gcc" "CMakeFiles/speechToText.dir/src/speechToText.cpp.o.d"
   "/home/dredre/DevStuff/cyberpet/speechToText/src/transcription.cpp" "CMakeFiles/speechToText.dir/src/transcription.cpp.o" "gcc" "CMakeFiles/speechToText.dir/src/transcription.cpp.o.d"
   "" "speechToText" "gcc" "CMakeFiles/speechToText.dir/link.d"

@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/speechToText.dir/link.d"
-  "CMakeFiles/speechToText.dir/main.cpp.o"
-  "CMakeFiles/speechToText.dir/main.cpp.o.d"
   "CMakeFiles/speechToText.dir/src/audio.cpp.o"
   "CMakeFiles/speechToText.dir/src/audio.cpp.o.d"
+  "CMakeFiles/speechToText.dir/src/main.cpp.o"
+  "CMakeFiles/speechToText.dir/src/main.cpp.o.d"
   "CMakeFiles/speechToText.dir/src/speechToText.cpp.o"
   "CMakeFiles/speechToText.dir/src/speechToText.cpp.o.d"
   "CMakeFiles/speechToText.dir/src/transcription.cpp.o"

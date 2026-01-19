@@ -1,4 +1,4 @@
-libwhisper.so.1.8.2: \
+libwhisper.so.1.8.3: \
   /usr/lib/gcc/aarch64-linux-gnu/14/../../../aarch64-linux-gnu/crti.o \
   /usr/lib/gcc/aarch64-linux-gnu/14/crtbeginS.o \
   CMakeFiles/whisper.dir/whisper.cpp.o \
