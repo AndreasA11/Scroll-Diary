@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
         if(mode == "live") {
             // List available devices
             std::cout << "\n=== Available Audio Devices ===\n";
-            list_devices();
+            listDevices();
             std::cout << "================================\n\n";
 
             // Get device index

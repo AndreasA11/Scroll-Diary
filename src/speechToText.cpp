@@ -24,7 +24,7 @@ SpeechToTextManager::~SpeechToTextManager() {
 
 bool SpeechToTextManager::STTMloadWAVfile(const std::string &filename) {
     std::vector<float> samples;
-    if(!load_wav_16k_mono_f32(filename.c_str(), samples)) {
+    if(!loadWAV16kMonoF32(filename.c_str(), samples)) {
         std::cerr << "[ERROR] WAV load failed\n";
         return false;
     }

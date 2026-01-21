@@ -4,7 +4,7 @@
 #include "miniaudio.h"
 
 // ---------------- WAV LOADER ----------------
-bool load_wav_16k_mono_f32(const char* filename, std::vector<float> &samples) {
+bool loadWAV16kMonoF32(const char* filename, std::vector<float> &samples) {
     ma_decoder decoder;
     ma_decoder_config config = ma_decoder_config_init(ma_format_f32, 1, 16000);
 
@@ -30,7 +30,7 @@ bool load_wav_16k_mono_f32(const char* filename, std::vector<float> &samples) {
 }
 
 // ---------------- LIVE MIC ----------------
-void audio_callback(ma_device* device, void* output, const void* input, ma_uint32 frameCount)
+void audioCallback(ma_device* device, void* output, const void* input, ma_uint32 frameCount)
 {
     LiveCapture* capture = (LiveCapture*)device->pUserData;
     if (!input || !capture) return;
@@ -46,7 +46,7 @@ void audio_callback(ma_device* device, void* output, const void* input, ma_uint3
     // std::cout << "Buffer size: " << capture->buffer.size() << "\n";
 }
 
-void list_devices() {
+void listDevices() {
     ma_context context; 
     ma_context_config ctxConfig = ma_context_config_init();
     if (ma_context_init(nullptr, 0, &ctxConfig, &context) != MA_SUCCESS) {
@@ -80,7 +80,7 @@ bool startLiveCapture(LiveCapture &capture, ma_uint32 deviceIndex) {
     config.capture.format   = ma_format_f32;
     config.capture.channels = 1;
     config.sampleRate       = 16000;
-    config.dataCallback     = audio_callback;
+    config.dataCallback     = audioCallback;
     config.pUserData        = &capture;
     config.capture.pDeviceID = &pInfos[deviceIndex].id;
 

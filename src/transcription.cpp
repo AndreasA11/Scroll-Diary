@@ -24,19 +24,16 @@ std::string transcribe_buffer(whisper_context* ctx, std::vector<float>& samples)
     params.print_timestamps = false;
     params.print_special = false;
 
-    //params.speed_up = true;
     params.language = "en";
     params.translate = false;
 
     // ACCURACY IMPROVEMENTS:
     params.no_context = false;  // Use context from previous chunks
-    params.audio_ctx = 1500;    // Default value (more context = better accuracy)
-    //params.beam_size = 5;       // Increase from 1 (slower but more accurate)
-    //params.best_of = 5;         // Try 5 candidates (slower but more accurate)
+    params.audio_ctx = 1500;    // more context --> better accuracy
+    
 
     params.temperature = 0.0f;
     params.suppress_blank = true;
-    //params.suppress_non_speech_tokens = true;
 
     int ret = whisper_full(ctx, params, samples.data(), samples.size());
     if (ret != 0) {

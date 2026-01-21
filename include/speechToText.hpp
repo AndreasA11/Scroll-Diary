@@ -19,7 +19,7 @@ private:
     std::condition_variable cv;
 
 public:
-    void push(T item) {
+    void push(T&& item) {
         {
             std::lock_guard<std::mutex> lock(mtx);
             queue.push(std::move(item));
@@ -27,15 +27,15 @@ public:
         cv.notify_one();
     }
 
-    bool pop(T& item, int timeout_ms = -1) {
+    bool pop(T& item, int timeoutMs = -1) {
         std::unique_lock<std::mutex> lock(mtx);
         
-        if(timeout_ms < 0) {
+        if(timeoutMs < 0) {
             // Wait indefinitely
             cv.wait(lock, [this]{ return !queue.empty(); });
         } else {
             // Wait with timeout
-            if(!cv.wait_for(lock, std::chrono::milliseconds(timeout_ms), 
+            if(!cv.wait_for(lock, std::chrono::milliseconds(timeoutMs), 
                            [this]{ return !queue.empty(); })) {
                 return false; // timeout
             }
