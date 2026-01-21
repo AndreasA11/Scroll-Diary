@@ -28,7 +28,10 @@ public:
             if(full) { // overwrite oldest
                 tail = (tail + 1) % capacity;
             }
-            if(head == tail) full = true;
+            if(head == tail) {
+                full = true;
+            } 
+            
         }
     }
 
@@ -36,8 +39,9 @@ public:
     std::vector<T> pop(size_t len) {
         std::lock_guard<std::mutex> lock(mtx);
         size_t available = sizeUnsafe();
-        if(len > available) len = available;
-
+        if(len > available) {
+            len = available;
+        }
         std::vector<T> out(len);
         for(size_t i = 0; i < len; ++i) {
             out[i] = buffer[tail];

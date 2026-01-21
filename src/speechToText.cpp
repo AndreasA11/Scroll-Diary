@@ -30,7 +30,8 @@ bool SpeechToTextManager::STTMloadWAVfile(const std::string &filename) {
     }
 
     std::cerr << "[INFO] Loaded WAV samples: " << samples.size() << "\n";
-    transcribe_buffer(ctx, samples);
+    std::string transcribedFile = transcribe_buffer(ctx, samples);
+    std::cout << transcribedFile << std::flush << std::endl;
     return true;
 }
 
@@ -82,7 +83,8 @@ void SpeechToTextManager::processorThreadFunc() {
             std::cerr << "[PROCESSOR] Processing chunk: " << chunk.size() << " samples\n";
             
             auto start = std::chrono::high_resolution_clock::now();
-            transcribe_buffer(ctx, chunk);
+            std::string transcribedChunk = transcribe_buffer(ctx, chunk);
+            std::cout << transcribedChunk << std::flush << std::endl;
             auto end = std::chrono::high_resolution_clock::now();
             
             auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
