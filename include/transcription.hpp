@@ -1,8 +1,8 @@
 #pragma once
-#include <vector>
-#include <iostream>
-#include <string>
+
+#include "pch.hpp"
 #include "whisper.h"
 
-std::string transcribe_buffer(whisper_context* ctx, std::vector<float>& samples);
+//transcribe audio samples and output as a std::string
+std::string transcribeBuffer(whisper_context* ctx, std::vector<float>& samples);
 

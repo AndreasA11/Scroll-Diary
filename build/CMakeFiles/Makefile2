@@ -64,11 +64,13 @@ CMAKE_BINARY_DIR = /home/dredre/DevStuff/cyberpet/speechToText/build
 
 # The main recursive "all" target.
 all: CMakeFiles/speechToText.dir/all
+all: CMakeFiles/transcribeTest.dir/all
 all: whisperCXX/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/speechToText.dir/codegen
+codegen: CMakeFiles/transcribeTest.dir/codegen
 codegen: whisperCXX/codegen
 .PHONY : codegen
 
@@ -78,6 +80,7 @@ preinstall: whisperCXX/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/speechToText.dir/clean
+clean: CMakeFiles/transcribeTest.dir/clean
 clean: CMakeFiles/Experimental.dir/clean
 clean: CMakeFiles/Nightly.dir/clean
 clean: CMakeFiles/Continuous.dir/clean
@@ -251,6 +254,38 @@ CMakeFiles/speechToText.dir/codegen:
 CMakeFiles/speechToText.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/speechToText.dir/build.make CMakeFiles/speechToText.dir/clean
 .PHONY : CMakeFiles/speechToText.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/transcribeTest.dir
+
+# All Build rule for target.
+CMakeFiles/transcribeTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcribeTest.dir/build.make CMakeFiles/transcribeTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcribeTest.dir/build.make CMakeFiles/transcribeTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dredre/DevStuff/cyberpet/speechToText/build/CMakeFiles --progress-num=32,33 "Built target transcribeTest"
+.PHONY : CMakeFiles/transcribeTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/transcribeTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dredre/DevStuff/cyberpet/speechToText/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/transcribeTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dredre/DevStuff/cyberpet/speechToText/build/CMakeFiles 0
+.PHONY : CMakeFiles/transcribeTest.dir/rule
+
+# Convenience name for target.
+transcribeTest: CMakeFiles/transcribeTest.dir/rule
+.PHONY : transcribeTest
+
+# codegen rule for target.
+CMakeFiles/transcribeTest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcribeTest.dir/build.make CMakeFiles/transcribeTest.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dredre/DevStuff/cyberpet/speechToText/build/CMakeFiles --progress-num=32,33 "Finished codegen for target transcribeTest"
+.PHONY : CMakeFiles/transcribeTest.dir/codegen
+
+# clean rule for target.
+CMakeFiles/transcribeTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcribeTest.dir/build.make CMakeFiles/transcribeTest.dir/clean
+.PHONY : CMakeFiles/transcribeTest.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Experimental.dir
@@ -1254,7 +1289,7 @@ whisperCXX/src/CMakeFiles/whisper.dir/all: whisperCXX/ggml/src/CMakeFiles/ggml.d
 whisperCXX/src/CMakeFiles/whisper.dir/all: whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/all
 	$(MAKE) $(MAKESILENT) -f whisperCXX/src/CMakeFiles/whisper.dir/build.make whisperCXX/src/CMakeFiles/whisper.dir/depend
 	$(MAKE) $(MAKESILENT) -f whisperCXX/src/CMakeFiles/whisper.dir/build.make whisperCXX/src/CMakeFiles/whisper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dredre/DevStuff/cyberpet/speechToText/build/CMakeFiles --progress-num=32,33 "Built target whisper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dredre/DevStuff/cyberpet/speechToText/build/CMakeFiles --progress-num=34,35 "Built target whisper"
 .PHONY : whisperCXX/src/CMakeFiles/whisper.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1271,7 +1306,7 @@ whisper: whisperCXX/src/CMakeFiles/whisper.dir/rule
 # codegen rule for target.
 whisperCXX/src/CMakeFiles/whisper.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f whisperCXX/src/CMakeFiles/whisper.dir/build.make whisperCXX/src/CMakeFiles/whisper.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dredre/DevStuff/cyberpet/speechToText/build/CMakeFiles --progress-num=32,33 "Finished codegen for target whisper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dredre/DevStuff/cyberpet/speechToText/build/CMakeFiles --progress-num=34,35 "Finished codegen for target whisper"
 .PHONY : whisperCXX/src/CMakeFiles/whisper.dir/codegen
 
 # clean rule for target.

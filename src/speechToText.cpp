@@ -24,14 +24,16 @@ SpeechToTextManager::~SpeechToTextManager() {
 
 bool SpeechToTextManager::STTMloadWAVfile(const std::string &filename) {
     std::vector<float> samples;
+    //load WAV file into samples
     if(!loadWAV16kMonoF32(filename.c_str(), samples)) {
         std::cerr << "[ERROR] WAV load failed\n";
         return false;
     }
 
+    //transcribe WAV file and print
     std::cerr << "[INFO] Loaded WAV samples: " << samples.size() << "\n";
-    std::string transcribedFile = transcribe_buffer(ctx, samples);
-    std::cout << transcribedFile << std::flush << std::endl;
+    std::string transcribedFile = transcribeBuffer(ctx, samples);
+    std::cout << transcribedFile << std::flush << "\n";
     return true;
 }
 
@@ -83,8 +85,8 @@ void SpeechToTextManager::processorThreadFunc() {
             std::cerr << "[PROCESSOR] Processing chunk: " << chunk.size() << " samples\n";
             
             auto start = std::chrono::high_resolution_clock::now();
-            std::string transcribedChunk = transcribe_buffer(ctx, chunk);
-            std::cout << transcribedChunk << std::flush << std::endl;
+            std::string transcribedChunk = transcribeBuffer(ctx, chunk); //call to transcribe chunk
+            std::cout << transcribedChunk << std::flush << "\n";
             auto end = std::chrono::high_resolution_clock::now();
             
             auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);

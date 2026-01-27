@@ -1,10 +1,5 @@
 #pragma once
-#include <iostream>
-#include <string>
-#include <thread>
-#include <atomic>
-#include <queue>
-#include <condition_variable>
+
 #include "whisper.h"
 #include "audio.hpp"
 #include "transcription.hpp"
@@ -19,6 +14,7 @@ private:
     std::condition_variable cv;
 
 public:
+    //push data into queue
     void push(T&& item) {
         {
             std::lock_guard<std::mutex> lock(mtx);
@@ -27,6 +23,7 @@ public:
         cv.notify_one();
     }
 
+    //pop data from queue, return true if queue found chunk in timeoutMs ms
     bool pop(T& item, int timeoutMs = -1) {
         std::unique_lock<std::mutex> lock(mtx);
         
@@ -46,11 +43,13 @@ public:
         return true;
     }
 
+    //gets the size of the queue
     size_t size() const {
         std::lock_guard<std::mutex> lock(mtx);
         return queue.size();
     }
 
+    //returns true if queue is empty, false otherwise
     bool empty() const {
         std::lock_guard<std::mutex> lock(mtx);
         return queue.empty();
@@ -75,15 +74,28 @@ private:
     void processorThreadFunc();
 
 public:
+
+    //CTOR:Initializes a whisper_context with modelPath, initializes other member variables
     explicit SpeechToTextManager(const std::string &modelPath);
+    //DTOR: Normal whisper cleanup
     ~SpeechToTextManager();
 
     // WAV file
+    //Transcribe an audio WAV file and print the transcription to std::cout
     bool STTMloadWAVfile(const std::string &filename);
 
     // Live audio
+
+    /*
+      Starts the live capture process, this is what handles the chunk  
+      and processor threads in order to transcribe live audio. 
+    */  
     bool STTMstartLiveCapture(ma_uint32 deviceIndex = 0);
+
+    //live audio cleanup
+    //Manage any leftover threads or loose ends and stop the live capture
     void STTMstopLiveCapture();
+    //Waits for chunker and process thread to complete, then joins them
     void STTMwaitForShutdown();
 };
 

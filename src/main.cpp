@@ -1,8 +1,6 @@
 #include "speechToText.hpp"
-#include "audio.hpp"
 #include <csignal>
-#include <atomic>
-#include <iostream>
+
 
 std::atomic<bool> gRunning(true);
 SpeechToTextManager* gSTT = nullptr;
@@ -94,5 +92,8 @@ int main(int argc, char** argv) {
     }
 
     gSTT = nullptr;
+
+    
+
     return 0;
 }

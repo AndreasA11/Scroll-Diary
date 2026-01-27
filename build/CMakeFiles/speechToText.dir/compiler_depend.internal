@@ -5,6 +5,7 @@ CMakeFiles/speechToText.dir/src/audio.cpp.o
  /home/dredre/DevStuff/cyberpet/speechToText/src/audio.cpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/audio.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/circularBuffer.hpp
+ /home/dredre/DevStuff/cyberpet/speechToText/include/pch.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/whisperCXX/examples/miniaudio.h
  /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h
  /usr/include/aarch64-linux-gnu/bits/byteswap.h
@@ -129,12 +130,11 @@ CMakeFiles/speechToText.dir/src/audio.cpp.o
  /usr/include/asm-generic/posix_types.h
  /usr/include/asm-generic/types.h
  /usr/include/assert.h
- /usr/include/c++/14/algorithm
  /usr/include/c++/14/atomic
  /usr/include/c++/14/backward/binders.h
  /usr/include/c++/14/bit
- /usr/include/c++/14/bits/algorithmfwd.h
  /usr/include/c++/14/bits/alloc_traits.h
+ /usr/include/c++/14/bits/allocated_ptr.h
  /usr/include/c++/14/bits/allocator.h
  /usr/include/c++/14/bits/atomic_base.h
  /usr/include/c++/14/bits/atomic_lockfree_defines.h
@@ -149,6 +149,7 @@ CMakeFiles/speechToText.dir/src/audio.cpp.o
  /usr/include/c++/14/bits/cpp_type_traits.h
  /usr/include/c++/14/bits/cxxabi_forced.h
  /usr/include/c++/14/bits/cxxabi_init_exception.h
+ /usr/include/c++/14/bits/deque.tcc
  /usr/include/c++/14/bits/exception.h
  /usr/include/c++/14/bits/exception_defines.h
  /usr/include/c++/14/bits/exception_ptr.h
@@ -177,28 +178,32 @@ CMakeFiles/speechToText.dir/src/audio.cpp.o
  /usr/include/c++/14/bits/range_access.h
  /usr/include/c++/14/bits/refwrap.h
  /usr/include/c++/14/bits/requires_hosted.h
+ /usr/include/c++/14/bits/shared_ptr.h
+ /usr/include/c++/14/bits/shared_ptr_base.h
  /usr/include/c++/14/bits/specfun.h
  /usr/include/c++/14/bits/std_abs.h
  /usr/include/c++/14/bits/std_mutex.h
- /usr/include/c++/14/bits/stl_algo.h
+ /usr/include/c++/14/bits/std_thread.h
  /usr/include/c++/14/bits/stl_algobase.h
  /usr/include/c++/14/bits/stl_bvector.h
  /usr/include/c++/14/bits/stl_construct.h
+ /usr/include/c++/14/bits/stl_deque.h
  /usr/include/c++/14/bits/stl_function.h
  /usr/include/c++/14/bits/stl_heap.h
  /usr/include/c++/14/bits/stl_iterator.h
  /usr/include/c++/14/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14/bits/stl_iterator_base_types.h
  /usr/include/c++/14/bits/stl_pair.h
- /usr/include/c++/14/bits/stl_tempbuf.h
+ /usr/include/c++/14/bits/stl_queue.h
  /usr/include/c++/14/bits/stl_uninitialized.h
  /usr/include/c++/14/bits/stl_vector.h
  /usr/include/c++/14/bits/streambuf.tcc
  /usr/include/c++/14/bits/streambuf_iterator.h
  /usr/include/c++/14/bits/string_view.tcc
  /usr/include/c++/14/bits/stringfwd.h
- /usr/include/c++/14/bits/uniform_int_dist.h
+ /usr/include/c++/14/bits/this_thread_sleep.h
  /usr/include/c++/14/bits/unique_lock.h
+ /usr/include/c++/14/bits/unique_ptr.h
  /usr/include/c++/14/bits/uses_allocator.h
  /usr/include/c++/14/bits/uses_allocator_args.h
  /usr/include/c++/14/bits/utility.h
@@ -209,6 +214,7 @@ CMakeFiles/speechToText.dir/src/audio.cpp.o
  /usr/include/c++/14/clocale
  /usr/include/c++/14/cmath
  /usr/include/c++/14/concepts
+ /usr/include/c++/14/condition_variable
  /usr/include/c++/14/cstddef
  /usr/include/c++/14/cstdint
  /usr/include/c++/14/cstdio
@@ -218,9 +224,12 @@ CMakeFiles/speechToText.dir/src/audio.cpp.o
  /usr/include/c++/14/cwctype
  /usr/include/c++/14/debug/assertions.h
  /usr/include/c++/14/debug/debug.h
+ /usr/include/c++/14/deque
  /usr/include/c++/14/exception
+ /usr/include/c++/14/ext/aligned_buffer.h
  /usr/include/c++/14/ext/alloc_traits.h
  /usr/include/c++/14/ext/atomicity.h
+ /usr/include/c++/14/ext/concurrence.h
  /usr/include/c++/14/ext/numeric_traits.h
  /usr/include/c++/14/ext/string_conversions.h
  /usr/include/c++/14/ext/type_traits.h
@@ -234,9 +243,8 @@ CMakeFiles/speechToText.dir/src/audio.cpp.o
  /usr/include/c++/14/mutex
  /usr/include/c++/14/new
  /usr/include/c++/14/ostream
- /usr/include/c++/14/pstl/execution_defs.h
- /usr/include/c++/14/pstl/glue_algorithm_defs.h
  /usr/include/c++/14/pstl/pstl_config.h
+ /usr/include/c++/14/queue
  /usr/include/c++/14/ratio
  /usr/include/c++/14/stdexcept
  /usr/include/c++/14/stdlib.h
@@ -244,6 +252,7 @@ CMakeFiles/speechToText.dir/src/audio.cpp.o
  /usr/include/c++/14/string
  /usr/include/c++/14/string_view
  /usr/include/c++/14/system_error
+ /usr/include/c++/14/thread
  /usr/include/c++/14/tr1/bessel_function.tcc
  /usr/include/c++/14/tr1/beta_function.tcc
  /usr/include/c++/14/tr1/ell_integral.tcc
@@ -307,6 +316,7 @@ CMakeFiles/speechToText.dir/src/main.cpp.o
  /home/dredre/DevStuff/cyberpet/speechToText/src/main.cpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/audio.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/circularBuffer.hpp
+ /home/dredre/DevStuff/cyberpet/speechToText/include/pch.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/speechToText.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/transcription.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/whisperCXX/examples/miniaudio.h
@@ -436,11 +446,9 @@ CMakeFiles/speechToText.dir/src/main.cpp.o
  /usr/include/asm-generic/int-ll64.h
  /usr/include/asm-generic/posix_types.h
  /usr/include/asm-generic/types.h
- /usr/include/c++/14/algorithm
  /usr/include/c++/14/atomic
  /usr/include/c++/14/backward/binders.h
  /usr/include/c++/14/bit
- /usr/include/c++/14/bits/algorithmfwd.h
  /usr/include/c++/14/bits/alloc_traits.h
  /usr/include/c++/14/bits/allocated_ptr.h
  /usr/include/c++/14/bits/allocator.h
@@ -491,7 +499,6 @@ CMakeFiles/speechToText.dir/src/main.cpp.o
  /usr/include/c++/14/bits/std_abs.h
  /usr/include/c++/14/bits/std_mutex.h
  /usr/include/c++/14/bits/std_thread.h
- /usr/include/c++/14/bits/stl_algo.h
  /usr/include/c++/14/bits/stl_algobase.h
  /usr/include/c++/14/bits/stl_bvector.h
  /usr/include/c++/14/bits/stl_construct.h
@@ -503,7 +510,6 @@ CMakeFiles/speechToText.dir/src/main.cpp.o
  /usr/include/c++/14/bits/stl_iterator_base_types.h
  /usr/include/c++/14/bits/stl_pair.h
  /usr/include/c++/14/bits/stl_queue.h
- /usr/include/c++/14/bits/stl_tempbuf.h
  /usr/include/c++/14/bits/stl_uninitialized.h
  /usr/include/c++/14/bits/stl_vector.h
  /usr/include/c++/14/bits/streambuf.tcc
@@ -511,7 +517,6 @@ CMakeFiles/speechToText.dir/src/main.cpp.o
  /usr/include/c++/14/bits/string_view.tcc
  /usr/include/c++/14/bits/stringfwd.h
  /usr/include/c++/14/bits/this_thread_sleep.h
- /usr/include/c++/14/bits/uniform_int_dist.h
  /usr/include/c++/14/bits/unique_lock.h
  /usr/include/c++/14/bits/unique_ptr.h
  /usr/include/c++/14/bits/uses_allocator.h
@@ -552,8 +557,6 @@ CMakeFiles/speechToText.dir/src/main.cpp.o
  /usr/include/c++/14/mutex
  /usr/include/c++/14/new
  /usr/include/c++/14/ostream
- /usr/include/c++/14/pstl/execution_defs.h
- /usr/include/c++/14/pstl/glue_algorithm_defs.h
  /usr/include/c++/14/pstl/pstl_config.h
  /usr/include/c++/14/queue
  /usr/include/c++/14/ratio
@@ -605,6 +608,7 @@ CMakeFiles/speechToText.dir/src/speechToText.cpp.o
  /home/dredre/DevStuff/cyberpet/speechToText/src/speechToText.cpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/audio.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/circularBuffer.hpp
+ /home/dredre/DevStuff/cyberpet/speechToText/include/pch.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/speechToText.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/transcription.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/whisperCXX/examples/miniaudio.h
@@ -700,11 +704,9 @@ CMakeFiles/speechToText.dir/src/speechToText.cpp.o
  /usr/include/asm-generic/int-ll64.h
  /usr/include/asm-generic/posix_types.h
  /usr/include/asm-generic/types.h
- /usr/include/c++/14/algorithm
  /usr/include/c++/14/atomic
  /usr/include/c++/14/backward/binders.h
  /usr/include/c++/14/bit
- /usr/include/c++/14/bits/algorithmfwd.h
  /usr/include/c++/14/bits/alloc_traits.h
  /usr/include/c++/14/bits/allocated_ptr.h
  /usr/include/c++/14/bits/allocator.h
@@ -755,7 +757,6 @@ CMakeFiles/speechToText.dir/src/speechToText.cpp.o
  /usr/include/c++/14/bits/std_abs.h
  /usr/include/c++/14/bits/std_mutex.h
  /usr/include/c++/14/bits/std_thread.h
- /usr/include/c++/14/bits/stl_algo.h
  /usr/include/c++/14/bits/stl_algobase.h
  /usr/include/c++/14/bits/stl_bvector.h
  /usr/include/c++/14/bits/stl_construct.h
@@ -767,7 +768,6 @@ CMakeFiles/speechToText.dir/src/speechToText.cpp.o
  /usr/include/c++/14/bits/stl_iterator_base_types.h
  /usr/include/c++/14/bits/stl_pair.h
  /usr/include/c++/14/bits/stl_queue.h
- /usr/include/c++/14/bits/stl_tempbuf.h
  /usr/include/c++/14/bits/stl_uninitialized.h
  /usr/include/c++/14/bits/stl_vector.h
  /usr/include/c++/14/bits/streambuf.tcc
@@ -775,7 +775,6 @@ CMakeFiles/speechToText.dir/src/speechToText.cpp.o
  /usr/include/c++/14/bits/string_view.tcc
  /usr/include/c++/14/bits/stringfwd.h
  /usr/include/c++/14/bits/this_thread_sleep.h
- /usr/include/c++/14/bits/uniform_int_dist.h
  /usr/include/c++/14/bits/unique_lock.h
  /usr/include/c++/14/bits/unique_ptr.h
  /usr/include/c++/14/bits/uses_allocator.h
@@ -815,8 +814,6 @@ CMakeFiles/speechToText.dir/src/speechToText.cpp.o
  /usr/include/c++/14/mutex
  /usr/include/c++/14/new
  /usr/include/c++/14/ostream
- /usr/include/c++/14/pstl/execution_defs.h
- /usr/include/c++/14/pstl/glue_algorithm_defs.h
  /usr/include/c++/14/pstl/pstl_config.h
  /usr/include/c++/14/queue
  /usr/include/c++/14/ratio
@@ -861,6 +858,7 @@ CMakeFiles/speechToText.dir/src/speechToText.cpp.o
 
 CMakeFiles/speechToText.dir/src/transcription.cpp.o
  /home/dredre/DevStuff/cyberpet/speechToText/src/transcription.cpp
+ /home/dredre/DevStuff/cyberpet/speechToText/include/pch.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/include/transcription.hpp
  /home/dredre/DevStuff/cyberpet/speechToText/whisperCXX/ggml/include/ggml-alloc.h
  /home/dredre/DevStuff/cyberpet/speechToText/whisperCXX/ggml/include/ggml-backend.h
@@ -954,20 +952,26 @@ CMakeFiles/speechToText.dir/src/transcription.cpp.o
  /usr/include/asm-generic/int-ll64.h
  /usr/include/asm-generic/posix_types.h
  /usr/include/asm-generic/types.h
+ /usr/include/c++/14/atomic
  /usr/include/c++/14/backward/binders.h
  /usr/include/c++/14/bit
  /usr/include/c++/14/bits/alloc_traits.h
+ /usr/include/c++/14/bits/allocated_ptr.h
  /usr/include/c++/14/bits/allocator.h
+ /usr/include/c++/14/bits/atomic_base.h
+ /usr/include/c++/14/bits/atomic_lockfree_defines.h
  /usr/include/c++/14/bits/basic_ios.h
  /usr/include/c++/14/bits/basic_ios.tcc
  /usr/include/c++/14/bits/basic_string.h
  /usr/include/c++/14/bits/basic_string.tcc
  /usr/include/c++/14/bits/char_traits.h
  /usr/include/c++/14/bits/charconv.h
+ /usr/include/c++/14/bits/chrono.h
  /usr/include/c++/14/bits/concept_check.h
  /usr/include/c++/14/bits/cpp_type_traits.h
  /usr/include/c++/14/bits/cxxabi_forced.h
  /usr/include/c++/14/bits/cxxabi_init_exception.h
+ /usr/include/c++/14/bits/deque.tcc
  /usr/include/c++/14/bits/exception.h
  /usr/include/c++/14/bits/exception_defines.h
  /usr/include/c++/14/bits/exception_ptr.h
@@ -989,27 +993,38 @@ CMakeFiles/speechToText.dir/src/transcription.cpp.o
  /usr/include/c++/14/bits/new_allocator.h
  /usr/include/c++/14/bits/ostream.tcc
  /usr/include/c++/14/bits/ostream_insert.h
+ /usr/include/c++/14/bits/parse_numbers.h
  /usr/include/c++/14/bits/postypes.h
  /usr/include/c++/14/bits/predefined_ops.h
  /usr/include/c++/14/bits/ptr_traits.h
  /usr/include/c++/14/bits/range_access.h
  /usr/include/c++/14/bits/refwrap.h
  /usr/include/c++/14/bits/requires_hosted.h
+ /usr/include/c++/14/bits/shared_ptr.h
+ /usr/include/c++/14/bits/shared_ptr_base.h
  /usr/include/c++/14/bits/std_abs.h
+ /usr/include/c++/14/bits/std_mutex.h
+ /usr/include/c++/14/bits/std_thread.h
  /usr/include/c++/14/bits/stl_algobase.h
  /usr/include/c++/14/bits/stl_bvector.h
  /usr/include/c++/14/bits/stl_construct.h
+ /usr/include/c++/14/bits/stl_deque.h
  /usr/include/c++/14/bits/stl_function.h
+ /usr/include/c++/14/bits/stl_heap.h
  /usr/include/c++/14/bits/stl_iterator.h
  /usr/include/c++/14/bits/stl_iterator_base_funcs.h
  /usr/include/c++/14/bits/stl_iterator_base_types.h
  /usr/include/c++/14/bits/stl_pair.h
+ /usr/include/c++/14/bits/stl_queue.h
  /usr/include/c++/14/bits/stl_uninitialized.h
  /usr/include/c++/14/bits/stl_vector.h
  /usr/include/c++/14/bits/streambuf.tcc
  /usr/include/c++/14/bits/streambuf_iterator.h
  /usr/include/c++/14/bits/string_view.tcc
  /usr/include/c++/14/bits/stringfwd.h
+ /usr/include/c++/14/bits/this_thread_sleep.h
+ /usr/include/c++/14/bits/unique_lock.h
+ /usr/include/c++/14/bits/unique_ptr.h
  /usr/include/c++/14/bits/uses_allocator.h
  /usr/include/c++/14/bits/uses_allocator_args.h
  /usr/include/c++/14/bits/utility.h
@@ -1019,16 +1034,22 @@ CMakeFiles/speechToText.dir/src/transcription.cpp.o
  /usr/include/c++/14/cerrno
  /usr/include/c++/14/clocale
  /usr/include/c++/14/concepts
+ /usr/include/c++/14/condition_variable
  /usr/include/c++/14/cstddef
+ /usr/include/c++/14/cstdint
  /usr/include/c++/14/cstdio
  /usr/include/c++/14/cstdlib
+ /usr/include/c++/14/ctime
  /usr/include/c++/14/cwchar
  /usr/include/c++/14/cwctype
  /usr/include/c++/14/debug/assertions.h
  /usr/include/c++/14/debug/debug.h
+ /usr/include/c++/14/deque
  /usr/include/c++/14/exception
+ /usr/include/c++/14/ext/aligned_buffer.h
  /usr/include/c++/14/ext/alloc_traits.h
  /usr/include/c++/14/ext/atomicity.h
+ /usr/include/c++/14/ext/concurrence.h
  /usr/include/c++/14/ext/numeric_traits.h
  /usr/include/c++/14/ext/string_conversions.h
  /usr/include/c++/14/ext/type_traits.h
@@ -1037,14 +1058,19 @@ CMakeFiles/speechToText.dir/src/transcription.cpp.o
  /usr/include/c++/14/iosfwd
  /usr/include/c++/14/iostream
  /usr/include/c++/14/istream
+ /usr/include/c++/14/limits
+ /usr/include/c++/14/mutex
  /usr/include/c++/14/new
  /usr/include/c++/14/ostream
  /usr/include/c++/14/pstl/pstl_config.h
+ /usr/include/c++/14/queue
+ /usr/include/c++/14/ratio
  /usr/include/c++/14/stdexcept
  /usr/include/c++/14/streambuf
  /usr/include/c++/14/string
  /usr/include/c++/14/string_view
  /usr/include/c++/14/system_error
+ /usr/include/c++/14/thread
  /usr/include/c++/14/tuple
  /usr/include/c++/14/type_traits
  /usr/include/c++/14/typeinfo

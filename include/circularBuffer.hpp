@@ -1,9 +1,7 @@
 #pragma once
-#include <vector>
-#include <cstddef>
-#include <mutex>
-#include <algorithm>
-#include <stdexcept>
+#include "pch.hpp"
+
+
 
 template <typename T>
 class CircularBuffer {

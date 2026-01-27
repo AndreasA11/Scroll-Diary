@@ -23,6 +23,10 @@ add_executable(speechToText
     src/speechToText.cpp
 )
 
+add_executable(transcribeTest
+    src/transcribeTester.cpp
+)
+
 target_include_directories(speechToText PRIVATE 
     include
     whisperCXX/include

@@ -192,6 +192,19 @@ speechToText/fast:
 .PHONY : speechToText/fast
 
 #=============================================================================
+# Target rules for targets named transcribeTest
+
+# Build rule for target.
+transcribeTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 transcribeTest
+.PHONY : transcribeTest
+
+# fast build rule for target.
+transcribeTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcribeTest.dir/build.make CMakeFiles/transcribeTest.dir/build
+.PHONY : transcribeTest/fast
+
+#=============================================================================
 # Target rules for targets named Experimental
 
 # Build rule for target.
@@ -679,6 +692,30 @@ src/speechToText.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/speechToText.dir/build.make CMakeFiles/speechToText.dir/src/speechToText.cpp.s
 .PHONY : src/speechToText.cpp.s
 
+src/transcribeTester.o: src/transcribeTester.cpp.o
+.PHONY : src/transcribeTester.o
+
+# target to build an object file
+src/transcribeTester.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcribeTest.dir/build.make CMakeFiles/transcribeTest.dir/src/transcribeTester.cpp.o
+.PHONY : src/transcribeTester.cpp.o
+
+src/transcribeTester.i: src/transcribeTester.cpp.i
+.PHONY : src/transcribeTester.i
+
+# target to preprocess a source file
+src/transcribeTester.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcribeTest.dir/build.make CMakeFiles/transcribeTest.dir/src/transcribeTester.cpp.i
+.PHONY : src/transcribeTester.cpp.i
+
+src/transcribeTester.s: src/transcribeTester.cpp.s
+.PHONY : src/transcribeTester.s
+
+# target to generate assembly for a file
+src/transcribeTester.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcribeTest.dir/build.make CMakeFiles/transcribeTest.dir/src/transcribeTester.cpp.s
+.PHONY : src/transcribeTester.cpp.s
+
 src/transcription.o: src/transcription.cpp.o
 .PHONY : src/transcription.o
 
@@ -749,6 +786,7 @@ help:
 	@echo "... ggml-base"
 	@echo "... ggml-cpu"
 	@echo "... speechToText"
+	@echo "... transcribeTest"
 	@echo "... whisper"
 	@echo "... src/audio.o"
 	@echo "... src/audio.i"
@@ -759,6 +797,9 @@ help:
 	@echo "... src/speechToText.o"
 	@echo "... src/speechToText.i"
 	@echo "... src/speechToText.s"
+	@echo "... src/transcribeTester.o"
+	@echo "... src/transcribeTester.i"
+	@echo "... src/transcribeTester.s"
 	@echo "... src/transcription.o"
 	@echo "... src/transcription.i"
 	@echo "... src/transcription.s"
