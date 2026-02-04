@@ -3,13 +3,13 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"85ca640\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.9.5\" -D_GLIBCXX_ASSERTIONS -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
+C_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"3df92d7\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.9.5\" -D_GLIBCXX_ASSERTIONS -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
 
 C_INCLUDES = -I/home/dredre/DevStuff/cyberpet/speechToText/whisperCXX/ggml/src/. -I/home/dredre/DevStuff/cyberpet/speechToText/whisperCXX/ggml/src/../include
 
 C_FLAGS =  -O3 -march=armv8.2-a+fp16 -mtune=cortex-a76 -g -std=gnu11 -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wdouble-promotion
 
-CXX_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"85ca640\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.9.5\" -D_GLIBCXX_ASSERTIONS -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
+CXX_DEFINES = -DGGML_BUILD -DGGML_COMMIT=\"3df92d7\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_SHARED -DGGML_VERSION=\"0.9.5\" -D_GLIBCXX_ASSERTIONS -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -Dggml_base_EXPORTS
 
 CXX_INCLUDES = -I/home/dredre/DevStuff/cyberpet/speechToText/whisperCXX/ggml/src/. -I/home/dredre/DevStuff/cyberpet/speechToText/whisperCXX/ggml/src/../include
 

@@ -31,6 +31,7 @@ target_include_directories(speechToText PRIVATE
     include
     whisperCXX/include
     whisperCXX/examples
+
 )
 
 
