@@ -1,0 +1,53 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)
+-- Does script exist: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/scripts/py_node.py
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg
+[ 50%] [32mBuilding CXX object CMakeFiles/minimal_cpp_node.dir/src/minimalNode1.cpp.o[0m
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/minimalNode1.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/minimalNode1.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[KincludeClassInstancee[m[K’ was not declared in this scope; did you mean ‘[01m[KincludeClassInstance[m[K’?
+   11 |     [01;31m[KincludeClassInstancee[m[K.count = 2;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[KincludeClassInstance[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/minimalNode1.cpp:12:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::string includeClass::name[m[K’ is private within this context
+   12 |     includeClassInstance.[01;31m[Kname[m[K = "includeClassName";
+      |                          [01;31m[K^~~~[m[K
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/minimalNode1.cpp:2[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/minimalNodeInclude.hpp:5:17:[m[K [01;36m[Knote: [m[Kdeclared private here
+    5 |     std::string [01;36m[Kname[m[K;
+      |                 [01;36m[K^~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/minimalNode1.cpp:13:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kint includeClass::count[m[K’ is private within this context
+   13 | std::cout << "includeClassInstance" << includeClassInstance.[01;31m[Kcount[m[K <<  " " << includeClassInstance.name << "\n";
+      |                                                             [01;31m[K^~~~~[m[K
+
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/minimalNodeInclude.hpp:4:9:[m[K [01;36m[Knote: [m[Kdeclared private here
+    4 |     int [01;36m[Kcount[m[K;
+      |         [01;36m[K^~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/minimalNode1.cpp:13:103:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::string includeClass::name[m[K’ is private within this context
+   13 |  includeClassInstance.count <<  " " << includeClassInstance.[01;31m[Kname[m[K << "\n";
+      |                                                             [01;31m[K^~~~[m[K
+
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/minimalNodeInclude.hpp:5:17:[m[K [01;36m[Knote: [m[Kdeclared private here
+    5 |     std::string [01;36m[Kname[m[K;
+      |                 [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/minimal_cpp_node.dir/build.make:79: CMakeFiles/minimal_cpp_node.dir/src/minimalNode1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/minimal_cpp_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
