@@ -1,0 +1,24 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces/rosidl_generator_py/speech_to_text_interfaces/msg/_audio_stamped_s.c" "CMakeFiles/speech_to_text_interfaces__rosidl_generator_py.dir/rosidl_generator_py/speech_to_text_interfaces/msg/_audio_stamped_s.c.o" "gcc" "CMakeFiles/speech_to_text_interfaces__rosidl_generator_py.dir/rosidl_generator_py/speech_to_text_interfaces/msg/_audio_stamped_s.c.o.d"
+  "" "libspeech_to_text_interfaces__rosidl_generator_py.so" "gcc" "CMakeFiles/speech_to_text_interfaces__rosidl_generator_py.dir/link.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

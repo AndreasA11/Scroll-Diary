@@ -10,24 +10,27 @@ find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
-find_packages(audio_samples_interfaces REQUIRED)
+find_package(speech_to_text_interfaces REQUIRED)
 
 include_directories(include)
 
 
-add_executable(audio_node src/audioNode.cpp)
-ament_target_dependencies(audio_node 
+add_executable(audio_capture_node src/audioCaptureNode.cpp)
+
+ament_target_dependencies(
+  audio_capture_node 
   rclcpp
-  audio_samples_interfaces
+  speech_to_text_interfaces
 )
 
-target_include_directories(audio_node PRIVATE
+target_include_directories(audio_capture_node PRIVATE
   include/speech_to_text_pkg
+  src
   libs
 )
 
 install(TARGETS
-  audio_node
+  audio_capture_node
   DESTINATION lib/${PROJECT_NAME}  
 )
 

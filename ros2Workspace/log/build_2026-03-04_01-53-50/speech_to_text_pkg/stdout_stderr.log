@@ -1,0 +1,22 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o[0m
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:2[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:53:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kaudio_samples_interfaces[m[K’ was not declared in this scope
+   53 |             [01;31m[Kaudio_samples_interfaces[m[K::msg::AudioStamped>::SharedPtr publisher_;
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:53:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   53 |             audio_samples_interfaces::msg::AudioStamped[01;31m[K>[m[K::SharedPtr publisher_;
+      |                                                        [01;31m[K^[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:53:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   53 |             audio_samples_interfaces::msg::AudioStamped>::[01;31m[KSharedPtr[m[K publisher_;
+      |                                                           [01;31m[K^~~~~~~~~[m[K
+      |                                                                    [32m[K;[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:53:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   53 |             audio_samples_interfaces::msg::AudioStamped>::SharedPtr [01;31m[Kpublisher_[m[K;
+      |                                                                     [01;31m[K^~~~~~~~~~[m[K
+      |                                                                     [32m[Krmw_publisher_t[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:63:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid audioCallback(ma_device*, void*, const void*, ma_uint32)[m[K’ declared ‘[01m[Kstatic[m[K’ but never defined [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+   63 | static void [01;35m[KaudioCallback[m[K(ma_device* dev, void* output, const void* input, ma_uint32 frameCount);
+      |             [01;35m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/audio_capture_node.dir/build.make:79: CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/audio_capture_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

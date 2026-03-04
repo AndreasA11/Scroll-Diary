@@ -1,0 +1,47 @@
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:2[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:8:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kma_context[m[K’ does not name a type; did you mean ‘[01m[Kza_context[m[K’?
+    8 |     [01;31m[Kma_context[m[K context;
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[Kza_context[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:9:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kma_device[m[K’ does not name a type
+    9 |     [01;31m[Kma_device[m[K device;
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:45:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kma_uint32[m[K’ has not been declared
+   45 |         bool startLiveCapture(LiveCapture &capture, [01;31m[Kma_uint32[m[K deviceIndex = 0);
+      |                                                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:52:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kaudio_samples_interfaces[m[K’ was not declared in this scope
+   52 |         rclcpp::Publisher<[01;31m[Kaudio_samples_interfaces[m[K::msg::AudioStamped>::SharedPtr publisher_;
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:52:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   52 |         rclcpp::Publisher<audio_samples_interfaces::msg::AudioStamped[01;31m[K>[m[K::SharedPtr publisher_;
+      |                                                                      [01;31m[K^[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:52:73:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   52 |         rclcpp::Publisher<audio_samples_interfaces::msg::AudioStamped>::[01;31m[KSharedPtr[m[K publisher_;
+      |                                                                         [01;31m[K^~~~~~~~~[m[K
+      |                                                                                  [32m[K;[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:52:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   52 |     rclcpp::Publisher<audio_samples_interfaces::msg::AudioStamped>::SharedPtr [01;31m[Kpublisher_[m[K;
+      |                                                                               [01;31m[K^~~~~~~~~~[m[K
+      |                                                                               [32m[Krmw_publisher_t[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:62:13:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KaudioCallback[m[K’ declared void
+   62 | static void [01;31m[KaudioCallback[m[K(ma_device* dev, void* output, const void* input, ma_uint32 frameCount);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:62:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kma_device[m[K’ was not declared in this scope
+   62 | static void audioCallback([01;31m[Kma_device[m[K* dev, void* output, const void* input, ma_uint32 frameCount);
+      |                           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:62:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kdev[m[K’ was not declared in this scope; did you mean ‘[01m[Kdiv[m[K’?
+   62 | static void audioCallback(ma_device* [01;31m[Kdev[m[K, void* output, const void* input, ma_uint32 frameCount);
+      |                                      [01;31m[K^~~[m[K
+      |                                      [32m[Kdiv[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:62:43:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kvoid[m[K’
+   62 | static void audioCallback(ma_device* dev, [01;31m[Kvoid[m[K* output, const void* input, ma_uint32 frameCount);
+      |                                           [01;31m[K^~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:62:57:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+   62 | static void audioCallback(ma_device* dev, void* output, [01;31m[Kconst[m[K void* input, ma_uint32 frameCount);
+      |                                                         [01;31m[K^~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:62:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kma_uint32[m[K’ was not declared in this scope
+   62 | static void audioCallback(ma_device* dev, void* output, const void* input, [01;31m[Kma_uint32[m[K frameCount);
+      |                                                                            [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/audio_capture_node.dir/build.make:79: CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/audio_capture_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

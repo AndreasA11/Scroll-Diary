@@ -198,41 +198,41 @@ speech_to_text_pkg_uninstall/fast:
 .PHONY : speech_to_text_pkg_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named minimal_cpp_node
+# Target rules for targets named audio_capture_node
 
 # Build rule for target.
-minimal_cpp_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minimal_cpp_node
-.PHONY : minimal_cpp_node
+audio_capture_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 audio_capture_node
+.PHONY : audio_capture_node
 
 # fast build rule for target.
-minimal_cpp_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal_cpp_node.dir/build.make CMakeFiles/minimal_cpp_node.dir/build
-.PHONY : minimal_cpp_node/fast
+audio_capture_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/build
+.PHONY : audio_capture_node/fast
 
-src/minimalNode1.o: src/minimalNode1.cpp.o
-.PHONY : src/minimalNode1.o
+src/audioCaptureNode.o: src/audioCaptureNode.cpp.o
+.PHONY : src/audioCaptureNode.o
 
 # target to build an object file
-src/minimalNode1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal_cpp_node.dir/build.make CMakeFiles/minimal_cpp_node.dir/src/minimalNode1.cpp.o
-.PHONY : src/minimalNode1.cpp.o
+src/audioCaptureNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o
+.PHONY : src/audioCaptureNode.cpp.o
 
-src/minimalNode1.i: src/minimalNode1.cpp.i
-.PHONY : src/minimalNode1.i
+src/audioCaptureNode.i: src/audioCaptureNode.cpp.i
+.PHONY : src/audioCaptureNode.i
 
 # target to preprocess a source file
-src/minimalNode1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal_cpp_node.dir/build.make CMakeFiles/minimal_cpp_node.dir/src/minimalNode1.cpp.i
-.PHONY : src/minimalNode1.cpp.i
+src/audioCaptureNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.i
+.PHONY : src/audioCaptureNode.cpp.i
 
-src/minimalNode1.s: src/minimalNode1.cpp.s
-.PHONY : src/minimalNode1.s
+src/audioCaptureNode.s: src/audioCaptureNode.cpp.s
+.PHONY : src/audioCaptureNode.s
 
 # target to generate assembly for a file
-src/minimalNode1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimal_cpp_node.dir/build.make CMakeFiles/minimal_cpp_node.dir/src/minimalNode1.cpp.s
-.PHONY : src/minimalNode1.cpp.s
+src/audioCaptureNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.s
+.PHONY : src/audioCaptureNode.cpp.s
 
 # Help Target
 help:
@@ -249,10 +249,10 @@ help:
 	@echo "... test"
 	@echo "... speech_to_text_pkg_uninstall"
 	@echo "... uninstall"
-	@echo "... minimal_cpp_node"
-	@echo "... src/minimalNode1.o"
-	@echo "... src/minimalNode1.i"
-	@echo "... src/minimalNode1.s"
+	@echo "... audio_capture_node"
+	@echo "... src/audioCaptureNode.o"
+	@echo "... src/audioCaptureNode.i"
+	@echo "... src/audioCaptureNode.s"
 .PHONY : help
 
 
