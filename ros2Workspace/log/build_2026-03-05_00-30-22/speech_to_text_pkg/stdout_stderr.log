@@ -1,0 +1,43 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o[0m
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:[m[K In member function ‘[01m[Kvoid AudioCaptureNode::[01;32m[KpublishAudio[m[K()[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:104:33:[m[K [01;31m[Kerror: [m[K‘[01m[KAudioStamped[m[K’ was not declared in this scope; did you mean ‘[01m[Kspeech_to_text_interfaces::msg::AudioStamped[m[K’?
+  104 |     auto msg = std::make_unique<[01;31m[KAudioStamped[m[K>();
+      |                                 [01;31m[K^~~~~~~~~~~~[m[K
+      |                                 [32m[Kspeech_to_text_interfaces::msg::AudioStamped[m[K
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/audio_stamped.hpp:7[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:9[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:3[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__struct.hpp:152:7:[m[K [01;36m[Knote: [m[K‘[01m[Kspeech_to_text_interfaces::msg::AudioStamped[m[K’ declared here
+  152 | using [01;36m[KAudioStamped[m[K =
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:104:46:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >()[m[K’
+  104 |     auto msg = [01;31m[Kstd::make_unique<AudioStamped>()[m[K;
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/13/memory:78[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:6[m[K:
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__unique_ptr_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’
+ 1069 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:104:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  104 |     auto msg = [01;31m[Kstd::make_unique<AudioStamped>()[m[K;
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::__detail::__unique_ptr_array_t<_Tp> std::[01;32m[Kmake_unique[m[K(size_t)[m[K’
+ 1084 |     [01;36m[Kmake_unique[m[K(size_t __num)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__invalid_make_unique_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’ (deleted)
+ 1094 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:104:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  104 |     auto msg = [01;31m[Kstd::make_unique<AudioStamped>()[m[K;
+      |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K audioCallback[m[K(ma_device*, void*, const void*, ma_uint32)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:122:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koutput[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  122 | void audioCallback(ma_device* device, [01;35m[Kvoid* output[m[K, const void* input, ma_uint32 frameCount) {
+      |                                       [01;35m[K~~~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/audio_capture_node.dir/build.make:93: CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/audio_capture_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

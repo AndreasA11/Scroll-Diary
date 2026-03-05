@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp" "CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o" "gcc" "CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o.d"
+  "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp" "CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o" "gcc" "CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o.d"
   "" "audio_capture_node" "gcc" "CMakeFiles/audio_capture_node.dir/link.d"
   )
 

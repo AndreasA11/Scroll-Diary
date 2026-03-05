@@ -234,6 +234,30 @@ src/audioCaptureNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.s
 .PHONY : src/audioCaptureNode.cpp.s
 
+src/audioFunctions.o: src/audioFunctions.cpp.o
+.PHONY : src/audioFunctions.o
+
+# target to build an object file
+src/audioFunctions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o
+.PHONY : src/audioFunctions.cpp.o
+
+src/audioFunctions.i: src/audioFunctions.cpp.i
+.PHONY : src/audioFunctions.i
+
+# target to preprocess a source file
+src/audioFunctions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.i
+.PHONY : src/audioFunctions.cpp.i
+
+src/audioFunctions.s: src/audioFunctions.cpp.s
+.PHONY : src/audioFunctions.s
+
+# target to generate assembly for a file
+src/audioFunctions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.s
+.PHONY : src/audioFunctions.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -253,6 +277,9 @@ help:
 	@echo "... src/audioCaptureNode.o"
 	@echo "... src/audioCaptureNode.i"
 	@echo "... src/audioCaptureNode.s"
+	@echo "... src/audioFunctions.o"
+	@echo "... src/audioFunctions.i"
+	@echo "... src/audioFunctions.s"
 .PHONY : help
 
 

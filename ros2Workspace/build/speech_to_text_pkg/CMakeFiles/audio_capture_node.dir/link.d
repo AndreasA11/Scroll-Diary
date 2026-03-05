@@ -3,6 +3,7 @@ audio_capture_node: \
   /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crti.o \
   /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o \
   CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o \
+  CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o \
   /opt/ros/jazzy/lib/librclcpp.so \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_typesupport_fastrtps_c.so \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_typesupport_introspection_c.so \
@@ -108,9 +109,37 @@ audio_capture_node: \
   /usr/lib/gcc/aarch64-linux-gnu/13/libgcc.a \
   /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o \
   /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o \
-  /lib/aarch64-linux-gnu/libm.so.6 \
-  /lib/ld-linux-aarch64.so.1 \
-  /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/libgcc_s.so.1
+  /opt/ros/jazzy/lib/liblibstatistics_collector.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/librcl_yaml_param_parser.so \
+  /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/librcl_logging_interface.so \
+  /opt/ros/jazzy/lib/librmw_implementation.so \
+  /opt/ros/jazzy/lib/libament_index_cpp.so \
+  /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so \
+  /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so \
+  /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so \
+  /opt/ros/jazzy/lib/librcpputils.so \
+  /opt/ros/jazzy/lib/librosidl_runtime_c.so \
+  /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/librcl_logging_spdlog.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so \
+  /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so \
+  /lib/aarch64-linux-gnu/libyaml-0.so.2 \
+  /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/liblttng-ust.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/librosidl_typesupport_c.so \
+  /lib/aarch64-linux-gnu/libspdlog.so.1.12 \
+  /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so \
+  /lib/aarch64-linux-gnu/libnuma.so.1 \
+  /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/liblttng-ust-common.so \
+  /lib/aarch64-linux-gnu/liblttng-ust-tracepoint.so.1 \
+  /lib/aarch64-linux-gnu/libfmt.so.9
 
 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o:
 
@@ -119,6 +148,8 @@ audio_capture_node: \
 /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o:
 
 CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
+
+CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o:
 
 /opt/ros/jazzy/lib/librclcpp.so:
 
@@ -330,8 +361,64 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/crtn.o:
 
-/lib/aarch64-linux-gnu/libm.so.6:
+/opt/ros/jazzy/lib/liblibstatistics_collector.so:
 
-/lib/ld-linux-aarch64.so.1:
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so:
 
-/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/libgcc_s.so.1:
+/opt/ros/jazzy/lib/librcl_yaml_param_parser.so:
+
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_cpp.so:
+
+/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so:
+
+/opt/ros/jazzy/lib/librcl_logging_interface.so:
+
+/opt/ros/jazzy/lib/librmw_implementation.so:
+
+/opt/ros/jazzy/lib/libament_index_cpp.so:
+
+/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so:
+
+/opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so:
+
+/opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so:
+
+/opt/ros/jazzy/lib/librcpputils.so:
+
+/opt/ros/jazzy/lib/librosidl_runtime_c.so:
+
+/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_generator_c.so:
+
+/opt/ros/jazzy/lib/librosidl_typesupport_cpp.so:
+
+/opt/ros/jazzy/lib/librcl_logging_spdlog.so:
+
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so:
+
+/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so:
+
+/lib/aarch64-linux-gnu/libyaml-0.so.2:
+
+/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/liblttng-ust.so:
+
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so:
+
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_generator_c.so:
+
+/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so:
+
+/opt/ros/jazzy/lib/librosidl_typesupport_c.so:
+
+/lib/aarch64-linux-gnu/libspdlog.so.1.12:
+
+/opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so:
+
+/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so:
+
+/lib/aarch64-linux-gnu/libnuma.so.1:
+
+/usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/liblttng-ust-common.so:
+
+/lib/aarch64-linux-gnu/liblttng-ust-tracepoint.so.1:
+
+/lib/aarch64-linux-gnu/libfmt.so.9:

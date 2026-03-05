@@ -1,0 +1,87 @@
+[0.043s] Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg -- -j4 -l4
+[0.182s] [ 33%] [32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o[0m
+[9.143s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:[m[K In member function ‘[01m[Kvoid AudioCaptureNode::[01;32m[KlistDevices[m[K()[m[K’:
+[9.143s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:12:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+[9.143s]    12 |         [01;31m[Kreturn[m[K;
+[9.143s]       |         [01;31m[K^~~~~~[m[K
+[9.146s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[9.147s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[9.147s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[9.147s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:6[m[K,
+[9.147s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:3[m[K:
+[9.147s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:[m[K In member function ‘[01m[Kbool AudioCaptureNode::[01;32m[KstartLiveCapture[m[K(ma_uint32)[m[K’:
+[9.147s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:45:107:[m[K [01;31m[Kerror: [m[K‘[01m[Kcount[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::count[m[K’?
+[9.147s]    45 |         RCLCPP_ERROR(get_logger(), "Device index %u is out of range (%u devices available)", deviceIndex, [01;31m[Kcount[m[K);
+[9.148s]       |                                                                                                           [01;31m[K^~~~~[m[K
+[9.148s] In file included from [01m[K/usr/include/c++/13/algorithm:73[m[K,
+[9.148s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:11[m[K,
+[9.148s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7[m[K,
+[9.148s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21[m[K:
+[9.148s] [01m[K/usr/include/c++/13/pstl/glue_algorithm_defs.h:101:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::count[m[K’ declared here
+[9.148s]   101 | [01;36m[Kcount[m[K(_ExecutionPolicy&& __exec, _ForwardIterator __first, _ForwardIterator __last, const _Tp& __value);
+[9.148s]       | [01;36m[K^~~~~[m[K
+[9.210s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:53:31:[m[K [01;31m[Kerror: [m[K‘[01m[KaudioCallback[m[K’ was not declared in this scope
+[9.210s]    53 |     config.dataCallback     = [01;31m[KaudioCallback[m[K; //function used to get more data (audio samples)
+[9.210s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[9.247s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:57:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kcapture[m[K’ was not declared in this scope; did you mean ‘[01m[Kcapture_[m[K’?
+[9.248s]    57 |     if (ma_device_init(nullptr, &config, &[01;31m[Kcapture[m[K.device) != MA_SUCCESS) {
+[9.248s]       |                                           [01;31m[K^~~~~~~[m[K
+[9.248s]       |                                           [32m[Kcapture_[m[K
+[9.300s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:[m[K In member function ‘[01m[Kvoid AudioCaptureNode::[01;32m[KstopLiveCapture[m[K()[m[K’:
+[9.300s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:79:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kma_context_uninint[m[K’ was not declared in this scope; did you mean ‘[01m[Kma_context_uninit[m[K’?
+[9.300s]    79 |     [01;31m[Kma_context_uninint[m[K(&capture_.context);
+[9.300s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.300s]       |     [32m[Kma_context_uninit[m[K
+[9.331s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:[m[K In member function ‘[01m[Kvoid AudioCaptureNode::[01;32m[KpublishAudio[m[K()[m[K’:
+[9.332s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:94:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kaudio[m[K’ was not declared in this scope
+[9.332s]    94 |     [01;31m[Kaudio[m[K msg = std::make_unique<AudioStamped>();
+[9.332s]       |     [01;31m[K^~~~~[m[K
+[9.333s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:95:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[9.334s]    95 |     [01;31m[Kmsg[m[K->header.stamp = now();
+[9.334s]       |     [01;31m[K^~~[m[K
+[9.334s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:95:5:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[9.334s] In file included from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:157[m[K:
+[9.335s] [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[9.335s]    31 | namespace [01;36m[Kmsg[m[K
+[9.337s]       |           [01;36m[K^~~[m[K
+[9.337s] In file included from [01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:24[m[K,
+[9.338s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:268[m[K:
+[9.338s] [01m[K/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[9.338s]    31 | namespace [01;36m[Kmsg[m[K
+[9.338s]       |           [01;36m[K^~~[m[K
+[9.338s] [01m[K/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kservice_msgs::msg[m[K’
+[9.338s]    35 | namespace [01;36m[Kmsg[m[K
+[9.338s]       |           [01;36m[K^~~[m[K
+[9.338s] In file included from [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:27[m[K,
+[9.339s]                  from [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[9.339s]                  from [01m[K/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[9.339s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[9.339s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[9.339s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[9.339s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[9.339s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[9.339s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+[9.339s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+[9.339s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[9.340s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[9.340s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K:
+[9.340s] [01m[K/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[9.340s]    31 | namespace [01;36m[Kmsg[m[K
+[9.340s]       |           [01;36m[K^~~[m[K
+[9.340s] In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/audio_stamped.hpp:7[m[K,
+[9.340s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:9[m[K:
+[9.340s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kspeech_to_text_interfaces::msg[m[K’
+[9.340s]    31 | namespace [01;36m[Kmsg[m[K
+[9.341s]       |           [01;36m[K^~~[m[K
+[9.341s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K audioCallback[m[K(ma_device*, void*, const void*, ma_uint32)[m[K’:
+[9.341s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:118:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koutput[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.341s]   118 | void audioCallback(ma_device* device, [01;35m[Kvoid* output[m[K, const void* input, ma_uint32 frameCount) {
+[9.341s]       |                                       [01;35m[K~~~~~~^~~~~~[m[K
+[12.057s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:[m[K At global scope:
+[12.057s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:118:6:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid[01;32m[K audioCallback[m[K(ma_device*, void*, const void*, ma_uint32)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[12.057s]   118 | void [01;35m[KaudioCallback[m[K(ma_device* device, void* output, const void* input, ma_uint32 frameCount) {
+[12.057s]       |      [01;35m[K^~~~~~~~~~~~~[m[K
+[12.145s] gmake[2]: *** [CMakeFiles/audio_capture_node.dir/build.make:93: CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o] Error 1
+[12.145s] gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/audio_capture_node.dir/all] Error 2
+[12.145s] gmake: *** [Makefile:146: all] Error 2
+[12.148s] Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg' returned '2': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg -- -j4 -l4

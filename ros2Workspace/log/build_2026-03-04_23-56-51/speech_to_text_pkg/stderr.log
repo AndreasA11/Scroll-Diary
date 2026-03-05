@@ -1,0 +1,72 @@
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:19:1:[m[K [01;31m[Kerror: [m[K‘[01m[KstatIc[m[K’ does not name a type; did you mean ‘[01m[Kstatic[m[K’?
+   19 | [01;31m[KstatIc[m[K constexpr uint32_t SAMPLES_PER_CHUNK = (SAMPLE_RATE * PUBLISH_INTERVAL_MS) / 1000;
+      | [01;31m[K^~~~~~[m[K
+      | [32m[Kstatic[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:81:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   81 |         rclcpp::TimerBase::SharedPtr [01;31m[Kpublish_timer_[m[K
+      |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                    [32m[K;[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:[m[K In constructor ‘[01m[KAudioCaptureNode::[01;32m[KAudioCaptureNode[m[K(ma_uint32)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:7:13:[m[K [01;31m[Kerror: [m[K‘[01m[KQos[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[KQoS[m[K’?
+    7 |     rclcpp::[01;31m[KQos[m[K audio_qos(rclcpp::KeepLast(10));
+      |             [01;31m[K^~~[m[K
+      |             [32m[KQoS[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:8:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kaudio_qos[m[K’ was not declared in this scope
+    8 |     [01;31m[Kaudio_qos[m[K.best_effort();
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:10:35:[m[K [01;31m[Kerror: [m[K‘[01m[KAudioStamped[m[K’ was not declared in this scope; did you mean ‘[01m[Kspeech_to_text_interfaces::msg::AudioStamped[m[K’?
+   10 |     publisher_ = create_publisher<[01;31m[KAudioStamped[m[K>("/raw_audio", audio_qos);
+      |                                   [01;31m[K^~~~~~~~~~~~[m[K
+      |                                   [32m[Kspeech_to_text_interfaces::msg::AudioStamped[m[K
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/audio_stamped.hpp:7[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:9[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__struct.hpp:152:7:[m[K [01;36m[Knote: [m[K‘[01m[Kspeech_to_text_interfaces::msg::AudioStamped[m[K’ declared here
+  152 | using [01;36m[KAudioStamped[m[K =
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:19:27:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[KLiveCapture&[m[K’ to an rvalue of type ‘[01m[KLiveCapture[m[K’
+   19 |     if (!startLiveCapture([01;31m[KdeviceIndex[m[K)) {
+      |                           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:30:5:[m[K [01;36m[Knote: [m[K  after user-defined conversion: ‘[01m[KLiveCapture::[01;32m[KLiveCapture[m[K(size_t)[m[K’
+   30 |     [01;36m[KLiveCapture[m[K(size_t bufCapacity = BUFFER_CAPACITY)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:71:44:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kbool AudioCaptureNode::[01;32m[KstartLiveCapture[m[K(LiveCapture&, ma_uint32)[m[K’
+   71 |         bool startLiveCapture([01;36m[KLiveCapture &capture[m[K, ma_uint32 deviceIndex = 0);
+      |                               [01;36m[K~~~~~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:6[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:33:30:[m[K [01;31m[Kerror: [m[K‘[01m[KSAMPLES_PER_CHUNK[m[K’ was not declared in this scope
+   33 |         PUBLISH_INTERVAL_MS, [01;31m[KSAMPLES_PER_CHUNK[m[K, SAMPLE_RATE
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:[m[K In destructor ‘[01m[Kvirtual AudioCaptureNode::[01;32m[K~AudioCaptureNode[m[K()[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:42:20:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KAudioCaptureNode::stopLiveCapture()[m[K’
+   42 |     [01;31m[KstopLiveCapture()[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:75:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid AudioCaptureNode::[01;32m[KstopLiveCapture[m[K(LiveCapture&)[m[K’
+   75 |         void [01;36m[KstopLiveCapture[m[K(LiveCapture &capture);
+      |              [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:75:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:57:11:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[Kcatch[m[K’ before ‘[01m[Kcatach[m[K’
+   57 |         } [01;31m[Kcatach[m[K (...) {
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:57:11:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kcatach[m[K’
+   57 |         } [01;31m[Kc[m[K[32m[Katach[m[K (...) {
+      |           [01;31m[K^[m[K[32m[K~~~~~[m[K
+      |           [32m[K([m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:57:11:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[Kcatach[m[K’
+   57 |         } [01;31m[Kcatach[m[K (...) {
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:57:23:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+   57 |         } [34m[Kcatach[m[K (...)[01;31m[K [m[K[32m[K{[m[K
+      |           [34m[K~~~~~~[m[K      [01;31m[K^[m[K[32m[K~[m[K
+      |                       [32m[K)[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:[m[K At global scope:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:102:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid audioCallback(ma_device*, void*, const void*, ma_uint32)[m[K’ declared ‘[01m[Kstatic[m[K’ but never defined [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+  102 | static void [01;35m[KaudioCallback[m[K(ma_device* dev, void* output, const void* input, ma_uint32 frameCount);
+      |             [01;35m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/audio_capture_node.dir/build.make:79: CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/audio_capture_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

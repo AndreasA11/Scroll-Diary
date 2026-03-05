@@ -15,7 +15,10 @@ find_package(speech_to_text_interfaces REQUIRED)
 include_directories(include)
 
 
-add_executable(audio_capture_node src/audioCaptureNode.cpp)
+add_executable(audio_capture_node 
+src/audioCaptureNode.cpp
+src/audioFunctions.cpp
+)
 
 ament_target_dependencies(
   audio_capture_node 

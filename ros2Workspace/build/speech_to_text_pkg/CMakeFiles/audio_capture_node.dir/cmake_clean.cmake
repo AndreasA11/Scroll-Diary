@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/audio_capture_node.dir/link.d"
   "CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o"
   "CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o.d"
+  "CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o"
+  "CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o.d"
   "audio_capture_node"
   "audio_capture_node.pdb"
 )
