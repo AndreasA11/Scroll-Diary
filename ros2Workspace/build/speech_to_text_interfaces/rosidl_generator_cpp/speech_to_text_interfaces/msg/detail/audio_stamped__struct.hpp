@@ -44,6 +44,7 @@ struct AudioStamped_
     {
       this->sample_rate = 0ul;
       this->channels = 0;
+      this->has_speech = false;
     }
   }
 
@@ -55,6 +56,7 @@ struct AudioStamped_
     {
       this->sample_rate = 0ul;
       this->channels = 0;
+      this->has_speech = false;
     }
   }
 
@@ -68,6 +70,9 @@ struct AudioStamped_
   using _channels_type =
     uint8_t;
   _channels_type channels;
+  using _has_speech_type =
+    bool;
+  _has_speech_type has_speech;
 
   // setters for named parameter idiom
   Type & set__data(
@@ -86,6 +91,12 @@ struct AudioStamped_
     const uint8_t & _arg)
   {
     this->channels = _arg;
+    return *this;
+  }
+  Type & set__has_speech(
+    const bool & _arg)
+  {
+    this->has_speech = _arg;
     return *this;
   }
 
@@ -138,6 +149,9 @@ struct AudioStamped_
       return false;
     }
     if (this->channels != other.channels) {
+      return false;
+    }
+    if (this->has_speech != other.has_speech) {
       return false;
     }
     return true;

@@ -8,7 +8,7 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o: /home/dredre/DevSt
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__traits.hpp \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__type_support.hpp \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp \
+  /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/libs/miniaudio.h \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/circularBuffer.hpp \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/pch.hpp \
@@ -792,7 +792,7 @@ CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o: /home/dredre/DevStuf
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__traits.hpp \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__type_support.hpp \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp \
+  /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/libs/miniaudio.h \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/circularBuffer.hpp \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/pch.hpp \
@@ -2027,12 +2027,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /usr/include/c++/13/bits/stl_queue.h:
 
-/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so:
-
-/opt/ros/jazzy/lib/libfastcdr.so.2.2.5:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
 /usr/include/c++/13/debug/debug.h:
 
 /usr/include/c++/13/bits/stl_list.h:
@@ -2295,8 +2289,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/macros.hpp:
-
 /usr/include/aarch64-linux-gnu/c++/13/bits/time_members.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/error_t.h:
@@ -2535,6 +2527,14 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /opt/ros/jazzy/include/rcl/rcl/node.h:
 
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so:
+
+/opt/ros/jazzy/lib/libfastcdr.so.2.2.5:
+
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp:
+
 /usr/include/aarch64-linux-gnu/bits/siginfo-consts.h:
 
 /opt/ros/jazzy/include/tracetools/tracetools/visibility_control.hpp:
@@ -2565,13 +2565,9 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_base.hpp:
 
-/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audio.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/macros.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/domain_id.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/visibility_control.h:
 
@@ -2598,6 +2594,10 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
 
 /usr/include/string.h:
 
@@ -2765,15 +2765,15 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /opt/ros/jazzy/include/rmw/rmw/impl/config.h:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/domain_id.h:
+
 /usr/include/c++/13/bits/functexcept.h:
 
 /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__builder.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
-
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
 
 /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so:
 

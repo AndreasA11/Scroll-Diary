@@ -29,6 +29,7 @@ typedef struct speech_to_text_interfaces__msg__AudioStamped
   rosidl_runtime_c__float__Sequence data;
   uint32_t sample_rate;
   uint8_t channels;
+  bool has_speech;
 } speech_to_text_interfaces__msg__AudioStamped;
 
 // Struct for a sequence of speech_to_text_interfaces__msg__AudioStamped.

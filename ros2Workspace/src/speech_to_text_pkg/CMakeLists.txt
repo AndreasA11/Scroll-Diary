@@ -18,6 +18,7 @@ include_directories(include)
 add_executable(audio_capture_node 
 src/audioCaptureNode.cpp
 src/audioFunctions.cpp
+src/vad.hpp
 )
 
 ament_target_dependencies(
@@ -38,7 +39,7 @@ install(TARGETS
 )
 
 install(PROGRAMS
-  scripts/py_node.py
+  scripts/wakeWordNode.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

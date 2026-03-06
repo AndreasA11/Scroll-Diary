@@ -28,6 +28,7 @@ speech_to_text_interfaces__msg__AudioStamped__init(speech_to_text_interfaces__ms
   }
   // sample_rate
   // channels
+  // has_speech
   return true;
 }
 
@@ -41,6 +42,7 @@ speech_to_text_interfaces__msg__AudioStamped__fini(speech_to_text_interfaces__ms
   rosidl_runtime_c__float__Sequence__fini(&msg->data);
   // sample_rate
   // channels
+  // has_speech
 }
 
 bool
@@ -61,6 +63,10 @@ speech_to_text_interfaces__msg__AudioStamped__are_equal(const speech_to_text_int
   }
   // channels
   if (lhs->channels != rhs->channels) {
+    return false;
+  }
+  // has_speech
+  if (lhs->has_speech != rhs->has_speech) {
     return false;
   }
   return true;
@@ -84,6 +90,8 @@ speech_to_text_interfaces__msg__AudioStamped__copy(
   output->sample_rate = input->sample_rate;
   // channels
   output->channels = input->channels;
+  // has_speech
+  output->has_speech = input->has_speech;
   return true;
 }
 

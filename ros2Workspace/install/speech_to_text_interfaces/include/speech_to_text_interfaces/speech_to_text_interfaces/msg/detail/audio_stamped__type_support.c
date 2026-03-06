@@ -90,7 +90,7 @@ bool speech_to_text_interfaces__msg__AudioStamped__rosidl_typesupport_introspect
   return rosidl_runtime_c__float__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember speech_to_text_interfaces__msg__AudioStamped__rosidl_typesupport_introspection_c__AudioStamped_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember speech_to_text_interfaces__msg__AudioStamped__rosidl_typesupport_introspection_c__AudioStamped_message_member_array[4] = {
   {
     "data",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -144,13 +144,31 @@ static rosidl_typesupport_introspection_c__MessageMember speech_to_text_interfac
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "has_speech",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(speech_to_text_interfaces__msg__AudioStamped, has_speech),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers speech_to_text_interfaces__msg__AudioStamped__rosidl_typesupport_introspection_c__AudioStamped_message_members = {
   "speech_to_text_interfaces__msg",  // message namespace
   "AudioStamped",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(speech_to_text_interfaces__msg__AudioStamped),
   false,  // has_any_key_member_
   speech_to_text_interfaces__msg__AudioStamped__rosidl_typesupport_introspection_c__AudioStamped_message_member_array,  // message members

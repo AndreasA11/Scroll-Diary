@@ -1,4 +1,4 @@
-#include "audio.hpp"
+#include "audioCapture.hpp"
 
 
 using namespace std::chrono_literals;
@@ -11,6 +11,7 @@ AudioCaptureNode::AudioCaptureNode(ma_uint32 deviceIndex)
     audio_qos.best_effort();
 
     publisher_ = create_publisher<speech_to_text_interfaces::msg::AudioStamped>("/raw_audio", audio_qos);
+    
 
     listDevices();
 
@@ -53,7 +54,7 @@ int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
 
     //Devuce ubdex can be overrideen via ROS2 param or argv[1]
-    ma_uint32 deviceIndex = 0;
+    ma_uint32 deviceIndex = 2;
     if(argc > 1) {
         try {
             deviceIndex = static_cast<ma_uint32>(std::stoul(argv[1]));

@@ -1,6 +1,6 @@
 #define MINIAUDIO_IMPLEMENTATION
 #include "miniaudio.h"
-#include "audio.hpp"
+#include "audioCapture.hpp"
 
 
 
@@ -106,13 +106,15 @@ void AudioCaptureNode::publishAudio() {
     msg->sample_rate = SAMPLE_RATE;
     msg->channels = NUM_CHANNELS;
     msg->data = capture_.buffer.pop(SAMPLES_PER_CHUNK);
+    msg->has_speech = vad_.detectSpeech(msg->data.data(), SAMPLES_PER_CHUNK);
+
 
     publisher_->publish(std::move(msg));
 
+    //DEBUG
+    //RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "Audio Capture Running");
+    
 }
-
-
-
 
 
 void audioCallback(ma_device* device, void*, const void* input, ma_uint32 frameCount) {

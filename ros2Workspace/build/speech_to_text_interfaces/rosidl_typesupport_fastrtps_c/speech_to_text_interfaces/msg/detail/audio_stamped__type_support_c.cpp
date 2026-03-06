@@ -68,6 +68,11 @@ bool cdr_serialize_speech_to_text_interfaces__msg__AudioStamped(
     cdr << ros_message->channels;
   }
 
+  // Field name: has_speech
+  {
+    cdr << (ros_message->has_speech ? true : false);
+  }
+
   return true;
 }
 
@@ -112,6 +117,13 @@ bool cdr_deserialize_speech_to_text_interfaces__msg__AudioStamped(
     cdr >> ros_message->channels;
   }
 
+  // Field name: has_speech
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->has_speech = tmp ? true : false;
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -152,6 +164,13 @@ size_t get_serialized_size_speech_to_text_interfaces__msg__AudioStamped(
   // Field name: channels
   {
     size_t item_size = sizeof(ros_message->channels);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: has_speech
+  {
+    size_t item_size = sizeof(ros_message->has_speech);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -205,6 +224,13 @@ size_t max_serialized_size_speech_to_text_interfaces__msg__AudioStamped(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Field name: has_speech
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -214,7 +240,7 @@ size_t max_serialized_size_speech_to_text_interfaces__msg__AudioStamped(
     using DataType = speech_to_text_interfaces__msg__AudioStamped;
     is_plain =
       (
-      offsetof(DataType, channels) +
+      offsetof(DataType, has_speech) +
       last_member_size
       ) == ret_val;
   }
@@ -242,6 +268,11 @@ bool cdr_serialize_key_speech_to_text_interfaces__msg__AudioStamped(
   // Field name: channels
   {
     cdr << ros_message->channels;
+  }
+
+  // Field name: has_speech
+  {
+    cdr << (ros_message->has_speech ? true : false);
   }
 
   return true;
@@ -284,6 +315,13 @@ size_t get_serialized_size_key_speech_to_text_interfaces__msg__AudioStamped(
   // Field name: channels
   {
     size_t item_size = sizeof(ros_message->channels);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: has_speech
+  {
+    size_t item_size = sizeof(ros_message->has_speech);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -335,6 +373,13 @@ size_t max_serialized_size_key_speech_to_text_interfaces__msg__AudioStamped(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Field name: has_speech
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -343,7 +388,7 @@ size_t max_serialized_size_key_speech_to_text_interfaces__msg__AudioStamped(
     using DataType = speech_to_text_interfaces__msg__AudioStamped;
     is_plain =
       (
-      offsetof(DataType, channels) +
+      offsetof(DataType, has_speech) +
       last_member_size
       ) == ret_val;
   }

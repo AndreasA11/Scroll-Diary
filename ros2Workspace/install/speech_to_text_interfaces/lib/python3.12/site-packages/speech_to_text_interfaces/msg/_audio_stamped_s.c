@@ -133,6 +133,15 @@ bool speech_to_text_interfaces__msg__audio_stamped__convert_from_py(PyObject * _
     ros_message->channels = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
+  {  // has_speech
+    PyObject * field = PyObject_GetAttrString(_pymsg, "has_speech");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->has_speech = (Py_True == field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -228,6 +237,17 @@ PyObject * speech_to_text_interfaces__msg__audio_stamped__convert_to_py(void * r
     field = PyLong_FromUnsignedLong(ros_message->channels);
     {
       int rc = PyObject_SetAttrString(_pymessage, "channels", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // has_speech
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->has_speech ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "has_speech", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

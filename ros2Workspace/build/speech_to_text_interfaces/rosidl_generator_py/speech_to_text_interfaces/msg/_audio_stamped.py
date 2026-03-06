@@ -70,6 +70,7 @@ class AudioStamped(metaclass=Metaclass_AudioStamped):
         '_data',
         '_sample_rate',
         '_channels',
+        '_has_speech',
         '_check_fields',
     ]
 
@@ -77,6 +78,7 @@ class AudioStamped(metaclass=Metaclass_AudioStamped):
         'data': 'sequence<float>',
         'sample_rate': 'uint32',
         'channels': 'uint8',
+        'has_speech': 'boolean',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -85,6 +87,7 @@ class AudioStamped(metaclass=Metaclass_AudioStamped):
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -99,6 +102,7 @@ class AudioStamped(metaclass=Metaclass_AudioStamped):
         self.data = array.array('f', kwargs.get('data', []))
         self.sample_rate = kwargs.get('sample_rate', int())
         self.channels = kwargs.get('channels', int())
+        self.has_speech = kwargs.get('has_speech', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -135,6 +139,8 @@ class AudioStamped(metaclass=Metaclass_AudioStamped):
         if self.sample_rate != other.sample_rate:
             return False
         if self.channels != other.channels:
+            return False
+        if self.has_speech != other.has_speech:
             return False
         return True
 
@@ -200,3 +206,16 @@ class AudioStamped(metaclass=Metaclass_AudioStamped):
             assert value >= 0 and value < 256, \
                 "The 'channels' field must be an unsigned integer in [0, 255]"
         self._channels = value
+
+    @builtins.property
+    def has_speech(self):
+        """Message field 'has_speech'."""
+        return self._has_speech
+
+    @has_speech.setter
+    def has_speech(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'has_speech' field must be of type 'bool'"
+        self._has_speech = value

@@ -24,16 +24,32 @@ namespace msg
 namespace builder
 {
 
+class Init_AudioStamped_has_speech
+{
+public:
+  explicit Init_AudioStamped_has_speech(::speech_to_text_interfaces::msg::AudioStamped & msg)
+  : msg_(msg)
+  {}
+  ::speech_to_text_interfaces::msg::AudioStamped has_speech(::speech_to_text_interfaces::msg::AudioStamped::_has_speech_type arg)
+  {
+    msg_.has_speech = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::speech_to_text_interfaces::msg::AudioStamped msg_;
+};
+
 class Init_AudioStamped_channels
 {
 public:
   explicit Init_AudioStamped_channels(::speech_to_text_interfaces::msg::AudioStamped & msg)
   : msg_(msg)
   {}
-  ::speech_to_text_interfaces::msg::AudioStamped channels(::speech_to_text_interfaces::msg::AudioStamped::_channels_type arg)
+  Init_AudioStamped_has_speech channels(::speech_to_text_interfaces::msg::AudioStamped::_channels_type arg)
   {
     msg_.channels = std::move(arg);
-    return std::move(msg_);
+    return Init_AudioStamped_has_speech(msg_);
   }
 
 private:

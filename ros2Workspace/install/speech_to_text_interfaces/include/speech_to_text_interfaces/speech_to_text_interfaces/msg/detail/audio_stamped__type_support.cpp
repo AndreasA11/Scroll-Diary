@@ -83,7 +83,7 @@ void resize_function__AudioStamped__data(void * untyped_member, size_t size)
   member->resize(size);
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember AudioStamped_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember AudioStamped_message_member_array[4] = {
   {
     "data",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -137,13 +137,31 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember AudioStamped_
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "has_speech",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(speech_to_text_interfaces::msg::AudioStamped, has_speech),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers AudioStamped_message_members = {
   "speech_to_text_interfaces::msg",  // message namespace
   "AudioStamped",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(speech_to_text_interfaces::msg::AudioStamped),
   false,  // has_any_key_member_
   AudioStamped_message_member_array,  // message members

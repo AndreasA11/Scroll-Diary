@@ -11,10 +11,10 @@ speech_to_text_interfaces__msg__AudioStamped__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0xbb, 0x02, 0x05, 0x1e, 0xb6, 0x64, 0x32, 0x82,
-      0xfc, 0x0a, 0x8c, 0x7a, 0x29, 0x94, 0xeb, 0x49,
-      0x55, 0x28, 0x85, 0x42, 0x4b, 0xb7, 0x12, 0x2b,
-      0x4d, 0x97, 0x58, 0x30, 0xfa, 0xd0, 0x8c, 0x11,
+      0x53, 0xf3, 0x4c, 0x60, 0x3e, 0xe5, 0xeb, 0x88,
+      0x6e, 0xb1, 0x0e, 0xd3, 0xf5, 0xd7, 0x10, 0x0c,
+      0x96, 0x3e, 0x28, 0x61, 0x95, 0x35, 0x3c, 0x84,
+      0x3d, 0x6d, 0xf3, 0x42, 0x9b, 0x55, 0x55, 0x0f,
     }};
   return &hash;
 }
@@ -34,6 +34,7 @@ static char speech_to_text_interfaces__msg__AudioStamped__TYPE_NAME[] = "speech_
 static char speech_to_text_interfaces__msg__AudioStamped__FIELD_NAME__data[] = "data";
 static char speech_to_text_interfaces__msg__AudioStamped__FIELD_NAME__sample_rate[] = "sample_rate";
 static char speech_to_text_interfaces__msg__AudioStamped__FIELD_NAME__channels[] = "channels";
+static char speech_to_text_interfaces__msg__AudioStamped__FIELD_NAME__has_speech[] = "has_speech";
 
 static rosidl_runtime_c__type_description__Field speech_to_text_interfaces__msg__AudioStamped__FIELDS[] = {
   {
@@ -66,6 +67,16 @@ static rosidl_runtime_c__type_description__Field speech_to_text_interfaces__msg_
     },
     {NULL, 0, 0},
   },
+  {
+    {speech_to_text_interfaces__msg__AudioStamped__FIELD_NAME__has_speech, 10, 10},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_BOOLEAN,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
 };
 
 const rosidl_runtime_c__type_description__TypeDescription *
@@ -77,7 +88,7 @@ speech_to_text_interfaces__msg__AudioStamped__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {speech_to_text_interfaces__msg__AudioStamped__TYPE_NAME, 42, 42},
-      {speech_to_text_interfaces__msg__AudioStamped__FIELDS, 3, 3},
+      {speech_to_text_interfaces__msg__AudioStamped__FIELDS, 4, 4},
     },
     {NULL, 0, 0},
   };
@@ -90,7 +101,8 @@ speech_to_text_interfaces__msg__AudioStamped__get_type_description(
 static char toplevel_type_raw_source[] =
   "float32[] data\n"
   "uint32 sample_rate\n"
-  "uint8 channels";
+  "uint8 channels\n"
+  "bool has_speech";
 
 static char msg_encoding[] = "msg";
 
@@ -104,7 +116,7 @@ speech_to_text_interfaces__msg__AudioStamped__get_individual_type_description_so
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {speech_to_text_interfaces__msg__AudioStamped__TYPE_NAME, 42, 42},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 48, 48},
+    {toplevel_type_raw_source, 64, 64},
   };
   return &source;
 }
