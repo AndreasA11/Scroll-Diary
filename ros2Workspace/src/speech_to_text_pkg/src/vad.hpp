@@ -15,7 +15,7 @@ private:
     int speechFrameCount;
     
 public:
-    LightweightVAD(float noiseFloorIn = 0.001f, float noiseAdaptRateIn = 0.01f,
+    LightweightVAD(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
         float speechMultiplierIn = 4.0f, float zcrThresh = 0.3f, int minFrames = 3)
         : noiseFloor(noiseFloorIn), noiseAdaptRate(noiseAdaptRateIn), 
         speechMultiplier(speechMultiplierIn), zcr_threshold(zcrThresh), 
@@ -27,7 +27,7 @@ public:
     
     // Fast energy-based detection (~0.01ms for 320 samples)
     bool detectSpeech(const float* samples, size_t len) {
-        if(len == 0) {
+        if(len < 2) {  
             return false;
         }
         
@@ -38,7 +38,11 @@ public:
         for(size_t i = 0; i < len; i++) {
             energy += samples[i] * samples[i];
         }
-        energy = std::sqrt(energy / len);        
+        double energyAccum = 0.0;
+        for(size_t i = 0; i < len; i++) {
+            energyAccum += static_cast<double>(samples[i]) * samples[i];
+        }
+        energy = std::sqrt(static_cast<float>(energyAccum / len));        
         // 2. Calculate zero-crossing rate (distinguishes speech from noise)
         int zeroCrossings = 0;
         for(size_t i = 1; i < len; i++) {
@@ -47,8 +51,11 @@ public:
                 zeroCrossings++;
             }
         }
-        float zcr = static_cast<float>(zeroCrossings) / (len - 1);
-        
+        float zcr = 0.0f;
+        if(len > 1) {
+            zcr = static_cast<float>(zeroCrossings) / (len - 1);
+        }
+    
         // 3. Speech detection logic
         bool isSpeech = (energy > noiseFloor * speechMultiplier) && (zcr > zcr_threshold);
         if(!isSpeech) {
