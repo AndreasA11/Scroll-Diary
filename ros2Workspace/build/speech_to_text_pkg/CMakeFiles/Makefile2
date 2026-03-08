@@ -64,10 +64,12 @@ CMAKE_BINARY_DIR = /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/
 
 # The main recursive "all" target.
 all: CMakeFiles/audio_capture_node.dir/all
+all: CMakeFiles/transcription_pre_process_node.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/audio_capture_node.dir/codegen
+codegen: CMakeFiles/transcription_pre_process_node.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -78,6 +80,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/speech_to_text_pkg_uninstall.dir/clean
 clean: CMakeFiles/audio_capture_node.dir/clean
+clean: CMakeFiles/transcription_pre_process_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -175,6 +178,38 @@ CMakeFiles/audio_capture_node.dir/codegen:
 CMakeFiles/audio_capture_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/clean
 .PHONY : CMakeFiles/audio_capture_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/transcription_pre_process_node.dir
+
+# All Build rule for target.
+CMakeFiles/transcription_pre_process_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcription_pre_process_node.dir/build.make CMakeFiles/transcription_pre_process_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcription_pre_process_node.dir/build.make CMakeFiles/transcription_pre_process_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg/CMakeFiles --progress-num=4,5 "Built target transcription_pre_process_node"
+.PHONY : CMakeFiles/transcription_pre_process_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/transcription_pre_process_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/transcription_pre_process_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/transcription_pre_process_node.dir/rule
+
+# Convenience name for target.
+transcription_pre_process_node: CMakeFiles/transcription_pre_process_node.dir/rule
+.PHONY : transcription_pre_process_node
+
+# codegen rule for target.
+CMakeFiles/transcription_pre_process_node.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcription_pre_process_node.dir/build.make CMakeFiles/transcription_pre_process_node.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg/CMakeFiles --progress-num=4,5 "Finished codegen for target transcription_pre_process_node"
+.PHONY : CMakeFiles/transcription_pre_process_node.dir/codegen
+
+# clean rule for target.
+CMakeFiles/transcription_pre_process_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcription_pre_process_node.dir/build.make CMakeFiles/transcription_pre_process_node.dir/clean
+.PHONY : CMakeFiles/transcription_pre_process_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

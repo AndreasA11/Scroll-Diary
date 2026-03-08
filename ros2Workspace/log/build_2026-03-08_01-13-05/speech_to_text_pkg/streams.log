@@ -1,0 +1,80 @@
+[0.027s] Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg -- -j4 -l4
+[0.118s] [ 60%] Built target audio_capture_node
+[0.124s] [ 80%] [32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o[0m
+[5.062s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:[m[K In constructor ‘[01m[KtranscriptionPreProcessNode::[01;32m[KtranscriptionPreProcessNode[m[K()[m[K’:
+[5.063s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:9:80:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtranscriptionPreProcessNode::create_publisher<speech_to_text_interfaces::msg::AudioStamped>(const char [15])[m[K’
+[5.063s]     9 |     publisher_ = [01;31m[Kcreate_publisher<speech_to_text_interfaces::msg::AudioStamped>("/whisper_audio")[m[K;
+[5.063s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[5.063s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.063s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[5.063s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[5.063s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp:3[m[K,
+[5.063s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:1[m[K:
+[5.064s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::[01;32m[Kcreate_publisher[m[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[5.064s]   197 |   [01;36m[Kcreate_publisher[m[K(
+[5.064s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[5.064s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.105s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:[m[K In member function ‘[01m[Kvoid transcriptionPreProcessNode::[01;32m[KpublishAudio[m[K(std::vector<float>&)[m[K’:
+[5.106s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:38:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kvad_[m[K’ was not declared in this scope
+[5.106s]    38 |     msg->has_speech = [01;31m[Kvad_[m[K.detectSpeech(msg->data.data(), CHUNK_SIZE);
+[5.106s]       |                       [01;31m[K^~~~[m[K
+[5.112s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:[m[K In member function ‘[01m[Kvoid transcriptionPreProcessNode::[01;32m[KaudioCallback[m[K(speech_to_text_interfaces::msg::AudioStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.112s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:48:16:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KCircularBuffer<float>::push(float*)[m[K’
+[5.112s]    48 |    [01;31m[Kbuffer_.push(msg->data.data())[m[K;
+[5.112s]       |    [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[5.112s] In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp:5[m[K:
+[5.112s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/circularBuffer.hpp:20:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid CircularBuffer<T>::[01;32m[Kpush[m[K(const T*, size_t) [35m[K[with T = float; size_t = long unsigned int][m[K[m[K’
+[5.112s]    20 |     void [01;36m[Kpush[m[K(const T* data, size_t len) {
+[5.113s]       |          [01;36m[K^~~~[m[K
+[5.113s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/circularBuffer.hpp:20:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.113s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:[m[K In member function ‘[01m[Kvoid transcriptionPreProcessNode::[01;32m[KboolCallback[m[K(const std_msgs::msg::Bool&)[m[K’:
+[5.113s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:66:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CircularBuffer<float>[m[K’ has no member named ‘[01m[KpeakLast[m[K’; did you mean ‘[01m[KpeekLast[m[K’?
+[5.113s]    66 |         auto preRoll = buffer_.[01;31m[KpeakLast[m[K(PRE_ROLL_SIZE);
+[5.113s]       |                                [01;31m[K^~~~~~~~[m[K
+[5.113s]       |                                [32m[KpeekLast[m[K
+[5.114s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:71:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<float>::push_back(std::vector<float>::iterator, std::vector<float>::iterator, std::vector<float>::iterator)[m[K’
+[5.114s]    71 |             [01;31m[Ksamples.push_back(samples.end(), liveAudio.begin(), liveAudio.end())[m[K;
+[5.114s]       |             [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.114s] In file included from [01m[K/usr/include/c++/13/vector:66[m[K,
+[5.114s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:19[m[K,
+[5.114s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K:
+[5.114s] [01m[K/usr/include/c++/13/bits/stl_vector.h:1281:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::[01;32m[Kpush_back[m[K(const value_type&) [35m[K[with _Tp = float; _Alloc = std::allocator<float>; value_type = float][m[K[m[K’
+[5.114s]  1281 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+[5.115s]       |       [01;36m[K^~~~~~~~~[m[K
+[5.115s] [01m[K/usr/include/c++/13/bits/stl_vector.h:1281:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[5.115s] [01m[K/usr/include/c++/13/bits/stl_vector.h:1298:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::[01;32m[Kpush_back[m[K(value_type&&) [35m[K[with _Tp = float; _Alloc = std::allocator<float>; value_type = float][m[K[m[K’
+[5.115s]  1298 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+[5.115s]       |       [01;36m[K^~~~~~~~~[m[K
+[5.115s] [01m[K/usr/include/c++/13/bits/stl_vector.h:1298:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[5.115s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:79:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+[5.115s]    79 |     [01;31m[K}[m[K
+[5.115s]       |     [01;31m[K^[m[K
+[5.115s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:78:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[5.116s]    78 |         return
+[5.116s]       |               [01;31m[K^[m[K
+[5.116s]       |               [32m[K;[m[K
+[5.116s]    79 |     [32m[K}[m[K
+[5.116s]       |     [32m[K~[m[K          
+[5.116s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[5.116s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:91:18:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar**[m[K’ to ‘[01m[Kint[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[5.116s]    91 |     rclcpp::init([01;31m[Kargc[m[K, argv);
+[5.116s]       |                  [01;31m[K^~~~[m[K
+[5.116s]       |                  [01;31m[K|[m[K
+[5.116s]       |                  [01;31m[Kchar**[m[K
+[5.117s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+[5.117s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K:
+[5.117s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:76:7:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rclcpp::[01;32m[Kinit[m[K(int, const char* const*, const InitOptions&, SignalHandlerOptions)[m[K’
+[5.117s]    76 |   [01;36m[Kint argc[m[K,
+[5.117s]       |   [01;36m[K~~~~^~~~[m[K
+[5.117s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:91:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kconst char* const*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[5.117s]    91 |     rclcpp::init(argc, [01;31m[Kargv[m[K);
+[5.117s]       |                        [01;31m[K^~~~[m[K
+[5.117s]       |                        [01;31m[K|[m[K
+[5.117s]       |                        [01;31m[Kint[m[K
+[5.117s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:77:24:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid rclcpp::[01;32m[Kinit[m[K(int, const char* const*, const InitOptions&, SignalHandlerOptions)[m[K’
+[5.117s]    77 |   [01;36m[Kchar const * const * argv[m[K,
+[5.118s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[9.603s] gmake[2]: *** [CMakeFiles/transcription_pre_process_node.dir/build.make:79: CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o] Error 1
+[9.603s] gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/transcription_pre_process_node.dir/all] Error 2
+[9.603s] gmake: *** [Makefile:146: all] Error 2
+[9.605s] Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg' returned '2': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg -- -j4 -l4

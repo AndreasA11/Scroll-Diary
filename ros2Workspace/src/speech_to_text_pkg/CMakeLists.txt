@@ -11,14 +11,15 @@ find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(speech_to_text_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
 
 include_directories(include)
 
 
 add_executable(audio_capture_node 
-src/audioCaptureNode.cpp
-src/audioFunctions.cpp
-src/vad.hpp
+  src/audioCaptureNode.cpp
+  src/audioFunctions.cpp
+  src/vad.hpp
 )
 
 ament_target_dependencies(
@@ -31,6 +32,27 @@ target_include_directories(audio_capture_node PRIVATE
   include/speech_to_text_pkg
   src
   libs
+)
+
+add_executable(transcription_pre_process_node
+  src/whisperPreProcessNode.cpp
+)
+
+ament_target_dependencies(
+  transcription_pre_process_node
+  rclcpp
+  speech_to_text_interfaces
+  std_msgs
+)
+
+target_include_directories(transcription_pre_process_node PRIVATE
+  include/speech_to_text_pkg
+  src
+)
+
+install(TARGETS
+  transcription_pre_process_node
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 install(TARGETS

@@ -210,6 +210,19 @@ audio_capture_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/build
 .PHONY : audio_capture_node/fast
 
+#=============================================================================
+# Target rules for targets named transcription_pre_process_node
+
+# Build rule for target.
+transcription_pre_process_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 transcription_pre_process_node
+.PHONY : transcription_pre_process_node
+
+# fast build rule for target.
+transcription_pre_process_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcription_pre_process_node.dir/build.make CMakeFiles/transcription_pre_process_node.dir/build
+.PHONY : transcription_pre_process_node/fast
+
 src/audioCaptureNode.o: src/audioCaptureNode.cpp.o
 .PHONY : src/audioCaptureNode.o
 
@@ -258,6 +271,30 @@ src/audioFunctions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/audio_capture_node.dir/build.make CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.s
 .PHONY : src/audioFunctions.cpp.s
 
+src/whisperPreProcessNode.o: src/whisperPreProcessNode.cpp.o
+.PHONY : src/whisperPreProcessNode.o
+
+# target to build an object file
+src/whisperPreProcessNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcription_pre_process_node.dir/build.make CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o
+.PHONY : src/whisperPreProcessNode.cpp.o
+
+src/whisperPreProcessNode.i: src/whisperPreProcessNode.cpp.i
+.PHONY : src/whisperPreProcessNode.i
+
+# target to preprocess a source file
+src/whisperPreProcessNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcription_pre_process_node.dir/build.make CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.i
+.PHONY : src/whisperPreProcessNode.cpp.i
+
+src/whisperPreProcessNode.s: src/whisperPreProcessNode.cpp.s
+.PHONY : src/whisperPreProcessNode.s
+
+# target to generate assembly for a file
+src/whisperPreProcessNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcription_pre_process_node.dir/build.make CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.s
+.PHONY : src/whisperPreProcessNode.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -274,12 +311,16 @@ help:
 	@echo "... speech_to_text_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... audio_capture_node"
+	@echo "... transcription_pre_process_node"
 	@echo "... src/audioCaptureNode.o"
 	@echo "... src/audioCaptureNode.i"
 	@echo "... src/audioCaptureNode.s"
 	@echo "... src/audioFunctions.o"
 	@echo "... src/audioFunctions.i"
 	@echo "... src/audioFunctions.s"
+	@echo "... src/whisperPreProcessNode.o"
+	@echo "... src/whisperPreProcessNode.i"
+	@echo "... src/whisperPreProcessNode.s"
 .PHONY : help
 
 

@@ -1,0 +1,13 @@
+[ 60%] Built target audio_capture_node
+[ 80%] [32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o[0m
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:[m[K In member function ‘[01m[Kvoid transcriptionPreProcessNode::[01;32m[KpublishAudio[m[K()[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:40:68:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   40 |     samples_.erase(samples_.begin(), samples_.begin() + CHUNK_SIZE)
+      |                                                                    [01;31m[K^[m[K
+      |                                                                    [32m[K;[m[K
+   41 | 
+   42 | [32m[K}[m[K
+      | [32m[K~[m[K                                                                   
+gmake[2]: *** [CMakeFiles/transcription_pre_process_node.dir/build.make:79: CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/transcription_pre_process_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

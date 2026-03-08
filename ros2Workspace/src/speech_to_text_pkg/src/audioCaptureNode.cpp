@@ -54,7 +54,7 @@ int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
 
     //Devuce ubdex can be overrideen via ROS2 param or argv[1]
-    ma_uint32 deviceIndex = 1;
+    ma_uint32 deviceIndex = 0;
     if(argc > 1) {
         try {
             deviceIndex = static_cast<ma_uint32>(std::stoul(argv[1]));

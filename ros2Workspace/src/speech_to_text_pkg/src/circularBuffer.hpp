@@ -68,6 +68,37 @@ public:
         full = false;
     }
 
+    std::vector<T> peekLast(size_t len) const {
+        std::lock_guard<std::mutex> lock(mtx);
+
+        size_t available = sizeUnsafe();
+        if(len > available) {
+            len = available;
+        }
+
+        std::vector<T> out(len);
+
+        size_t start = (head + capacity - len) % capacity;
+
+        if(start + len <= capacity) {
+            std::copy(buffer.begin() + start,
+                    buffer.begin() + start + len,
+                    out.begin());
+        } else {
+            size_t first_part = capacity - start;
+
+            std::copy(buffer.begin() + start,
+                    buffer.end(),
+                    out.begin());
+
+            std::copy(buffer.begin(),
+                    buffer.begin() + (len - first_part),
+                    out.begin() + first_part);
+        }
+
+        return out;
+    }
+
 private:
     // Internal unsafe version for when lock is already held
     size_t sizeUnsafe() const {
