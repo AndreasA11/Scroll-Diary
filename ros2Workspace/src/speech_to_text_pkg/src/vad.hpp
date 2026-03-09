@@ -16,7 +16,7 @@ private:
     
 public:
     LightweightVAD(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
-        float speechMultiplierIn = 4.0f, float zcrThresh = 0.3f, int minFrames = 3)
+        float speechMultiplierIn = 4.0f, float zcrThresh = 0.05f, int minFrames = 1)
         : noiseFloor(noiseFloorIn), noiseAdaptRate(noiseAdaptRateIn), 
         speechMultiplier(speechMultiplierIn), zcr_threshold(zcrThresh), 
           minSpeechFrames(minFrames), speechFrameCount(0) {}
@@ -33,16 +33,11 @@ public:
         
         // 1. Calculate RMS energy
         
-
-        float energy = 0.0f;
-        for(size_t i = 0; i < len; i++) {
-            energy += samples[i] * samples[i];
-        }
         double energyAccum = 0.0;
         for(size_t i = 0; i < len; i++) {
             energyAccum += static_cast<double>(samples[i]) * samples[i];
         }
-        energy = std::sqrt(static_cast<float>(energyAccum / len));        
+        float energy = std::sqrt(static_cast<float>(energyAccum / len));        
         // 2. Calculate zero-crossing rate (distinguishes speech from noise)
         int zeroCrossings = 0;
         for(size_t i = 1; i < len; i++) {

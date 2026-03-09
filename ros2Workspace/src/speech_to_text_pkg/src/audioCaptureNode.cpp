@@ -5,7 +5,7 @@ using namespace std::chrono_literals;
 
 //CTOR
 
-AudioCaptureNode::AudioCaptureNode(ma_uint32 deviceIndex)
+AudioCaptureNode::AudioCaptureNode()
 : Node("audio_capture_node") {
     rclcpp::QoS audio_qos(rclcpp::KeepLast(10));
     audio_qos.best_effort();
@@ -13,7 +13,8 @@ AudioCaptureNode::AudioCaptureNode(ma_uint32 deviceIndex)
     publisher_ = create_publisher<speech_to_text_interfaces::msg::AudioStamped>("/raw_audio", audio_qos);
     
 
-    listDevices();
+    ma_uint32 deviceIndex  = listDevices();
+    RCLCPP_INFO(get_logger(), "device index we found is %u", deviceIndex);
 
     if(!initContext()) {
         RCLCPP_FATAL(get_logger(), "Cannot init audio context, shutting down");
@@ -52,20 +53,8 @@ AudioCaptureNode::~AudioCaptureNode() {
 
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
-
-    //Devuce ubdex can be overrideen via ROS2 param or argv[1]
-    ma_uint32 deviceIndex = 0;
-    if(argc > 1) {
-        try {
-            deviceIndex = static_cast<ma_uint32>(std::stoul(argv[1]));
-        } catch (...) {
-            std::cerr << "Usage: audio_capture_node [device_index]\n";
-            return 1;
-        }
-    }
-
     try {
-        rclcpp::spin(std::make_shared<AudioCaptureNode>(deviceIndex));
+        rclcpp::spin(std::make_shared<AudioCaptureNode>());
     } catch (const std::exception& e) {
         RCLCPP_FATAL(rclcpp::get_logger("main"), "Fatal: %s", e.what());
         rclcpp::shutdown();

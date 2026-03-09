@@ -11,6 +11,7 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o: /
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/circularBuffer.hpp \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/pch.hpp \
+  /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
@@ -1368,6 +1369,8 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /usr/include/aarch64-linux-gnu/sys/procfs.h:
 
+/usr/include/aarch64-linux-gnu/gnu/stubs.h:
+
 /usr/include/c++/13/bits/unique_lock.h:
 
 /usr/include/aarch64-linux-gnu/bits/typesizes.h:
@@ -1387,8 +1390,6 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 /usr/include/c++/13/tr1/hypergeometric.tcc:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_base.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
@@ -1413,14 +1414,6 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
 
 /opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_options.hpp:
-
-/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so:
-
-/usr/include/c++/13/streambuf:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
 
@@ -1535,10 +1528,6 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 /usr/include/aarch64-linux-gnu/asm/types.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_description__struct.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/event.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
@@ -1830,13 +1819,27 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
-/usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
-
 /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__traits.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_options.hpp:
+
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so:
+
+/usr/include/c++/13/streambuf:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/event.hpp:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_description__struct.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
 /usr/include/c++/13/cstddef:
 
@@ -1849,6 +1852,8 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 /opt/ros/jazzy/include/rcl/rcl/types.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:
+
+/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/types/siginfo_t.h:
 
@@ -1892,8 +1897,6 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
-/usr/include/aarch64-linux-gnu/gnu/stubs.h:
-
 /usr/include/c++/13/bits/hashtable_policy.h:
 
 /opt/ros/jazzy/include/rcl/rcl/logging_rosout.h:
@@ -1914,12 +1917,6 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__builder.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
-
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
-
 /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
@@ -1928,7 +1925,11 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
 
 CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 
@@ -2020,6 +2021,18 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 
 /opt/ros/jazzy/include/rmw/rmw/init_options.h:
 
+/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
+
+/usr/include/c++/13/system_error:
+
+/usr/include/c++/13/bits/ostream_insert.h:
+
+/usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/c++/13/shared_mutex:
+
+/usr/include/aarch64-linux-gnu/bits/procfs-extra.h:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
@@ -2104,17 +2117,7 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/array_list.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
-
-/usr/include/c++/13/system_error:
-
-/usr/include/c++/13/bits/ostream_insert.h:
-
-/usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/13/shared_mutex:
-
-/usr/include/aarch64-linux-gnu/bits/procfs-extra.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
 

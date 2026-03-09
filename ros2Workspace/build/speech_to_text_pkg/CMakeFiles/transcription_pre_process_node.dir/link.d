@@ -130,7 +130,6 @@ transcription_pre_process_node: \
   /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_generator_c.so \
   /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so \
   /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so \
-  /lib/aarch64-linux-gnu/libm.so.6 \
   /opt/ros/jazzy/lib/librcl_logging_spdlog.so \
   /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so \
   /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so \
@@ -409,8 +408,6 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so:
 
 /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so:
-
-/lib/aarch64-linux-gnu/libm.so.6:
 
 /opt/ros/jazzy/lib/librcl_logging_spdlog.so:
 

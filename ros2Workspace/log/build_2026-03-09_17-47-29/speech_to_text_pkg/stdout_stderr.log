@@ -1,0 +1,28 @@
+[ 60%] Built target audio_capture_node
+[ 80%] [32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o[0m
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp:9[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In constructor ‘[01m[KLightweightVAD::[01;32m[KLightweightVAD[m[K(float, float, float, float, int)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KLightweightVAD::noiseAdaptRate[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   11 |     float [01;35m[KnoiseAdaptRate[m[K;
+      |           [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat LightweightVAD::speechMultiplier[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   10 |     float [01;35m[KspeechMultiplier[m[K;
+      |           [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:18:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   18 |     [01;35m[KLightweightVAD[m[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
+      |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:[m[K In member function ‘[01m[Kvoid transcriptionPreProcessNode::[01;32m[KaudioCallback[m[K(speech_to_text_interfaces::msg::AudioStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:57:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtimeQuiet[m[K’ was not declared in this scope; did you mean ‘[01m[KisQuiet[m[K’?
+   57 |             [01;31m[KtimeQuiet[m[K = now - startQuietTime;
+      |             [01;31m[K^~~~~~~~~[m[K
+      |             [32m[KisQuiet[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:57:31:[m[K [01;31m[Kerror: [m[K‘[01m[KstartQuietTime[m[K’ was not declared in this scope
+   57 |             timeQuiet = now - [01;31m[KstartQuietTime[m[K;
+      |                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:65:13:[m[K [01;31m[Kerror: [m[K‘[01m[KstartQuietTime[m[K’ was not declared in this scope
+   65 |             [01;31m[KstartQuietTime[m[K = now;
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/transcription_pre_process_node.dir/build.make:79: CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:188: CMakeFiles/transcription_pre_process_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

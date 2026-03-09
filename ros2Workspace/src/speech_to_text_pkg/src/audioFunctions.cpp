@@ -14,27 +14,33 @@ static void audioCallback(ma_device* dev, void* output, const void* input, ma_ui
 
 
 // ---------------- LIVE MIC ----------------
-void AudioCaptureNode::listDevices() {
+ma_uint32 AudioCaptureNode::listDevices() {
     //initialize context and context_config
     ma_context context; 
     ma_context_config ctxConfig = ma_context_config_init();
     if (ma_context_init(nullptr, 0, &ctxConfig, &context) != MA_SUCCESS) {
         RCLCPP_FATAL(get_logger(), "listDevices: failed to init context");
-        return;
+        return 0;
     }
     //get the number of devices
     ma_uint32 captureDeviceCount;
     ma_device_info* captureInfos;
     ma_context_get_devices(&context, nullptr, 0, &captureInfos, &captureDeviceCount);
 
+    ma_uint32 deviceIndex = 9;
     //loop through all of the devices, enumerate and print them out
     RCLCPP_INFO(get_logger(), "Available capture devices (%u):", captureDeviceCount); 
     for (ma_uint32 i = 0; i < captureDeviceCount; ++i) {
         RCLCPP_INFO(get_logger(), " [%u] %s", i, captureInfos[i].name);
+        char deviceName[] = "SF-558 Mono";
+        if(!std::strcmp(captureInfos[i].name, deviceName)) {
+            deviceIndex = i;
+        }
     }
 
     //cleanup
     ma_context_uninit(&context);
+    return deviceIndex;
 }
 
 bool AudioCaptureNode::initContext() {

@@ -716,4 +716,5 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o: \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp

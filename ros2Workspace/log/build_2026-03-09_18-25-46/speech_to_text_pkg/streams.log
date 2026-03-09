@@ -1,0 +1,54 @@
+[0.033s] Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg': CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg -- -j4 -l4
+[0.133s] [ 40%] Built target transcription_pre_process_node
+[0.145s] [ 80%] [32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o[0m
+[0.145s] [ 80%] [32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o[0m
+[7.039s] In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp:10[m[K,
+[7.039s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:1[m[K:
+[7.039s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In constructor ‘[01m[KLightweightVAD::[01;32m[KLightweightVAD[m[K(float, float, float, float, int)[m[K’:
+[7.039s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KLightweightVAD::noiseAdaptRate[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[7.039s]    11 |     float [01;35m[KnoiseAdaptRate[m[K;
+[7.040s]       |           [01;35m[K^~~~~~~~~~~~~~[m[K
+[7.040s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat LightweightVAD::speechMultiplier[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[7.040s]    10 |     float [01;35m[KspeechMultiplier[m[K;
+[7.040s]       |           [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[7.040s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:18:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[7.045s]    18 |     [01;35m[KLightweightVAD[m[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
+[7.045s]       |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[7.058s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:[m[K At global scope:
+[7.058s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:8:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KAudioCaptureNode::[01;32m[KAudioCaptureNode[m[K()[m[K’
+[7.059s]     8 | [01;31m[KAudioCaptureNode[m[K::AudioCaptureNode()
+[7.059s]       | [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.059s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp:38:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KAudioCaptureNode::[01;32m[KAudioCaptureNode[m[K(const AudioCaptureNode&)[m[K’
+[7.059s]    38 | class [01;36m[KAudioCaptureNode[m[K : public rclcpp::Node {
+[7.059s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[7.059s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp:40:18:[m[K [01;36m[Knote: [m[K                ‘[01m[KAudioCaptureNode::[01;32m[KAudioCaptureNode[m[K(ma_uint32)[m[K’
+[7.059s]    40 |         explicit [01;36m[KAudioCaptureNode[m[K(ma_uint32 deviceIndex = 0);
+[7.059s]       |                  [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[7.060s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp:38:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass AudioCaptureNode[m[K’ defined here
+[7.060s]    38 | class [01;36m[KAudioCaptureNode[m[K : public rclcpp::Node {
+[7.063s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[8.170s] gmake[2]: *** [CMakeFiles/audio_capture_node.dir/build.make:79: CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o] Error 1
+[8.170s] gmake[2]: *** Waiting for unfinished jobs....
+[8.643s] In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp:10[m[K,
+[8.643s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:3[m[K:
+[8.643s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In constructor ‘[01m[KLightweightVAD::[01;32m[KLightweightVAD[m[K(float, float, float, float, int)[m[K’:
+[8.643s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KLightweightVAD::noiseAdaptRate[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[8.643s]    11 |     float [01;35m[KnoiseAdaptRate[m[K;
+[8.646s]       |           [01;35m[K^~~~~~~~~~~~~~[m[K
+[8.646s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat LightweightVAD::speechMultiplier[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[8.646s]    10 |     float [01;35m[KspeechMultiplier[m[K;
+[8.647s]       |           [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[8.647s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:18:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[8.647s]    18 |     [01;35m[KLightweightVAD[m[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
+[8.651s]       |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[8.655s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:[m[K In member function ‘[01m[Kma_uint32 AudioCaptureNode::[01;32m[KlistDevices[m[K()[m[K’:
+[8.655s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:23:9:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kma_uint32[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[8.655s]    23 |         [01;31m[Kreturn[m[K;
+[8.656s]       |         [01;31m[K^~~~~~[m[K
+[8.656s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:35:33:[m[K [01;35m[Kwarning: [m[Kcomparison with string literal results in unspecified behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress-Waddress]8;;[m[K]
+[8.656s]    35 |         if([01;35m[KcaptureInfos[i].name == "SF-558 Mono"[m[K) {
+[8.656s]       |            [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[10.641s] gmake[2]: *** [CMakeFiles/audio_capture_node.dir/build.make:93: CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o] Error 1
+[10.642s] gmake[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/audio_capture_node.dir/all] Error 2
+[10.642s] gmake: *** [Makefile:146: all] Error 2
+[10.645s] Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg' returned '2': CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg -- -j4 -l4

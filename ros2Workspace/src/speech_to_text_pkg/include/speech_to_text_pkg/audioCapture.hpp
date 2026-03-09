@@ -37,7 +37,7 @@ struct LiveCapture {
 
 class AudioCaptureNode : public rclcpp::Node {
     public:
-        explicit AudioCaptureNode(ma_uint32 deviceIndex = 0);
+        explicit AudioCaptureNode();
         ~AudioCaptureNode() override;
     private:
         //Timer callback: drains SAMPLES_PER_CHUNK frames and publishes
@@ -50,9 +50,10 @@ class AudioCaptureNode : public rclcpp::Node {
         /*
         Enumerates and prints all available audio capture devices on the system
         Used to see which device to connect to in startLiveCapture
+        return a ma_uint32 of the index of working mic
         */
 
-        void listDevices();
+        ma_uint32 listDevices();
 
         /* 
         init context

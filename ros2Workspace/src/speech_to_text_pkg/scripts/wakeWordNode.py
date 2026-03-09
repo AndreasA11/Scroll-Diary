@@ -53,6 +53,7 @@ class WakeWordNode(Node):
         self.get_logger().info("WakeWordNode ready, listening for 'Hey Jarvis'")
         
     def audio_callback(self, msg: AudioStamped):
+
         # Convert to numpy array
         audio_np = np.array(msg.data, dtype=np.float32)
         
