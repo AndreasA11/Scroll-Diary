@@ -1,0 +1,247 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-534a869999d77d76bfe2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5,
+						6,
+						8
+					]
+				},
+				{
+					"build" : "_deps/whisper-build",
+					"childIndexes" : 
+					[
+						2,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.whisper-build-Release-74427c3b169b5215078b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg/_deps/whisper-src"
+				},
+				{
+					"build" : "_deps/whisper-build/ggml",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.whisper-build.ggml-Release-1f18d8ff3043f70fc511.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg/_deps/whisper-src/ggml"
+				},
+				{
+					"build" : "_deps/whisper-build/ggml/src",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.whisper-build.ggml.src-Release-e74bfdb6aece735a0876.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg/_deps/whisper-src/ggml/src",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "_deps/whisper-build/ggml/src/ggml-cpu",
+					"jsonFile" : "directory-_deps.whisper-build.ggml.src.ggml-cpu-Release-547c332e5a2c85359897.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg/_deps/whisper-src/ggml/src/ggml-cpu"
+				},
+				{
+					"build" : "_deps/whisper-build/src",
+					"jsonFile" : "directory-_deps.whisper-build.src-Release-add1b29ee80a432fc361.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg/_deps/whisper-src/src",
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "speech_to_text_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						5,
+						6,
+						8
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						5
+					],
+					"name" : "whisper.cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "ggml",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_capture_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_capture_node-Release-0492345221420ea8c597.json",
+					"name" : "audio_capture_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml::@adb943a8c98c89f2306b",
+					"jsonFile" : "target-ggml-Release-c05ca6dacae4f21356e6.json",
+					"name" : "ggml",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml-base::@adb943a8c98c89f2306b",
+					"jsonFile" : "target-ggml-base-Release-8b461103bdf56acfc2b6.json",
+					"name" : "ggml-base",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml-cpu::@adb943a8c98c89f2306b",
+					"jsonFile" : "target-ggml-cpu-Release-8ac11a1716b53438ac65.json",
+					"name" : "ggml-cpu",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "speech_to_text_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-speech_to_text_pkg_uninstall-Release-e651675446c3cb69505f.json",
+					"name" : "speech_to_text_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "transcription_pre_process_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-transcription_pre_process_node-Release-9074e03957ad985075f0.json",
+					"name" : "transcription_pre_process_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-5a416b457bbe13ec9ae2.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "whisper::@042bb418fb5bf6c59093",
+					"jsonFile" : "target-whisper-Release-b74b295f04ffb3e7a6a3.json",
+					"name" : "whisper",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "whisper_transcription_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-whisper_transcription_node-Release-61389c35e0fb25e294bf.json",
+					"name" : "whisper_transcription_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg",
+		"source" : "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

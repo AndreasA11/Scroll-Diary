@@ -84,8 +84,10 @@ void transcriptionPreProcessNode::audioCallback(const speech_to_text_interfaces:
     }
 
     if(isQuiet_ && (now - quietStartTime_ >= std::chrono::milliseconds(1500))) {
-        publishAudio(samples_.size());
-        samples_.clear();
+        if(samples_.size() >= MIN_CHUNK_SIZE) {
+            publishAudio(samples_.size());
+            samples_.clear();
+        }
         isQuiet_ = false;
     } else if (samples_.size() >= CHUNK_SIZE) {
         publishAudio(CHUNK_SIZE);
@@ -108,8 +110,6 @@ void transcriptionPreProcessNode::boolCallback(const std_msgs::msg::Bool::Shared
 
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
-
-    //Devuce ubdex can be overrideen via ROS2 param or argv[1]
     try {
         rclcpp::spin(std::make_shared<transcriptionPreProcessNode>());
     } catch (const std::exception& e) {

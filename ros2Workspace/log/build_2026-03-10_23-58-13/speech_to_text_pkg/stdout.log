@@ -1,0 +1,105 @@
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)
+-- Found speech_to_text_interfaces: 0.0.0 (/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake)
+-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found Git: /usr/bin/git (found version "2.43.0")
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: aarch64
+-- GGML_SYSTEM_ARCH: ARM
+-- Including CPU backend
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- ARM detected
+-- Performing Test GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E
+-- Performing Test GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E - Failed
+-- ARM detected flags: -mcpu=cortex-a76+crc+crypto
+-- Performing Test GGML_MACHINE_SUPPORTS_dotprod
+-- Performing Test GGML_MACHINE_SUPPORTS_dotprod - Success
+-- Performing Test GGML_MACHINE_SUPPORTS_i8mm
+-- Performing Test GGML_MACHINE_SUPPORTS_i8mm - Failed
+-- Performing Test GGML_MACHINE_SUPPORTS_noi8mm
+-- Performing Test GGML_MACHINE_SUPPORTS_noi8mm - Success
+-- Performing Test GGML_MACHINE_SUPPORTS_sve
+-- Performing Test GGML_MACHINE_SUPPORTS_sve - Failed
+-- Performing Test GGML_MACHINE_SUPPORTS_nosve
+-- Performing Test GGML_MACHINE_SUPPORTS_nosve - Success
+-- Performing Test GGML_MACHINE_SUPPORTS_sme
+-- Performing Test GGML_MACHINE_SUPPORTS_sme - Failed
+-- Performing Test GGML_MACHINE_SUPPORTS_nosme
+-- Performing Test GGML_MACHINE_SUPPORTS_nosme - Failed
+-- Checking for ARM features using flags:
+--   -U__ARM_FEATURE_MATMUL_INT8
+--   -U__ARM_FEATURE_SVE
+--   -mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve
+-- Performing Test HAVE_DOTPROD
+-- Performing Test HAVE_DOTPROD - Success
+-- Performing Test HAVE_SVE
+-- Performing Test HAVE_SVE - Failed
+-- Performing Test HAVE_MATMUL_INT8
+-- Performing Test HAVE_MATMUL_INT8 - Failed
+-- Performing Test HAVE_FMA
+-- Performing Test HAVE_FMA - Success
+-- Performing Test HAVE_FP16_VECTOR_ARITHMETIC
+-- Performing Test HAVE_FP16_VECTOR_ARITHMETIC - Success
+-- Performing Test HAVE_SME
+-- Performing Test HAVE_SME - Failed
+-- Adding CPU backend variant ggml-cpu: -U__ARM_FEATURE_MATMUL_INT8;-U__ARM_FEATURE_SVE;-mcpu=cortex-a76+crc+crypto+dotprod+noi8mm+nosve 
+-- ggml version: 0.9.5
+-- ggml commit:  2eeeba56
+-- Configuring done (15.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg
+[  2%] [32mBuilding C object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o[0m
+[  5%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o[0m
+[ 14%] [32mBuilding C object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o[0m
+[ 17%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o[0m
+[ 20%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o[0m
+[ 22%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o[0m
+[ 25%] [32mBuilding C object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o[0m
+[ 31%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o[0m
+[ 34%] [32m[1mLinking CXX shared library libggml-base.so[0m
+[ 34%] Built target ggml-base
+[ 37%] [32m[1mLinking CXX executable transcription_pre_process_node[0m
+[ 37%] Built target transcription_pre_process_node
+[ 40%] [32m[1mLinking CXX executable audio_capture_node[0m
+[ 40%] Built target audio_capture_node
+[ 42%] [32mBuilding C object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o[0m
+[ 45%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o[0m
+[ 48%] [32mBuilding C object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o[0m
+[ 51%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o[0m
+[ 54%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o[0m
+[ 57%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o[0m
+[ 60%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o[0m
+[ 62%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o[0m
+[ 65%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o[0m
+[ 68%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o[0m
+[ 71%] [32mBuilding C object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/quants.c.o[0m
+[ 74%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/repack.cpp.o[0m
+[ 77%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o[0m
+[ 80%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o[0m
+[ 82%] [32m[1mLinking CXX shared library libggml-cpu.so[0m
+[ 82%] Built target ggml-cpu
+[ 85%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o[0m
+[ 88%] [32m[1mLinking CXX shared library libggml.so[0m
+[ 88%] Built target ggml
+[ 91%] [32mBuilding CXX object _deps/whisper-build/src/CMakeFiles/whisper.dir/whisper.cpp.o[0m
+[ 94%] [32m[1mLinking CXX shared library libwhisper.so[0m
+[ 94%] Built target whisper
+[ 97%] [32mBuilding CXX object CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o[0m

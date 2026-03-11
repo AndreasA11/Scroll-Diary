@@ -1,0 +1,26 @@
+[ 25%] Built target ggml-base
+[ 31%] Built target transcription_pre_process_node
+[ 40%] Built target audio_capture_node
+[ 82%] Built target ggml-cpu
+[ 88%] Built target ggml
+[ 94%] Built target whisper
+[ 97%] [32mBuilding CXX object CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o[0m
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:[m[K In member function ‘[01m[Kvoid whisperTranscriptionNode::[01;32m[KwhisperInit[m[K()[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:40:47:[m[K [01;31m[Kerror: [m[K‘[01m[KmodelPath[m[K’ was not declared in this scope
+   40 |     ctx_ = whisper_init_from_file_with_params([01;31m[KmodelPath[m[K.c_str(), cparams_);
+      |                                               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:[m[K In member function ‘[01m[Kvoid whisperTranscriptionNode::[01;32m[KcleanUpNode[m[K()[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:161:33:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kwhisper_context_params[m[K’ to ‘[01m[Kwhisper_context_params*[m[K’
+  161 |     whisper_free_context_params([01;31m[Kcparams_[m[K);
+      |                                 [01;31m[K^~~~~~~~[m[K
+      |                                 [01;31m[K|[m[K
+      |                                 [01;31m[Kwhisper_context_params[m[K
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:8[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg/_deps/whisper-src/src/../include/whisper.h:271:82:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid[01;32m[K whisper_free_context_params[m[K(whisper_context_params*)[m[K’
+  271 | PER_API void whisper_free_context_params([01;36m[Kstruct whisper_context_params * params[m[K);
+      |                                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/whisper_transcription_node.dir/build.make:79: CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:337: CMakeFiles/whisper_transcription_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

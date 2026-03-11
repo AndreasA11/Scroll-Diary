@@ -455,7 +455,9 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o: /home/dredre/DevSt
   /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/aarch64-linux-gnu/bits/sched.h \
+  /usr/include/aarch64-linux-gnu/bits/select-decl.h \
   /usr/include/aarch64-linux-gnu/bits/select.h \
+  /usr/include/aarch64-linux-gnu/bits/select2.h \
   /usr/include/aarch64-linux-gnu/bits/setjmp.h \
   /usr/include/aarch64-linux-gnu/bits/sigaction.h \
   /usr/include/aarch64-linux-gnu/bits/sigcontext.h \
@@ -473,8 +475,15 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o: /home/dredre/DevSt
   /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio2.h \
   /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/aarch64-linux-gnu/bits/stdlib.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
   /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
   /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
@@ -516,10 +525,14 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o: /home/dredre/DevSt
   /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
   /usr/include/aarch64-linux-gnu/bits/typesizes.h \
   /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd-decl.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd.h \
   /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
   /usr/include/aarch64-linux-gnu/bits/waitflags.h \
   /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
   /usr/include/aarch64-linux-gnu/bits/wchar.h \
+  /usr/include/aarch64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/aarch64-linux-gnu/bits/wchar2.h \
   /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/aarch64-linux-gnu/bits/wordsize.h \
   /usr/include/aarch64-linux-gnu/c++/13/bits/atomic_word.h \
@@ -1236,6 +1249,7 @@ CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o: /home/dredre/DevStuf
   /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
   /usr/include/aarch64-linux-gnu/bits/poll.h \
+  /usr/include/aarch64-linux-gnu/bits/poll2.h \
   /usr/include/aarch64-linux-gnu/bits/posix1_lim.h \
   /usr/include/aarch64-linux-gnu/bits/posix2_lim.h \
   /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
@@ -1247,7 +1261,9 @@ CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o: /home/dredre/DevStuf
   /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/aarch64-linux-gnu/bits/sched.h \
+  /usr/include/aarch64-linux-gnu/bits/select-decl.h \
   /usr/include/aarch64-linux-gnu/bits/select.h \
+  /usr/include/aarch64-linux-gnu/bits/select2.h \
   /usr/include/aarch64-linux-gnu/bits/setjmp.h \
   /usr/include/aarch64-linux-gnu/bits/sigaction.h \
   /usr/include/aarch64-linux-gnu/bits/sigcontext.h \
@@ -1268,8 +1284,15 @@ CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o: /home/dredre/DevStuf
   /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio2.h \
   /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/aarch64-linux-gnu/bits/stdlib.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
   /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
   /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
@@ -1315,10 +1338,14 @@ CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o: /home/dredre/DevStuf
   /usr/include/aarch64-linux-gnu/bits/typesizes.h \
   /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
   /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd-decl.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd.h \
   /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
   /usr/include/aarch64-linux-gnu/bits/waitflags.h \
   /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
   /usr/include/aarch64-linux-gnu/bits/wchar.h \
+  /usr/include/aarch64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/aarch64-linux-gnu/bits/wchar2.h \
   /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/aarch64-linux-gnu/bits/wordsize.h \
   /usr/include/aarch64-linux-gnu/bits/xopen_lim.h \
@@ -1801,8 +1828,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /usr/lib/gcc/aarch64-linux-gnu/13/include/syslimits.h:
 
-/usr/include/poll.h:
-
 /usr/include/linux/stat.h:
 
 /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so:
@@ -1833,8 +1858,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /usr/include/aarch64-linux-gnu/bits/dl_find_object.h:
 
-/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:
-
 /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:
 
 /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so:
@@ -1850,6 +1873,8 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_c.so:
 
 /usr/include/wctype.h:
+
+/usr/include/aarch64-linux-gnu/bits/poll2.h:
 
 /usr/include/wchar.h:
 
@@ -2189,6 +2214,26 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /usr/include/aarch64-linux-gnu/sys/time.h:
 
+/usr/include/aarch64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/aarch64-linux-gnu/sys/select.h:
+
+/usr/include/aarch64-linux-gnu/sys/procfs.h:
+
+/usr/include/aarch64-linux-gnu/gnu/stubs.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/time_members.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/lib/gcc/aarch64-linux-gnu/13/include/limits.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/cxxabi_tweaks.h:
+
 /usr/include/c++/13/bits/unique_lock.h:
 
 /usr/include/aarch64-linux-gnu/bits/typesizes.h:
@@ -2216,6 +2261,10 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/messages_members.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
 
@@ -2281,13 +2330,9 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_memory_strategy.hpp:
 
-/usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/time_members.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/error_t.h:
 
@@ -2298,8 +2343,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 /opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:
-
-/usr/include/aarch64-linux-gnu/sys/single_threaded.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:
 
@@ -2377,8 +2420,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /usr/include/aarch64-linux-gnu/bits/fp-fast.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_value.hpp:
-
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
@@ -2407,6 +2448,8 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
 
+/usr/include/aarch64-linux-gnu/bits/string_fortified.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
@@ -2424,8 +2467,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 /opt/ros/jazzy/include/rcl/rcl/init_options.h:
 
 /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/qos_policy_kind.h:
 
@@ -2677,7 +2718,15 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_value.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/wchar2.h:
+
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
 
 /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__traits.hpp:
 
@@ -2694,10 +2743,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 /opt/ros/jazzy/include/rclcpp/rclcpp/event.hpp:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_description__struct.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
@@ -2758,8 +2803,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
-
-/usr/include/aarch64-linux-gnu/gnu/stubs.h:
 
 /usr/include/c++/13/bits/hashtable_policy.h:
 
@@ -2913,10 +2956,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /opt/ros/jazzy/include/rmw/rmw/visibility_control.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/macros.h:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
@@ -2959,11 +2998,15 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/array_list.h:
 
+/usr/include/aarch64-linux-gnu/bits/select2.h:
+
 /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so:
 
 /usr/include/aarch64-linux-gnu/asm/bitsperlong.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_base.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/strings_fortified.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
@@ -3211,6 +3254,8 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/dynamic_message_type_support_struct.h:
 
+/usr/include/aarch64-linux-gnu/bits/stdio2-decl.h:
+
 /usr/include/aarch64-linux-gnu/bits/sigstksz.h:
 
 /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so:
@@ -3291,8 +3336,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h:
 
-/usr/include/aarch64-linux-gnu/sys/procfs.h:
-
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h:
@@ -3312,6 +3355,12 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__functions.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/macros.h:
+
+/usr/include/aarch64-linux-gnu/bits/unistd.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/get_type_description.h:
 
@@ -3407,6 +3456,8 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /usr/include/aarch64-linux-gnu/bits/sched.h:
 
+/usr/include/aarch64-linux-gnu/bits/select-decl.h:
+
 /usr/include/aarch64-linux-gnu/bits/select.h:
 
 /usr/include/c++/13/iosfwd:
@@ -3416,8 +3467,6 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 /usr/include/aarch64-linux-gnu/bits/sigaction.h:
 
 /usr/include/aarch64-linux-gnu/bits/sigevent-consts.h:
-
-/usr/include/aarch64-linux-gnu/sys/select.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:
 
@@ -3448,6 +3497,18 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 /usr/include/c++/13/bits/stl_numeric.h:
 
 /usr/include/aarch64-linux-gnu/bits/sigthread.h:
+
+/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:
+
+/usr/include/aarch64-linux-gnu/bits/stdio.h:
+
+/usr/include/aarch64-linux-gnu/bits/stdio2.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h:
+
+/usr/include/aarch64-linux-gnu/bits/stdlib.h:
 
 /usr/include/aarch64-linux-gnu/bits/struct_mutex.h:
 
@@ -3509,32 +3570,26 @@ CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o:
 
 /usr/include/aarch64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/aarch64-linux-gnu/bits/unistd-decl.h:
+
 /usr/include/aarch64-linux-gnu/bits/waitflags.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/aarch64-linux-gnu/bits/waitstatus.h:
 
+/usr/include/poll.h:
+
+/usr/include/aarch64-linux-gnu/bits/wchar2-decl.h:
+
 /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
-
 /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/wordsize.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/c++locale.h:
-
-/usr/lib/gcc/aarch64-linux-gnu/13/include/limits.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/cxxabi_tweaks.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/messages_members.h:

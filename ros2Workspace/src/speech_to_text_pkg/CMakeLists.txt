@@ -50,6 +50,35 @@ target_include_directories(transcription_pre_process_node PRIVATE
   src
 )
 
+add_executable(whisper_transcription_node
+  src/whisperTranscriptionNode.cpp
+)
+
+include(FetchContent)
+
+FetchContent_Declare(
+  whisper
+  GIT_REPOSITORY https://github.com/ggerganov/whisper.cpp.git
+    GIT_TAG        v1.8.3  # pin a specific version
+)
+
+FetchContent_MakeAvailable(whisper)
+
+target_link_libraries(whisper_transcription_node whisper)
+
+
+ament_target_dependencies(
+  whisper_transcription_node
+  rclcpp
+  speech_to_text_interfaces
+  std_msgs
+)
+
+target_include_directories(whisper_transcription_node PRIVATE
+  include/speech_to_text_pkg
+  src
+)
+
 install(TARGETS
   transcription_pre_process_node
   DESTINATION lib/${PROJECT_NAME}
@@ -58,6 +87,11 @@ install(TARGETS
 install(TARGETS
   audio_capture_node
   DESTINATION lib/${PROJECT_NAME}  
+)
+
+install(TARGETS
+  whisper_transcription_node
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 install(PROGRAMS

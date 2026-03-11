@@ -223,6 +223,71 @@ transcription_pre_process_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcription_pre_process_node.dir/build.make CMakeFiles/transcription_pre_process_node.dir/build
 .PHONY : transcription_pre_process_node/fast
 
+#=============================================================================
+# Target rules for targets named whisper_transcription_node
+
+# Build rule for target.
+whisper_transcription_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 whisper_transcription_node
+.PHONY : whisper_transcription_node
+
+# fast build rule for target.
+whisper_transcription_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/whisper_transcription_node.dir/build.make CMakeFiles/whisper_transcription_node.dir/build
+.PHONY : whisper_transcription_node/fast
+
+#=============================================================================
+# Target rules for targets named ggml-base
+
+# Build rule for target.
+ggml-base: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml-base
+.PHONY : ggml-base
+
+# fast build rule for target.
+ggml-base/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/build.make _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/build
+.PHONY : ggml-base/fast
+
+#=============================================================================
+# Target rules for targets named ggml
+
+# Build rule for target.
+ggml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml
+.PHONY : ggml
+
+# fast build rule for target.
+ggml/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/whisper-build/ggml/src/CMakeFiles/ggml.dir/build.make _deps/whisper-build/ggml/src/CMakeFiles/ggml.dir/build
+.PHONY : ggml/fast
+
+#=============================================================================
+# Target rules for targets named ggml-cpu
+
+# Build rule for target.
+ggml-cpu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ggml-cpu
+.PHONY : ggml-cpu
+
+# fast build rule for target.
+ggml-cpu/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/build.make _deps/whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/build
+.PHONY : ggml-cpu/fast
+
+#=============================================================================
+# Target rules for targets named whisper
+
+# Build rule for target.
+whisper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 whisper
+.PHONY : whisper
+
+# fast build rule for target.
+whisper/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/whisper-build/src/CMakeFiles/whisper.dir/build.make _deps/whisper-build/src/CMakeFiles/whisper.dir/build
+.PHONY : whisper/fast
+
 src/audioCaptureNode.o: src/audioCaptureNode.cpp.o
 .PHONY : src/audioCaptureNode.o
 
@@ -295,6 +360,30 @@ src/whisperPreProcessNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/transcription_pre_process_node.dir/build.make CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.s
 .PHONY : src/whisperPreProcessNode.cpp.s
 
+src/whisperTranscriptionNode.o: src/whisperTranscriptionNode.cpp.o
+.PHONY : src/whisperTranscriptionNode.o
+
+# target to build an object file
+src/whisperTranscriptionNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/whisper_transcription_node.dir/build.make CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o
+.PHONY : src/whisperTranscriptionNode.cpp.o
+
+src/whisperTranscriptionNode.i: src/whisperTranscriptionNode.cpp.i
+.PHONY : src/whisperTranscriptionNode.i
+
+# target to preprocess a source file
+src/whisperTranscriptionNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/whisper_transcription_node.dir/build.make CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.i
+.PHONY : src/whisperTranscriptionNode.cpp.i
+
+src/whisperTranscriptionNode.s: src/whisperTranscriptionNode.cpp.s
+.PHONY : src/whisperTranscriptionNode.s
+
+# target to generate assembly for a file
+src/whisperTranscriptionNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/whisper_transcription_node.dir/build.make CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.s
+.PHONY : src/whisperTranscriptionNode.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -311,7 +400,12 @@ help:
 	@echo "... speech_to_text_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... audio_capture_node"
+	@echo "... ggml"
+	@echo "... ggml-base"
+	@echo "... ggml-cpu"
 	@echo "... transcription_pre_process_node"
+	@echo "... whisper"
+	@echo "... whisper_transcription_node"
 	@echo "... src/audioCaptureNode.o"
 	@echo "... src/audioCaptureNode.i"
 	@echo "... src/audioCaptureNode.s"
@@ -321,6 +415,9 @@ help:
 	@echo "... src/whisperPreProcessNode.o"
 	@echo "... src/whisperPreProcessNode.i"
 	@echo "... src/whisperPreProcessNode.s"
+	@echo "... src/whisperTranscriptionNode.o"
+	@echo "... src/whisperTranscriptionNode.i"
+	@echo "... src/whisperTranscriptionNode.s"
 .PHONY : help
 
 

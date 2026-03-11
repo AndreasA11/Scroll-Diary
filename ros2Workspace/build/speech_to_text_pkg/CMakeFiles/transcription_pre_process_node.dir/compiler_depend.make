@@ -460,7 +460,9 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o: /
   /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/aarch64-linux-gnu/bits/sched.h \
+  /usr/include/aarch64-linux-gnu/bits/select-decl.h \
   /usr/include/aarch64-linux-gnu/bits/select.h \
+  /usr/include/aarch64-linux-gnu/bits/select2.h \
   /usr/include/aarch64-linux-gnu/bits/setjmp.h \
   /usr/include/aarch64-linux-gnu/bits/sigaction.h \
   /usr/include/aarch64-linux-gnu/bits/sigcontext.h \
@@ -478,8 +480,15 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o: /
   /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/aarch64-linux-gnu/bits/stdio2.h \
   /usr/include/aarch64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/aarch64-linux-gnu/bits/stdlib.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
   /usr/include/aarch64-linux-gnu/bits/struct_mutex.h \
   /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/aarch64-linux-gnu/bits/thread-shared-types.h \
@@ -521,10 +530,14 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o: /
   /usr/include/aarch64-linux-gnu/bits/types/wint_t.h \
   /usr/include/aarch64-linux-gnu/bits/typesizes.h \
   /usr/include/aarch64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd-decl.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd.h \
   /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
   /usr/include/aarch64-linux-gnu/bits/waitflags.h \
   /usr/include/aarch64-linux-gnu/bits/waitstatus.h \
   /usr/include/aarch64-linux-gnu/bits/wchar.h \
+  /usr/include/aarch64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/aarch64-linux-gnu/bits/wchar2.h \
   /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/aarch64-linux-gnu/bits/wordsize.h \
   /usr/include/aarch64-linux-gnu/c++/13/bits/atomic_word.h \
@@ -1371,6 +1384,24 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /usr/include/aarch64-linux-gnu/gnu/stubs.h:
 
+/usr/include/aarch64-linux-gnu/c++/13/bits/time_members.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/cxxabi_tweaks.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h:
+
 /usr/include/c++/13/bits/unique_lock.h:
 
 /usr/include/aarch64-linux-gnu/bits/typesizes.h:
@@ -1397,7 +1428,15 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
 
+/usr/include/aarch64-linux-gnu/c++/13/bits/cpu_defines.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/messages_members.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
 
@@ -1459,15 +1498,11 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_memory_strategy.hpp:
 
-/usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/macros.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/time_members.h:
 
 /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so:
 
@@ -1557,8 +1592,6 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /usr/include/aarch64-linux-gnu/bits/fp-fast.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_value.hpp:
-
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
@@ -1591,6 +1624,8 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
 
+/usr/include/aarch64-linux-gnu/bits/string_fortified.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
@@ -1604,8 +1639,6 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 /opt/ros/jazzy/include/rcl/rcl/init_options.h:
 
 /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/qos_policy_kind.h:
 
@@ -1813,11 +1846,23 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 
 /opt/ros/jazzy/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
+/usr/include/aarch64-linux-gnu/c++/13/bits/c++locale.h:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_value.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/wchar2.h:
+
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
 
 /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__traits.hpp:
 
@@ -1834,10 +1879,6 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 /opt/ros/jazzy/include/rclcpp/rclcpp/event.hpp:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_description__struct.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
@@ -1890,8 +1931,6 @@ transcription_pre_process_node: /home/dredre/DevStuff/scrollDiary/speechToText/r
 /opt/ros/jazzy/include/rclcpp/rclcpp/qos.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
@@ -2065,10 +2104,6 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 
 /opt/ros/jazzy/include/rmw/rmw/visibility_control.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/macros.h:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
@@ -2116,6 +2151,10 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/array_list.h:
+
+/usr/include/aarch64-linux-gnu/bits/select2.h:
+
+/usr/include/aarch64-linux-gnu/bits/strings_fortified.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
@@ -2363,11 +2402,9 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/dynamic_message_type_support_struct.h:
 
+/usr/include/aarch64-linux-gnu/bits/stdio2-decl.h:
+
 /usr/include/aarch64-linux-gnu/bits/sigstksz.h:
-
-/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/types.h:
 
@@ -2402,10 +2439,6 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/cpu_defines.h:
 
 /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp:
 
@@ -2457,8 +2490,6 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 
 /usr/include/aarch64-linux-gnu/bits/types/stack_t.h:
 
-/usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h:
-
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h:
@@ -2480,6 +2511,12 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__functions.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/macros.h:
+
+/usr/include/aarch64-linux-gnu/bits/unistd.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/get_type_description.h:
 
@@ -2575,6 +2612,8 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 
 /usr/include/aarch64-linux-gnu/bits/sched.h:
 
+/usr/include/aarch64-linux-gnu/bits/select-decl.h:
+
 /usr/include/aarch64-linux-gnu/bits/select.h:
 
 /usr/include/c++/13/iosfwd:
@@ -2612,6 +2651,16 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 /usr/include/aarch64-linux-gnu/bits/sigstack.h:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/c++allocator.h:
+
+/usr/include/aarch64-linux-gnu/bits/stdio.h:
+
+/usr/include/aarch64-linux-gnu/bits/stdio2.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h:
+
+/usr/include/aarch64-linux-gnu/bits/stdlib.h:
 
 /usr/include/aarch64-linux-gnu/bits/struct_mutex.h:
 
@@ -2673,30 +2722,20 @@ CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o:
 
 /usr/include/aarch64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/aarch64-linux-gnu/bits/unistd-decl.h:
+
 /usr/include/aarch64-linux-gnu/bits/waitflags.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/aarch64-linux-gnu/bits/waitstatus.h:
 
-/usr/include/aarch64-linux-gnu/bits/wctype-wchar.h:
+/usr/include/aarch64-linux-gnu/bits/wchar2-decl.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
+/usr/include/aarch64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
+
 /usr/include/aarch64-linux-gnu/bits/wordsize.h:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/c++locale.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/cxxabi_tweaks.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/messages_members.h:
