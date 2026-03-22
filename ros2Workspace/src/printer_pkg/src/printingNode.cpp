@@ -2,8 +2,12 @@
 
 
 PrintingNode::PrintingNode() {
-    transcribed_text_subscriber_ = create_subscription<std_msgs::msg::String>(
-        "/transcription", 10, std::bind(&whisperTranscriptionNode::transcriptionCallback, this, std::placeholders::_1));
+    transcribedTextSubscriber_ = create_subscription<std_msgs::msg::String>(
+        "/transcription", 10, std::bind(&printingNode::transcriptionCallback, this, std::placeholders::_1));
+    
+    transcriptionState_ = create_subscription<std_msgs::msg::Bool> 
+    ("/transcriptionState", 10, std::bind(&printingNode::transcriptionStateCallback, this, std::placeholders::_1));
+
 
     if(!initPrinter()) {
         RCLCPP_FATAL(get_logger(), "connection to printer failed");
@@ -20,6 +24,10 @@ bool PrintingNode::initPrinter() {
 
 void PrintingNode::transcriptionCallback() {
 
+}
+
+void PrintingNode::transcriptionStateCallback() {
+    
 }
 
 void PrintingNode::printTranscription() {

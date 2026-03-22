@@ -4,6 +4,7 @@ whisperTranscriptionNode::whisperTranscriptionNode()
 : Node("whisper_transcription_node") {
     ctx_ = nullptr;
     running_.store(false);
+    transcriptionState_.store(false);
     // ros2 run your_pkg whisper_node --ros-args -p model_path:=/path/to/model.bin
 
     this->declare_parameter<std::string>("model_path", "");
@@ -23,6 +24,8 @@ whisperTranscriptionNode::whisperTranscriptionNode()
     audio_qos.best_effort();
     
     transcriptionPublisher_ = create_publisher<std_msgs::msg::String>("/transcription", 10);
+
+    transcriptionStatePublisher_ = create_publisher<std_msgs::msg::Bool>("/transcriptionState", 10);
 
     cleaned_audio_subscriber_ = create_subscription<speech_to_text_interfaces::msg::AudioStamped>(
         "/whisper_audio", rclcpp::QoS(10).best_effort(), 
@@ -115,12 +118,25 @@ bool whisperTranscriptionNode::liveCapture() {
         return false;
     }
 
+    transcriptionState_.store(true);
+    publishState();
     running_.store(true);
     transcriptionThread_ = std::thread(&whisperTranscriptionNode::transcriptionWorker, this);
 
     return true;
 
 }
+
+void whisperTranscriptionNode::publishState() {
+    auto msg = std_msgs::msg::Bool();
+    msg.data = transcriptionState_.load();
+    transcriptionStatePublisher_->publish(msg);
+
+    RCLCPP_INFO(get_logger(), "Publishing transcriptionState: %s",
+        msg.data ? "true" : "false"
+    );
+}
+
 
 void whisperTranscriptionNode::publishTranscription(const std::string &transcribedChunk) {
     RCLCPP_INFO(get_logger(), "Publishing '%s':", transcribedChunk.c_str());
@@ -168,7 +184,9 @@ void whisperTranscriptionNode::cleanUpNode() {
     }
 
     // whisper_free_context_params(&cparams_);
-
+    transcriptionState_.store(false);
+    publishState();
+    
     RCLCPP_INFO(get_logger(), "Stopped live capture!");
 }
 
