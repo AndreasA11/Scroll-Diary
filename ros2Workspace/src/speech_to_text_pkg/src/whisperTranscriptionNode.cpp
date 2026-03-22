@@ -167,7 +167,7 @@ void whisperTranscriptionNode::cleanUpNode() {
         transcriptionThread_.join();
     }
 
-    whisper_free_context_params(&cparams_);
+    // whisper_free_context_params(&cparams_);
 
     RCLCPP_INFO(get_logger(), "Stopped live capture!");
 }
