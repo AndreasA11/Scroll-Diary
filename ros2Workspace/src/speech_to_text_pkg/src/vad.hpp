@@ -17,7 +17,7 @@ private:
     
 public:
     LightweightVAD(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
-        float speechMultiplierIn = 2.0f, float zcrThresh = 0.05f, int minFrames = 1)
+        float speechMultiplierIn = 2.0f, float zcrThresh = 0.05f, int minFrames = 8)
         : noiseFloor(noiseFloorIn), noiseAdaptRate(noiseAdaptRateIn), 
         speechMultiplier(speechMultiplierIn), zcr_threshold(zcrThresh), 
           minSilenceFrames_(minFrames), speechFrameCount_(0), silenceFrameCount_(0) {}
@@ -56,7 +56,9 @@ public:
         bool isSpeech = (energy > noiseFloor * speechMultiplier) && (zcr > zcr_threshold);
     
         if(!isSpeech) {
-            noiseFloor = (1.0f - noiseAdaptRate) * noiseFloor + noiseAdaptRate * energy;
+            if(silenceFrameCount_ >= minSilenceFrames_) {
+                noiseFloor = (1.0f - noiseAdaptRate) * noiseFloor + noiseAdaptRate * energy;
+            }
             silenceFrameCount_++;
             speechFrameCount_ = 0;
         } else {
@@ -69,7 +71,7 @@ public:
         // Speech is confirmed immediately — one frame is enough
         // Silence requires minSilenceFrames consecutive frames to avoid mid-word gaps
         if(speechFrameCount_ > 0) return true;
-        return silenceFrameCount_ >= minSilenceFrames_;
+        return silenceFrameCount_ < minSilenceFrames_;
     }
     
     // Reset state

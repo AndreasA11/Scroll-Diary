@@ -1,0 +1,811 @@
+[0.000000] (-) TimerEvent: {}
+[0.001799] (-) JobUnselected: {'identifier': 'printer_pkg'}
+[0.002121] (-) JobUnselected: {'identifier': 'speech_to_text_interfaces'}
+[0.002323] (speech_to_text_pkg) JobQueued: {'identifier': 'speech_to_text_pkg', 'dependencies': OrderedDict({'speech_to_text_interfaces': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces'})}
+[0.003259] (speech_to_text_pkg) JobStarted: {'identifier': 'speech_to_text_pkg'}
+[0.055116] (speech_to_text_pkg) JobProgress: {'identifier': 'speech_to_text_pkg', 'progress': 'cmake'}
+[0.058117] (speech_to_text_pkg) JobProgress: {'identifier': 'speech_to_text_pkg', 'progress': 'build'}
+[0.059934] (speech_to_text_pkg) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg', '--', '-j4', '-l4'], 'cwd': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dredre', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dredre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2793', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'dredre', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dredre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/dredre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dredre/.local/bin', 'SESSION_MANAGER': 'local/dredre-desktop:@/tmp/.ICE-unix/2761,unix/dredre-desktop:/tmp/.ICE-unix/2761', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4190b834_edf5_403a_9629_125eb52de122', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LPGSM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.100', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099495] (-) TimerEvent: {}
+[0.190998] (speech_to_text_pkg) StdoutLine: {'line': b'[ 25%] Built target ggml-base\n'}
+[0.199654] (-) TimerEvent: {}
+[0.256634] (speech_to_text_pkg) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o\x1b[0m\n'}
+[0.295519] (speech_to_text_pkg) StdoutLine: {'line': b'[ 71%] Built target ggml-cpu\n'}
+[0.295923] (speech_to_text_pkg) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o\x1b[0m\n'}
+[0.301280] (-) TimerEvent: {}
+[0.305655] (speech_to_text_pkg) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o\x1b[0m\n'}
+[0.401418] (-) TimerEvent: {}
+[0.441638] (speech_to_text_pkg) StdoutLine: {'line': b'[ 82%] Built target ggml\n'}
+[0.501556] (-) TimerEvent: {}
+[0.575197] (speech_to_text_pkg) StdoutLine: {'line': b'[ 88%] Built target whisper\n'}
+[0.604420] (-) TimerEvent: {}
+[0.699190] (speech_to_text_pkg) StdoutLine: {'line': b'[ 94%] Built target whisper_transcription_node\n'}
+[0.706417] (-) TimerEvent: {}
+[0.807487] (-) TimerEvent: {}
+[0.910435] (-) TimerEvent: {}
+[1.010890] (-) TimerEvent: {}
+[1.111279] (-) TimerEvent: {}
+[1.213572] (-) TimerEvent: {}
+[1.314773] (-) TimerEvent: {}
+[1.418475] (-) TimerEvent: {}
+[1.522863] (-) TimerEvent: {}
+[1.624699] (-) TimerEvent: {}
+[1.725360] (-) TimerEvent: {}
+[1.832284] (-) TimerEvent: {}
+[1.935557] (-) TimerEvent: {}
+[2.039050] (-) TimerEvent: {}
+[2.142449] (-) TimerEvent: {}
+[2.243261] (-) TimerEvent: {}
+[2.344301] (-) TimerEvent: {}
+[2.445084] (-) TimerEvent: {}
+[2.547455] (-) TimerEvent: {}
+[2.647981] (-) TimerEvent: {}
+[2.752462] (-) TimerEvent: {}
+[2.853002] (-) TimerEvent: {}
+[2.955527] (-) TimerEvent: {}
+[3.056295] (-) TimerEvent: {}
+[3.159637] (-) TimerEvent: {}
+[3.263472] (-) TimerEvent: {}
+[3.366705] (-) TimerEvent: {}
+[3.467173] (-) TimerEvent: {}
+[3.571379] (-) TimerEvent: {}
+[3.671911] (-) TimerEvent: {}
+[3.774480] (-) TimerEvent: {}
+[3.877439] (-) TimerEvent: {}
+[3.977909] (-) TimerEvent: {}
+[4.081979] (-) TimerEvent: {}
+[4.183159] (-) TimerEvent: {}
+[4.287008] (-) TimerEvent: {}
+[4.395479] (-) TimerEvent: {}
+[4.495996] (-) TimerEvent: {}
+[4.596509] (-) TimerEvent: {}
+[4.702231] (-) TimerEvent: {}
+[4.802806] (-) TimerEvent: {}
+[4.903697] (-) TimerEvent: {}
+[5.004370] (-) TimerEvent: {}
+[5.105022] (-) TimerEvent: {}
+[5.208598] (-) TimerEvent: {}
+[5.309104] (-) TimerEvent: {}
+[5.412826] (-) TimerEvent: {}
+[5.513751] (-) TimerEvent: {}
+[5.617706] (-) TimerEvent: {}
+[5.718470] (-) TimerEvent: {}
+[5.821673] (-) TimerEvent: {}
+[5.922213] (-) TimerEvent: {}
+[6.025900] (-) TimerEvent: {}
+[6.129722] (-) TimerEvent: {}
+[6.230284] (-) TimerEvent: {}
+[6.331440] (-) TimerEvent: {}
+[6.434454] (-) TimerEvent: {}
+[6.534962] (-) TimerEvent: {}
+[6.635457] (-) TimerEvent: {}
+[6.738456] (-) TimerEvent: {}
+[6.838966] (-) TimerEvent: {}
+[6.942436] (-) TimerEvent: {}
+[7.042954] (-) TimerEvent: {}
+[7.143628] (-) TimerEvent: {}
+[7.246456] (-) TimerEvent: {}
+[7.346955] (-) TimerEvent: {}
+[7.447439] (-) TimerEvent: {}
+[7.548756] (-) TimerEvent: {}
+[7.649265] (-) TimerEvent: {}
+[7.751867] (-) TimerEvent: {}
+[7.854097] (-) TimerEvent: {}
+[7.954765] (-) TimerEvent: {}
+[8.058721] (-) TimerEvent: {}
+[8.161460] (-) TimerEvent: {}
+[8.261954] (-) TimerEvent: {}
+[8.363822] (-) TimerEvent: {}
+[8.470754] (-) TimerEvent: {}
+[8.573597] (-) TimerEvent: {}
+[8.674250] (-) TimerEvent: {}
+[8.777572] (-) TimerEvent: {}
+[8.878062] (-) TimerEvent: {}
+[8.983849] (-) TimerEvent: {}
+[9.085164] (-) TimerEvent: {}
+[9.189021] (-) TimerEvent: {}
+[9.289615] (-) TimerEvent: {}
+[9.390167] (-) TimerEvent: {}
+[9.491589] (-) TimerEvent: {}
+[9.594653] (-) TimerEvent: {}
+[9.698794] (-) TimerEvent: {}
+[9.799562] (-) TimerEvent: {}
+[9.900828] (-) TimerEvent: {}
+[10.003872] (-) TimerEvent: {}
+[10.104382] (-) TimerEvent: {}
+[10.207764] (-) TimerEvent: {}
+[10.308219] (-) TimerEvent: {}
+[10.358711] (speech_to_text_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp:9\x1b[m\x1b[K,\n'}
+[10.359151] (speech_to_text_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:1\x1b[m\x1b[K:\n'}
+[10.359318] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KLightweightVAD::\x1b[01;32m\x1b[KLightweightVAD\x1b[m\x1b[K(float, float, float, float, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.359504] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLightweightVAD::noiseAdaptRate\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.359655] (speech_to_text_pkg) StderrLine: {'line': b'   11 |     float \x1b[01;35m\x1b[KnoiseAdaptRate\x1b[m\x1b[K;\n'}
+[10.359789] (speech_to_text_pkg) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.359949] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kfloat LightweightVAD::speechMultiplier\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.360162] (speech_to_text_pkg) StderrLine: {'line': b'   10 |     float \x1b[01;35m\x1b[KspeechMultiplier\x1b[m\x1b[K;\n'}
+[10.360342] (speech_to_text_pkg) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.360544] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:19:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.360738] (speech_to_text_pkg) StderrLine: {'line': b'   19 |     \x1b[01;35m\x1b[KLightweightVAD\x1b[m\x1b[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,\n'}
+[10.360901] (speech_to_text_pkg) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.361048] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool LightweightVAD::\x1b[01;32m\x1b[KdetectSpeech\x1b[m\x1b[K(const float*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.361175] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:50:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kzcr\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.367474] (speech_to_text_pkg) StderrLine: {'line': b'   50 |         float \x1b[01;35m\x1b[Kzcr\x1b[m\x1b[K = 0.0f;\n'}
+[10.370729] (speech_to_text_pkg) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[10.370861] (speech_to_text_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp:10\x1b[m\x1b[K,\n'}
+[10.370974] (speech_to_text_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:1\x1b[m\x1b[K:\n'}
+[10.371084] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KLightweightVAD::\x1b[01;32m\x1b[KLightweightVAD\x1b[m\x1b[K(float, float, float, float, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.371190] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLightweightVAD::noiseAdaptRate\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.371341] (speech_to_text_pkg) StderrLine: {'line': b'   11 |     float \x1b[01;35m\x1b[KnoiseAdaptRate\x1b[m\x1b[K;\n'}
+[10.371504] (speech_to_text_pkg) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.371629] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kfloat LightweightVAD::speechMultiplier\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.371831] (speech_to_text_pkg) StderrLine: {'line': b'   10 |     float \x1b[01;35m\x1b[KspeechMultiplier\x1b[m\x1b[K;\n'}
+[10.371967] (speech_to_text_pkg) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.372093] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:19:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.372270] (speech_to_text_pkg) StderrLine: {'line': b'   19 |     \x1b[01;35m\x1b[KLightweightVAD\x1b[m\x1b[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,\n'}
+[10.372427] (speech_to_text_pkg) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.372551] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool LightweightVAD::\x1b[01;32m\x1b[KdetectSpeech\x1b[m\x1b[K(const float*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.372658] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:50:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kzcr\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.372779] (speech_to_text_pkg) StderrLine: {'line': b'   50 |         float \x1b[01;35m\x1b[Kzcr\x1b[m\x1b[K = 0.0f;\n'}
+[10.372899] (speech_to_text_pkg) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[10.409451] (-) TimerEvent: {}
+[10.509903] (-) TimerEvent: {}
+[10.615430] (-) TimerEvent: {}
+[10.715863] (-) TimerEvent: {}
+[10.819496] (-) TimerEvent: {}
+[10.921807] (-) TimerEvent: {}
+[11.022802] (-) TimerEvent: {}
+[11.125424] (-) TimerEvent: {}
+[11.225889] (-) TimerEvent: {}
+[11.326551] (-) TimerEvent: {}
+[11.432451] (-) TimerEvent: {}
+[11.533148] (-) TimerEvent: {}
+[11.636145] (-) TimerEvent: {}
+[11.736635] (-) TimerEvent: {}
+[11.838641] (-) TimerEvent: {}
+[11.943430] (-) TimerEvent: {}
+[12.046429] (-) TimerEvent: {}
+[12.149443] (-) TimerEvent: {}
+[12.251529] (-) TimerEvent: {}
+[12.352226] (-) TimerEvent: {}
+[12.452777] (-) TimerEvent: {}
+[12.557548] (-) TimerEvent: {}
+[12.661452] (-) TimerEvent: {}
+[12.761946] (-) TimerEvent: {}
+[12.864925] (-) TimerEvent: {}
+[12.968549] (-) TimerEvent: {}
+[13.070434] (-) TimerEvent: {}
+[13.170916] (-) TimerEvent: {}
+[13.274827] (-) TimerEvent: {}
+[13.375421] (-) TimerEvent: {}
+[13.473059] (speech_to_text_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp:10\x1b[m\x1b[K,\n'}
+[13.473423] (speech_to_text_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:3\x1b[m\x1b[K:\n'}
+[13.473579] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KLightweightVAD::\x1b[01;32m\x1b[KLightweightVAD\x1b[m\x1b[K(float, float, float, float, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.473705] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLightweightVAD::noiseAdaptRate\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.473884] (speech_to_text_pkg) StderrLine: {'line': b'   11 |     float \x1b[01;35m\x1b[KnoiseAdaptRate\x1b[m\x1b[K;\n'}
+[13.474020] (speech_to_text_pkg) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.478559] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kfloat LightweightVAD::speechMultiplier\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.478997] (-) TimerEvent: {}
+[13.480830] (speech_to_text_pkg) StderrLine: {'line': b'   10 |     float \x1b[01;35m\x1b[KspeechMultiplier\x1b[m\x1b[K;\n'}
+[13.481730] (speech_to_text_pkg) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.481925] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:19:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.482078] (speech_to_text_pkg) StderrLine: {'line': b'   19 |     \x1b[01;35m\x1b[KLightweightVAD\x1b[m\x1b[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,\n'}
+[13.482202] (speech_to_text_pkg) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.482313] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool LightweightVAD::\x1b[01;32m\x1b[KdetectSpeech\x1b[m\x1b[K(const float*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.488548] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:50:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kzcr\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.488789] (speech_to_text_pkg) StderrLine: {'line': b'   50 |         float \x1b[01;35m\x1b[Kzcr\x1b[m\x1b[K = 0.0f;\n'}
+[13.488957] (speech_to_text_pkg) StderrLine: {'line': b'      |               \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.579147] (-) TimerEvent: {}
+[13.680856] (-) TimerEvent: {}
+[13.784110] (-) TimerEvent: {}
+[13.884629] (-) TimerEvent: {}
+[13.989022] (-) TimerEvent: {}
+[14.089824] (-) TimerEvent: {}
+[14.192803] (-) TimerEvent: {}
+[14.293291] (-) TimerEvent: {}
+[14.395833] (-) TimerEvent: {}
+[14.496822] (-) TimerEvent: {}
+[14.600444] (-) TimerEvent: {}
+[14.700986] (-) TimerEvent: {}
+[14.801488] (-) TimerEvent: {}
+[14.902574] (-) TimerEvent: {}
+[15.005932] (-) TimerEvent: {}
+[15.106536] (-) TimerEvent: {}
+[15.209543] (-) TimerEvent: {}
+[15.310392] (-) TimerEvent: {}
+[15.413434] (-) TimerEvent: {}
+[15.514127] (-) TimerEvent: {}
+[15.614682] (-) TimerEvent: {}
+[15.716622] (-) TimerEvent: {}
+[15.819925] (-) TimerEvent: {}
+[15.922832] (-) TimerEvent: {}
+[16.025932] (-) TimerEvent: {}
+[16.126502] (-) TimerEvent: {}
+[16.234457] (-) TimerEvent: {}
+[16.335229] (-) TimerEvent: {}
+[16.438846] (-) TimerEvent: {}
+[16.539321] (-) TimerEvent: {}
+[16.639840] (-) TimerEvent: {}
+[16.740636] (-) TimerEvent: {}
+[16.842851] (-) TimerEvent: {}
+[16.943617] (-) TimerEvent: {}
+[17.047456] (-) TimerEvent: {}
+[17.148007] (-) TimerEvent: {}
+[17.248513] (-) TimerEvent: {}
+[17.349105] (-) TimerEvent: {}
+[17.450841] (-) TimerEvent: {}
+[17.556437] (-) TimerEvent: {}
+[17.656982] (-) TimerEvent: {}
+[17.757559] (-) TimerEvent: {}
+[17.858307] (-) TimerEvent: {}
+[17.959936] (-) TimerEvent: {}
+[18.061630] (-) TimerEvent: {}
+[18.163832] (-) TimerEvent: {}
+[18.264370] (-) TimerEvent: {}
+[18.368583] (-) TimerEvent: {}
+[18.469620] (-) TimerEvent: {}
+[18.570422] (-) TimerEvent: {}
+[18.673008] (-) TimerEvent: {}
+[18.775862] (-) TimerEvent: {}
+[18.879697] (-) TimerEvent: {}
+[18.980219] (-) TimerEvent: {}
+[19.081016] (-) TimerEvent: {}
+[19.181770] (-) TimerEvent: {}
+[19.284950] (-) TimerEvent: {}
+[19.385704] (-) TimerEvent: {}
+[19.489496] (-) TimerEvent: {}
+[19.590458] (-) TimerEvent: {}
+[19.693989] (-) TimerEvent: {}
+[19.798347] (-) TimerEvent: {}
+[19.901230] (-) TimerEvent: {}
+[20.004959] (-) TimerEvent: {}
+[20.105426] (-) TimerEvent: {}
+[20.207767] (-) TimerEvent: {}
+[20.308238] (-) TimerEvent: {}
+[20.414931] (-) TimerEvent: {}
+[20.518629] (-) TimerEvent: {}
+[20.619134] (-) TimerEvent: {}
+[20.719590] (-) TimerEvent: {}
+[20.822437] (-) TimerEvent: {}
+[20.922947] (-) TimerEvent: {}
+[21.023446] (-) TimerEvent: {}
+[21.126464] (-) TimerEvent: {}
+[21.226983] (-) TimerEvent: {}
+[21.327800] (-) TimerEvent: {}
+[21.429512] (-) TimerEvent: {}
+[21.534527] (-) TimerEvent: {}
+[21.635107] (-) TimerEvent: {}
+[21.735652] (-) TimerEvent: {}
+[21.836204] (-) TimerEvent: {}
+[21.941819] (-) TimerEvent: {}
+[22.042747] (-) TimerEvent: {}
+[22.145514] (-) TimerEvent: {}
+[22.246116] (-) TimerEvent: {}
+[22.346848] (-) TimerEvent: {}
+[22.451495] (-) TimerEvent: {}
+[22.552046] (-) TimerEvent: {}
+[22.652571] (-) TimerEvent: {}
+[22.754686] (-) TimerEvent: {}
+[22.858903] (-) TimerEvent: {}
+[22.962823] (-) TimerEvent: {}
+[23.063365] (-) TimerEvent: {}
+[23.164361] (-) TimerEvent: {}
+[23.267929] (-) TimerEvent: {}
+[23.370760] (-) TimerEvent: {}
+[23.474723] (-) TimerEvent: {}
+[23.575422] (-) TimerEvent: {}
+[23.678078] (-) TimerEvent: {}
+[23.781021] (-) TimerEvent: {}
+[23.884445] (-) TimerEvent: {}
+[23.984884] (-) TimerEvent: {}
+[24.087458] (-) TimerEvent: {}
+[24.187923] (-) TimerEvent: {}
+[24.288790] (-) TimerEvent: {}
+[24.392804] (-) TimerEvent: {}
+[24.493264] (-) TimerEvent: {}
+[24.595255] (-) TimerEvent: {}
+[24.698831] (-) TimerEvent: {}
+[24.799365] (-) TimerEvent: {}
+[24.899807] (-) TimerEvent: {}
+[25.000444] (-) TimerEvent: {}
+[25.101493] (-) TimerEvent: {}
+[25.201896] (-) TimerEvent: {}
+[25.304945] (-) TimerEvent: {}
+[25.405770] (-) TimerEvent: {}
+[25.509717] (-) TimerEvent: {}
+[25.610283] (-) TimerEvent: {}
+[25.714641] (-) TimerEvent: {}
+[25.817578] (-) TimerEvent: {}
+[25.918441] (-) TimerEvent: {}
+[26.019456] (-) TimerEvent: {}
+[26.122904] (-) TimerEvent: {}
+[26.226689] (-) TimerEvent: {}
+[26.327973] (-) TimerEvent: {}
+[26.432838] (-) TimerEvent: {}
+[26.533513] (-) TimerEvent: {}
+[26.637713] (-) TimerEvent: {}
+[26.740896] (-) TimerEvent: {}
+[26.841671] (-) TimerEvent: {}
+[26.942735] (-) TimerEvent: {}
+[27.043446] (-) TimerEvent: {}
+[27.148172] (-) TimerEvent: {}
+[27.251596] (-) TimerEvent: {}
+[27.353623] (-) TimerEvent: {}
+[27.456418] (-) TimerEvent: {}
+[27.556828] (-) TimerEvent: {}
+[27.657471] (-) TimerEvent: {}
+[27.758346] (-) TimerEvent: {}
+[27.862896] (-) TimerEvent: {}
+[27.965924] (-) TimerEvent: {}
+[28.069856] (-) TimerEvent: {}
+[28.171204] (-) TimerEvent: {}
+[28.272774] (-) TimerEvent: {}
+[28.373451] (-) TimerEvent: {}
+[28.475806] (-) TimerEvent: {}
+[28.576287] (-) TimerEvent: {}
+[28.682865] (-) TimerEvent: {}
+[28.783963] (-) TimerEvent: {}
+[28.888010] (-) TimerEvent: {}
+[28.992753] (-) TimerEvent: {}
+[29.093388] (-) TimerEvent: {}
+[29.196765] (-) TimerEvent: {}
+[29.300764] (-) TimerEvent: {}
+[29.402170] (-) TimerEvent: {}
+[29.506070] (-) TimerEvent: {}
+[29.608850] (-) TimerEvent: {}
+[29.709378] (-) TimerEvent: {}
+[29.812442] (-) TimerEvent: {}
+[29.913007] (-) TimerEvent: {}
+[30.013866] (-) TimerEvent: {}
+[30.117019] (-) TimerEvent: {}
+[30.220772] (-) TimerEvent: {}
+[30.321589] (-) TimerEvent: {}
+[30.425691] (-) TimerEvent: {}
+[30.526284] (-) TimerEvent: {}
+[30.630719] (-) TimerEvent: {}
+[30.732691] (-) TimerEvent: {}
+[30.836892] (-) TimerEvent: {}
+[30.940741] (-) TimerEvent: {}
+[31.043909] (-) TimerEvent: {}
+[31.144734] (-) TimerEvent: {}
+[31.247545] (-) TimerEvent: {}
+[31.348164] (-) TimerEvent: {}
+[31.451910] (-) TimerEvent: {}
+[31.555940] (-) TimerEvent: {}
+[31.656593] (-) TimerEvent: {}
+[31.757505] (-) TimerEvent: {}
+[31.860902] (-) TimerEvent: {}
+[31.963610] (-) TimerEvent: {}
+[32.064089] (-) TimerEvent: {}
+[32.167664] (-) TimerEvent: {}
+[32.268081] (-) TimerEvent: {}
+[32.370430] (-) TimerEvent: {}
+[32.470845] (-) TimerEvent: {}
+[32.573427] (-) TimerEvent: {}
+[32.673846] (-) TimerEvent: {}
+[32.776416] (-) TimerEvent: {}
+[32.876821] (-) TimerEvent: {}
+[32.978429] (-) TimerEvent: {}
+[33.081440] (-) TimerEvent: {}
+[33.181854] (-) TimerEvent: {}
+[33.282302] (-) TimerEvent: {}
+[33.382939] (-) TimerEvent: {}
+[33.483567] (-) TimerEvent: {}
+[33.586779] (-) TimerEvent: {}
+[33.687461] (-) TimerEvent: {}
+[33.790786] (-) TimerEvent: {}
+[33.893424] (-) TimerEvent: {}
+[33.993829] (-) TimerEvent: {}
+[34.096434] (-) TimerEvent: {}
+[34.196832] (-) TimerEvent: {}
+[34.297207] (-) TimerEvent: {}
+[34.399752] (-) TimerEvent: {}
+[34.500164] (-) TimerEvent: {}
+[34.603441] (-) TimerEvent: {}
+[34.703828] (-) TimerEvent: {}
+[34.804492] (-) TimerEvent: {}
+[34.907263] (-) TimerEvent: {}
+[35.010476] (-) TimerEvent: {}
+[35.111035] (-) TimerEvent: {}
+[35.213433] (-) TimerEvent: {}
+[35.313802] (-) TimerEvent: {}
+[35.416483] (-) TimerEvent: {}
+[35.516974] (-) TimerEvent: {}
+[35.617513] (-) TimerEvent: {}
+[35.720443] (-) TimerEvent: {}
+[35.820877] (-) TimerEvent: {}
+[35.921267] (-) TimerEvent: {}
+[36.021721] (-) TimerEvent: {}
+[36.124434] (-) TimerEvent: {}
+[36.224888] (-) TimerEvent: {}
+[36.325564] (-) TimerEvent: {}
+[36.428181] (-) TimerEvent: {}
+[36.531679] (-) TimerEvent: {}
+[36.635742] (-) TimerEvent: {}
+[36.739752] (-) TimerEvent: {}
+[36.840230] (-) TimerEvent: {}
+[36.941224] (-) TimerEvent: {}
+[37.043951] (-) TimerEvent: {}
+[37.145446] (-) TimerEvent: {}
+[37.246896] (-) TimerEvent: {}
+[37.348363] (-) TimerEvent: {}
+[37.449267] (-) TimerEvent: {}
+[37.553646] (-) TimerEvent: {}
+[37.656655] (-) TimerEvent: {}
+[37.757155] (-) TimerEvent: {}
+[37.857994] (-) TimerEvent: {}
+[37.961515] (-) TimerEvent: {}
+[38.062640] (-) TimerEvent: {}
+[38.163107] (-) TimerEvent: {}
+[38.266802] (-) TimerEvent: {}
+[38.369667] (-) TimerEvent: {}
+[38.470155] (-) TimerEvent: {}
+[38.573445] (-) TimerEvent: {}
+[38.673864] (-) TimerEvent: {}
+[38.776424] (-) TimerEvent: {}
+[38.876897] (-) TimerEvent: {}
+[38.979435] (-) TimerEvent: {}
+[39.079945] (-) TimerEvent: {}
+[39.181405] (-) TimerEvent: {}
+[39.281787] (-) TimerEvent: {}
+[39.384805] (-) TimerEvent: {}
+[39.487447] (-) TimerEvent: {}
+[39.587852] (-) TimerEvent: {}
+[39.690473] (-) TimerEvent: {}
+[39.791010] (-) TimerEvent: {}
+[39.893423] (-) TimerEvent: {}
+[39.993911] (-) TimerEvent: {}
+[40.096433] (-) TimerEvent: {}
+[40.196906] (-) TimerEvent: {}
+[40.297458] (-) TimerEvent: {}
+[40.400772] (-) TimerEvent: {}
+[40.501203] (-) TimerEvent: {}
+[40.603467] (-) TimerEvent: {}
+[40.703901] (-) TimerEvent: {}
+[40.807458] (-) TimerEvent: {}
+[40.907917] (-) TimerEvent: {}
+[41.010453] (-) TimerEvent: {}
+[41.110931] (-) TimerEvent: {}
+[41.213432] (-) TimerEvent: {}
+[41.313834] (-) TimerEvent: {}
+[41.415831] (-) TimerEvent: {}
+[41.518467] (-) TimerEvent: {}
+[41.618970] (-) TimerEvent: {}
+[41.719373] (-) TimerEvent: {}
+[41.821415] (-) TimerEvent: {}
+[41.921894] (-) TimerEvent: {}
+[42.025829] (-) TimerEvent: {}
+[42.131570] (-) TimerEvent: {}
+[42.232122] (-) TimerEvent: {}
+[42.334057] (-) TimerEvent: {}
+[42.434759] (-) TimerEvent: {}
+[42.537716] (-) TimerEvent: {}
+[42.640881] (-) TimerEvent: {}
+[42.742927] (-) TimerEvent: {}
+[42.846497] (-) TimerEvent: {}
+[42.947294] (-) TimerEvent: {}
+[43.050727] (-) TimerEvent: {}
+[43.154833] (-) TimerEvent: {}
+[43.255461] (-) TimerEvent: {}
+[43.358854] (-) TimerEvent: {}
+[43.460442] (-) TimerEvent: {}
+[43.563994] (-) TimerEvent: {}
+[43.664450] (-) TimerEvent: {}
+[43.767428] (-) TimerEvent: {}
+[43.867846] (-) TimerEvent: {}
+[43.970459] (-) TimerEvent: {}
+[44.070949] (-) TimerEvent: {}
+[44.173413] (-) TimerEvent: {}
+[44.273808] (-) TimerEvent: {}
+[44.376422] (-) TimerEvent: {}
+[44.476909] (-) TimerEvent: {}
+[44.577412] (-) TimerEvent: {}
+[44.677847] (-) TimerEvent: {}
+[44.778343] (-) TimerEvent: {}
+[44.878790] (-) TimerEvent: {}
+[44.981415] (-) TimerEvent: {}
+[45.081879] (-) TimerEvent: {}
+[45.182519] (-) TimerEvent: {}
+[45.285432] (-) TimerEvent: {}
+[45.399447] (-) TimerEvent: {}
+[45.499881] (-) TimerEvent: {}
+[45.603856] (-) TimerEvent: {}
+[45.704343] (-) TimerEvent: {}
+[45.807648] (-) TimerEvent: {}
+[45.908091] (-) TimerEvent: {}
+[46.010492] (-) TimerEvent: {}
+[46.111076] (-) TimerEvent: {}
+[46.214621] (-) TimerEvent: {}
+[46.315071] (-) TimerEvent: {}
+[46.418671] (-) TimerEvent: {}
+[46.519116] (-) TimerEvent: {}
+[46.619704] (-) TimerEvent: {}
+[46.701417] (speech_to_text_pkg) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable transcription_pre_process_node\x1b[0m\n'}
+[46.719913] (-) TimerEvent: {}
+[46.820461] (-) TimerEvent: {}
+[46.923917] (-) TimerEvent: {}
+[47.024500] (-) TimerEvent: {}
+[47.131693] (-) TimerEvent: {}
+[47.234701] (-) TimerEvent: {}
+[47.339686] (-) TimerEvent: {}
+[47.401154] (speech_to_text_pkg) StdoutLine: {'line': b'[ 97%] Built target transcription_pre_process_node\n'}
+[47.439886] (-) TimerEvent: {}
+[47.541084] (-) TimerEvent: {}
+[47.644531] (-) TimerEvent: {}
+[47.745089] (-) TimerEvent: {}
+[47.847088] (-) TimerEvent: {}
+[47.947604] (-) TimerEvent: {}
+[48.052933] (-) TimerEvent: {}
+[48.153570] (-) TimerEvent: {}
+[48.254072] (-) TimerEvent: {}
+[48.354966] (-) TimerEvent: {}
+[48.455999] (-) TimerEvent: {}
+[48.560356] (-) TimerEvent: {}
+[48.667538] (-) TimerEvent: {}
+[48.768406] (-) TimerEvent: {}
+[48.869175] (-) TimerEvent: {}
+[48.969803] (-) TimerEvent: {}
+[49.070323] (-) TimerEvent: {}
+[49.170689] (-) TimerEvent: {}
+[49.271116] (-) TimerEvent: {}
+[49.371493] (-) TimerEvent: {}
+[49.471879] (-) TimerEvent: {}
+[49.572242] (-) TimerEvent: {}
+[49.672676] (-) TimerEvent: {}
+[49.773027] (-) TimerEvent: {}
+[49.873400] (-) TimerEvent: {}
+[49.973770] (-) TimerEvent: {}
+[50.074154] (-) TimerEvent: {}
+[50.174687] (-) TimerEvent: {}
+[50.275230] (-) TimerEvent: {}
+[50.375670] (-) TimerEvent: {}
+[50.476139] (-) TimerEvent: {}
+[50.578358] (-) TimerEvent: {}
+[50.678882] (-) TimerEvent: {}
+[50.779380] (-) TimerEvent: {}
+[50.879769] (-) TimerEvent: {}
+[50.980272] (-) TimerEvent: {}
+[51.080702] (-) TimerEvent: {}
+[51.181256] (-) TimerEvent: {}
+[51.281716] (-) TimerEvent: {}
+[51.382379] (-) TimerEvent: {}
+[51.482822] (-) TimerEvent: {}
+[51.583875] (-) TimerEvent: {}
+[51.684318] (-) TimerEvent: {}
+[51.785280] (-) TimerEvent: {}
+[51.885860] (-) TimerEvent: {}
+[51.986689] (-) TimerEvent: {}
+[52.087186] (-) TimerEvent: {}
+[52.188118] (-) TimerEvent: {}
+[52.288647] (-) TimerEvent: {}
+[52.389217] (-) TimerEvent: {}
+[52.489640] (-) TimerEvent: {}
+[52.590197] (-) TimerEvent: {}
+[52.690585] (-) TimerEvent: {}
+[52.791027] (-) TimerEvent: {}
+[52.891405] (-) TimerEvent: {}
+[52.993252] (-) TimerEvent: {}
+[53.093678] (-) TimerEvent: {}
+[53.196793] (-) TimerEvent: {}
+[53.297256] (-) TimerEvent: {}
+[53.397693] (-) TimerEvent: {}
+[53.498245] (-) TimerEvent: {}
+[53.598695] (-) TimerEvent: {}
+[53.699301] (-) TimerEvent: {}
+[53.799711] (-) TimerEvent: {}
+[53.900319] (-) TimerEvent: {}
+[54.000725] (-) TimerEvent: {}
+[54.101232] (-) TimerEvent: {}
+[54.201713] (-) TimerEvent: {}
+[54.302296] (-) TimerEvent: {}
+[54.402843] (-) TimerEvent: {}
+[54.503392] (-) TimerEvent: {}
+[54.603820] (-) TimerEvent: {}
+[54.704488] (-) TimerEvent: {}
+[54.804934] (-) TimerEvent: {}
+[54.905753] (-) TimerEvent: {}
+[55.006222] (-) TimerEvent: {}
+[55.109747] (-) TimerEvent: {}
+[55.210208] (-) TimerEvent: {}
+[55.310955] (-) TimerEvent: {}
+[55.411312] (-) TimerEvent: {}
+[55.511693] (-) TimerEvent: {}
+[55.612053] (-) TimerEvent: {}
+[55.712447] (-) TimerEvent: {}
+[55.812820] (-) TimerEvent: {}
+[55.913236] (-) TimerEvent: {}
+[56.013628] (-) TimerEvent: {}
+[56.114039] (-) TimerEvent: {}
+[56.214435] (-) TimerEvent: {}
+[56.314850] (-) TimerEvent: {}
+[56.415294] (-) TimerEvent: {}
+[56.515915] (-) TimerEvent: {}
+[56.617729] (-) TimerEvent: {}
+[56.718115] (-) TimerEvent: {}
+[56.821615] (-) TimerEvent: {}
+[56.922024] (-) TimerEvent: {}
+[57.022905] (-) TimerEvent: {}
+[57.123362] (-) TimerEvent: {}
+[57.224012] (-) TimerEvent: {}
+[57.324483] (-) TimerEvent: {}
+[57.425269] (-) TimerEvent: {}
+[57.525775] (-) TimerEvent: {}
+[57.626686] (-) TimerEvent: {}
+[57.727272] (-) TimerEvent: {}
+[57.831832] (-) TimerEvent: {}
+[57.932204] (-) TimerEvent: {}
+[58.032669] (-) TimerEvent: {}
+[58.133032] (-) TimerEvent: {}
+[58.233434] (-) TimerEvent: {}
+[58.333806] (-) TimerEvent: {}
+[58.434206] (-) TimerEvent: {}
+[58.534687] (-) TimerEvent: {}
+[58.635095] (-) TimerEvent: {}
+[58.735545] (-) TimerEvent: {}
+[58.836044] (-) TimerEvent: {}
+[58.936413] (-) TimerEvent: {}
+[59.036834] (-) TimerEvent: {}
+[59.137323] (-) TimerEvent: {}
+[59.240630] (-) TimerEvent: {}
+[59.341180] (-) TimerEvent: {}
+[59.441600] (-) TimerEvent: {}
+[59.542164] (-) TimerEvent: {}
+[59.642653] (-) TimerEvent: {}
+[59.743268] (-) TimerEvent: {}
+[59.843726] (-) TimerEvent: {}
+[59.946063] (-) TimerEvent: {}
+[60.046606] (-) TimerEvent: {}
+[60.150853] (-) TimerEvent: {}
+[60.251209] (-) TimerEvent: {}
+[60.351628] (-) TimerEvent: {}
+[60.451997] (-) TimerEvent: {}
+[60.552421] (-) TimerEvent: {}
+[60.652773] (-) TimerEvent: {}
+[60.753167] (-) TimerEvent: {}
+[60.853544] (-) TimerEvent: {}
+[60.955072] (-) TimerEvent: {}
+[61.058973] (-) TimerEvent: {}
+[61.162706] (-) TimerEvent: {}
+[61.265796] (-) TimerEvent: {}
+[61.366254] (-) TimerEvent: {}
+[61.467056] (-) TimerEvent: {}
+[61.567580] (-) TimerEvent: {}
+[61.668817] (-) TimerEvent: {}
+[61.771917] (-) TimerEvent: {}
+[61.872287] (-) TimerEvent: {}
+[61.972662] (-) TimerEvent: {}
+[62.073054] (-) TimerEvent: {}
+[62.173434] (-) TimerEvent: {}
+[62.273834] (-) TimerEvent: {}
+[62.374216] (-) TimerEvent: {}
+[62.474728] (-) TimerEvent: {}
+[62.575248] (-) TimerEvent: {}
+[62.676068] (-) TimerEvent: {}
+[62.776439] (-) TimerEvent: {}
+[62.876931] (-) TimerEvent: {}
+[62.980743] (-) TimerEvent: {}
+[63.081184] (-) TimerEvent: {}
+[63.181786] (-) TimerEvent: {}
+[63.282204] (-) TimerEvent: {}
+[63.385876] (-) TimerEvent: {}
+[63.486514] (-) TimerEvent: {}
+[63.590732] (-) TimerEvent: {}
+[63.691132] (-) TimerEvent: {}
+[63.791747] (-) TimerEvent: {}
+[63.892179] (-) TimerEvent: {}
+[63.992629] (-) TimerEvent: {}
+[64.093099] (-) TimerEvent: {}
+[64.196567] (-) TimerEvent: {}
+[64.297923] (-) TimerEvent: {}
+[64.398446] (-) TimerEvent: {}
+[64.499022] (-) TimerEvent: {}
+[64.599543] (-) TimerEvent: {}
+[64.700244] (-) TimerEvent: {}
+[64.800660] (-) TimerEvent: {}
+[64.901232] (-) TimerEvent: {}
+[65.001656] (-) TimerEvent: {}
+[65.102196] (-) TimerEvent: {}
+[65.202707] (-) TimerEvent: {}
+[65.303260] (-) TimerEvent: {}
+[65.403689] (-) TimerEvent: {}
+[65.504206] (-) TimerEvent: {}
+[65.604693] (-) TimerEvent: {}
+[65.705531] (-) TimerEvent: {}
+[65.806020] (-) TimerEvent: {}
+[65.906946] (-) TimerEvent: {}
+[66.007502] (-) TimerEvent: {}
+[66.108371] (-) TimerEvent: {}
+[66.208779] (-) TimerEvent: {}
+[66.314612] (-) TimerEvent: {}
+[66.414988] (-) TimerEvent: {}
+[66.515402] (-) TimerEvent: {}
+[66.615916] (-) TimerEvent: {}
+[66.716399] (-) TimerEvent: {}
+[66.816836] (-) TimerEvent: {}
+[66.917302] (-) TimerEvent: {}
+[67.017939] (-) TimerEvent: {}
+[67.118401] (-) TimerEvent: {}
+[67.218995] (-) TimerEvent: {}
+[67.319454] (-) TimerEvent: {}
+[67.419978] (-) TimerEvent: {}
+[67.520442] (-) TimerEvent: {}
+[67.621343] (-) TimerEvent: {}
+[67.721810] (-) TimerEvent: {}
+[67.822345] (-) TimerEvent: {}
+[67.922852] (-) TimerEvent: {}
+[68.023597] (-) TimerEvent: {}
+[68.124026] (-) TimerEvent: {}
+[68.227887] (-) TimerEvent: {}
+[68.328297] (-) TimerEvent: {}
+[68.431633] (-) TimerEvent: {}
+[68.532068] (-) TimerEvent: {}
+[68.556037] (speech_to_text_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable audio_capture_node\x1b[0m\n'}
+[68.632229] (-) TimerEvent: {}
+[68.733217] (-) TimerEvent: {}
+[68.834536] (-) TimerEvent: {}
+[68.935278] (-) TimerEvent: {}
+[69.040088] (-) TimerEvent: {}
+[69.049844] (speech_to_text_pkg) StdoutLine: {'line': b'[100%] Built target audio_capture_node\n'}
+[69.096155] (speech_to_text_pkg) CommandEnded: {'returncode': 0}
+[69.099750] (speech_to_text_pkg) JobProgress: {'identifier': 'speech_to_text_pkg', 'progress': 'install'}
+[69.115725] (speech_to_text_pkg) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg'], 'cwd': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dredre', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dredre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2793', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'dredre', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dredre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/dredre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dredre/.local/bin', 'SESSION_MANAGER': 'local/dredre-desktop:@/tmp/.ICE-unix/2761,unix/dredre-desktop:/tmp/.ICE-unix/2761', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4190b834_edf5_403a_9629_125eb52de122', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LPGSM3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.100', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[69.133845] (speech_to_text_pkg) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[69.134423] (speech_to_text_pkg) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/transcription_pre_process_node\n'}
+[69.140247] (-) TimerEvent: {}
+[69.150105] (speech_to_text_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/transcription_pre_process_node" to ""\n'}
+[69.158460] (speech_to_text_pkg) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/audio_capture_node\n'}
+[69.168141] (speech_to_text_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/audio_capture_node" to ""\n'}
+[69.170442] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/whisper_transcription_node\n'}
+[69.172451] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/wakeWordNode.py\n'}
+[69.172859] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/ament_index/resource_index/package_run_dependencies/speech_to_text_pkg\n'}
+[69.174884] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/ament_index/resource_index/parent_prefix_path/speech_to_text_pkg\n'}
+[69.175160] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/ament_prefix_path.sh\n'}
+[69.175358] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/ament_prefix_path.dsv\n'}
+[69.175553] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/path.sh\n'}
+[69.175689] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/path.dsv\n'}
+[69.177940] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.bash\n'}
+[69.178207] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.sh\n'}
+[69.178413] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.zsh\n'}
+[69.178588] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.dsv\n'}
+[69.178715] (speech_to_text_pkg) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/package.dsv\n'}
+[69.180470] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/ament_index/resource_index/packages/speech_to_text_pkg\n'}
+[69.180967] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/cmake/speech_to_text_pkgConfig.cmake\n'}
+[69.181171] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/cmake/speech_to_text_pkgConfig-version.cmake\n'}
+[69.182554] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/package.xml\n'}
+[69.185483] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libwhisper.so.1.8.3\n'}
+[69.186240] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libwhisper.so.1\n'}
+[69.188675] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libwhisper.so\n'}
+[69.189317] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/whisper.h\n'}
+[69.189494] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/whisper/whisper-config.cmake\n'}
+[69.189625] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/whisper/whisper-version.cmake\n'}
+[69.189723] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/pkgconfig/whisper.pc\n'}
+[69.190029] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-cpu.so.0.9.5\n'}
+[69.190170] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-cpu.so.0\n'}
+[69.190532] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-cpu.so\n'}
+[69.190984] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml.so.0.9.5\n'}
+[69.191237] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml.so.0\n'}
+[69.191761] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml.so\n'}
+[69.192087] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml.h\n'}
+[69.192294] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cpu.h\n'}
+[69.192572] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-alloc.h\n'}
+[69.193168] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-backend.h\n'}
+[69.193366] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-blas.h\n'}
+[69.193616] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cann.h\n'}
+[69.193814] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cpp.h\n'}
+[69.193997] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cuda.h\n'}
+[69.194224] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-opt.h\n'}
+[69.194777] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-metal.h\n'}
+[69.195239] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-rpc.h\n'}
+[69.195615] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-sycl.h\n'}
+[69.195898] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-vulkan.h\n'}
+[69.196107] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-webgpu.h\n'}
+[69.196217] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-zendnn.h\n'}
+[69.196311] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/gguf.h\n'}
+[69.196738] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-base.so.0.9.5\n'}
+[69.197265] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-base.so.0\n'}
+[69.198204] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-base.so\n'}
+[69.198385] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/ggml/ggml-config.cmake\n'}
+[69.198526] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/ggml/ggml-version.cmake\n'}
+[69.200387] (speech_to_text_pkg) CommandEnded: {'returncode': 0}
+[69.240434] (-) TimerEvent: {}
+[69.275119] (speech_to_text_pkg) JobEnded: {'identifier': 'speech_to_text_pkg', 'rc': 0}
+[69.281185] (-) EventReactorShutdown: {}
