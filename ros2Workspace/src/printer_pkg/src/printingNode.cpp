@@ -5,7 +5,7 @@ PrintingNode::PrintingNode() {
     transcribedTextSubscriber_ = create_subscription<std_msgs::msg::String>(
         "/transcription", 10, std::bind(&printingNode::transcriptionCallback, this, std::placeholders::_1));
     
-    transcriptionState_ = create_subscription<std_msgs::msg::Bool> 
+    transcriptionStateSubscriber_ = create_subscription<std_msgs::msg::Bool> 
     ("/transcriptionState", 10, std::bind(&printingNode::transcriptionStateCallback, this, std::placeholders::_1));
 
 

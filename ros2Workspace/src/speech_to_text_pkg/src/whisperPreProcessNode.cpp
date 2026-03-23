@@ -39,6 +39,7 @@ void transcriptionPreProcessNode::publishAudio(size_t numSamples) {
 
     publisher_->publish(std::move(msg));
 
+    RCLCPP_INFO(get_logger(), "Chunk sent");
     
 
 }
@@ -53,42 +54,66 @@ void transcriptionPreProcessNode::audioCallback(const speech_to_text_interfaces:
     
     auto now = std::chrono::steady_clock::now(); // Static start time
     
+    // In audioCallback:
+    // In audioCallback:
     if(!vad_.detectSpeech(msg->data.data(), msg->data.size())) {
-        if(isQuiet_) {
-            //do not adjust the start time
-            
-            if(now - quietStartTime_ >= std::chrono::seconds(15)) {
-                //if we are quiet for more than 15 seconds wakeWordState should default to false
-                currentWakeState = false;
-                isQuiet_ = false;
-                if(!samples_.empty()) {
-                    publishAudio(samples_.size());
-                }
-                samples_.clear();
-                return;
-            }
-        } else {
-            //start running the clock for quietTime
-            isQuiet_ = true;
-            quietStartTime_ = now;
+        if(currentWakeState == false) return;
+
+        if(!isSilent_) {
+            isSilent_ = true;
+            silenceStartTime_ = now;
+            return;
         }
+
+        // Accumulate since last check
+        totalSilenceDuration_ += std::chrono::duration_cast<std::chrono::milliseconds>(
+            now - silenceStartTime_);
+        silenceStartTime_ = now; // slide forward, not reset
+        
+        RCLCPP_INFO(get_logger(), "totalSilenceDuration_ %ld ms", 
+    std::chrono::duration_cast<std::chrono::milliseconds>(totalSilenceDuration_).count());
+
+        if(totalSilenceDuration_ >= std::chrono::seconds(15)) {
+            currentWakeState = false;
+            isSilent_ = false;
+            totalSilenceDuration_ = std::chrono::milliseconds(0);
+            if(!samples_.empty()) {
+                publishAudio(samples_.size());
+                samples_.clear();
+            }
+            return;
+        }
+
+        if(totalSilenceDuration_ >= std::chrono::milliseconds(1500)) {
+            if(samples_.size() >= MIN_CHUNK_SIZE) {
+                publishAudio(samples_.size());
+                samples_.clear();
+            }
+            // don't reset totalSilenceDuration_ — keep counting toward 15s
+        }
+
     } else {
-        isQuiet_ = false;
+        if(isSilent_) {
+            // Was silent, now speaking — reset accumulated silence
+            isSilent_ = false;
+            totalSilenceDuration_ = std::chrono::milliseconds(0);
+        }
     }
 
     if (currentWakeState) {
         samples_.insert(samples_.end(), msg->data.begin(), msg->data.end());      
     } else {
         //do nothing
+        RCLCPP_INFO(get_logger(), "SPEECH");
         return;
     }
 
-    if(isQuiet_ && (now - quietStartTime_ >= std::chrono::milliseconds(1500))) {
+    if(isSilent_ && (now - silenceStartTime_ >= std::chrono::milliseconds(1500))) {
         if(samples_.size() >= MIN_CHUNK_SIZE) {
             publishAudio(samples_.size());
             samples_.clear();
         }
-        isQuiet_ = false;
+        isSilent_ = false;
     } else if (samples_.size() >= CHUNK_SIZE) {
         publishAudio(CHUNK_SIZE);
         samples_.erase(samples_.begin(), samples_.begin() + CHUNK_SIZE);

@@ -404,6 +404,11 @@ CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o: /h
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp \
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/bool.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
@@ -975,8 +980,6 @@ CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o:
 
 /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so:
 
-/opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so:
-
 /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so:
 
 /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so:
@@ -1096,10 +1099,6 @@ CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o:
 /usr/include/c++/13/unordered_map:
 
 /usr/include/c++/13/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/13/tr1/poly_hermite.tcc:
 
@@ -1429,6 +1428,10 @@ _deps/whisper-build/ggml/src/libggml.so.0.9.5:
 
 /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h:
 
+/usr/include/aarch64-linux-gnu/bits/wchar2-decl.h:
+
+/usr/include/aarch64-linux-gnu/bits/waitflags.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/serialization.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
@@ -1523,6 +1526,10 @@ _deps/whisper-build/ggml/src/libggml.so.0.9.5:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/macros.hpp:
 
+/opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
+
 /usr/include/aarch64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/c++/13/bits/erase_if.h:
@@ -1538,6 +1545,10 @@ _deps/whisper-src/ggml/include/ggml.h:
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/wchar.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/network_flow_endpoints.h:
 
@@ -1610,6 +1621,14 @@ _deps/whisper-src/ggml/include/ggml.h:
 /usr/include/c++/13/bits/stl_pair.h:
 
 /usr/include/aarch64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/aarch64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/aarch64-linux-gnu/bits/wchar2.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_value.hpp:
 
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
 
@@ -1712,10 +1731,6 @@ _deps/whisper-src/ggml/include/ggml.h:
 /opt/ros/jazzy/include/rcl/rcl/context.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
-
-/usr/include/aarch64-linux-gnu/bits/wchar.h:
 
 /opt/ros/jazzy/include/rcl/rcl/event.h:
 
@@ -1925,10 +1940,6 @@ _deps/whisper-src/ggml/include/ggml-alloc.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_value.hpp:
-
-/usr/include/aarch64-linux-gnu/bits/wchar2.h:
-
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h:
@@ -2043,8 +2054,6 @@ _deps/whisper-src/ggml/include/ggml-alloc.h:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
-
 /opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
@@ -2152,6 +2161,8 @@ _deps/whisper-src/ggml/include/ggml-backend.h:
 /usr/include/c++/13/tr1/gamma.tcc:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/bool.hpp:
 
 /usr/include/c++/13/bit:
 
@@ -2292,6 +2303,8 @@ _deps/whisper-build/ggml/src/libggml-cpu.so.0.9.5:
 /opt/ros/jazzy/include/rcutils/rcutils/snprintf.h:
 
 /usr/include/c++/13/initializer_list:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
 
@@ -2509,6 +2522,20 @@ _deps/whisper-build/ggml/src/libggml-cpu.so.0.9.5:
 
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp:
+
+/usr/include/c++/13/bits/stl_numeric.h:
+
+/usr/include/aarch64-linux-gnu/bits/sigthread.h:
+
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
 
 /opt/ros/jazzy/include/tracetools/tracetools/config.h:
@@ -2683,10 +2710,6 @@ _deps/whisper-src/ggml/include/ggml-cpu.h:
 
 /usr/include/aarch64-linux-gnu/bits/sigstack.h:
 
-/usr/include/c++/13/bits/stl_numeric.h:
-
-/usr/include/aarch64-linux-gnu/bits/sigthread.h:
-
 /usr/include/aarch64-linux-gnu/bits/stdio.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdio2.h:
@@ -2758,11 +2781,3 @@ _deps/whisper-src/ggml/include/ggml-cpu.h:
 /usr/include/aarch64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/aarch64-linux-gnu/bits/unistd-decl.h:
-
-/usr/include/aarch64-linux-gnu/bits/waitflags.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/aarch64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/aarch64-linux-gnu/bits/wchar2-decl.h:

@@ -118,8 +118,6 @@ bool whisperTranscriptionNode::liveCapture() {
         return false;
     }
 
-    transcriptionState_.store(true);
-    publishState();
     running_.store(true);
     transcriptionThread_ = std::thread(&whisperTranscriptionNode::transcriptionWorker, this);
 
@@ -147,6 +145,9 @@ void whisperTranscriptionNode::publishTranscription(const std::string &transcrib
 
 void whisperTranscriptionNode::transcriptionWorker() {
     RCLCPP_INFO(get_logger(), "[INFO] Processor thread started");
+    transcriptionState_.store(true);
+    publishState();
+    
     
     while(running_.load() || !chunkQueue_.empty()) {
         std::vector<float> chunk;
@@ -166,6 +167,9 @@ void whisperTranscriptionNode::transcriptionWorker() {
     }
     
     RCLCPP_INFO(get_logger(), "Processor thread stopped");
+
+    transcriptionState_.store(false);
+    publishState();
 }
 
 void whisperTranscriptionNode::cleanUpNode() {
@@ -184,8 +188,8 @@ void whisperTranscriptionNode::cleanUpNode() {
     }
 
     // whisper_free_context_params(&cparams_);
-    transcriptionState_.store(false);
-    publishState();
+    // transcriptionState_.store(false);
+    // publishState();
     
     RCLCPP_INFO(get_logger(), "Stopped live capture!");
 }

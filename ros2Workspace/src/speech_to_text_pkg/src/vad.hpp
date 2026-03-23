@@ -11,15 +11,16 @@ private:
     float noiseAdaptRate;
     
     float zcr_threshold;      // Zero-crossing rate
-    int minSpeechFrames;      // Min consecutive frames to confirm speech
-    int speechFrameCount;
+    int minSilenceFrames_;      // Min consecutive frames to confirm silence
+    int speechFrameCount_;
+    int silenceFrameCount_;
     
 public:
     LightweightVAD(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
-        float speechMultiplierIn = 4.0f, float zcrThresh = 0.05f, int minFrames = 1)
+        float speechMultiplierIn = 2.0f, float zcrThresh = 0.05f, int minFrames = 1)
         : noiseFloor(noiseFloorIn), noiseAdaptRate(noiseAdaptRateIn), 
         speechMultiplier(speechMultiplierIn), zcr_threshold(zcrThresh), 
-          minSpeechFrames(minFrames), speechFrameCount(0) {}
+          minSilenceFrames_(minFrames), speechFrameCount_(0), silenceFrameCount_(0) {}
 
     //no copying
     LightweightVAD(const LightweightVAD&) = delete;
@@ -53,22 +54,26 @@ public:
     
         // 3. Speech detection logic
         bool isSpeech = (energy > noiseFloor * speechMultiplier) && (zcr > zcr_threshold);
+    
         if(!isSpeech) {
             noiseFloor = (1.0f - noiseAdaptRate) * noiseFloor + noiseAdaptRate * energy;
-        }
-        noiseFloor = std::max(noiseFloor, 1e-6f);
-        // 4. Require multiple consecutive frames (reduce spurious triggers)
-        if(isSpeech) {
-            speechFrameCount++;
+            silenceFrameCount_++;
+            speechFrameCount_ = 0;
         } else {
-            speechFrameCount = 0;
+            speechFrameCount_++;
+            silenceFrameCount_ = 0;
         }
-        
-        return speechFrameCount >= minSpeechFrames;
+
+        noiseFloor = std::max(noiseFloor, 1e-6f);
+
+        // Speech is confirmed immediately — one frame is enough
+        // Silence requires minSilenceFrames consecutive frames to avoid mid-word gaps
+        if(speechFrameCount_ > 0) return true;
+        return silenceFrameCount_ >= minSilenceFrames_;
     }
     
     // Reset state
     void reset() {
-        speechFrameCount = 0;
+        speechFrameCount_ = 0;
     }
 };

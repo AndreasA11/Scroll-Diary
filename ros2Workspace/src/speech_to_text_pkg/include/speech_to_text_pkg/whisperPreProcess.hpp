@@ -29,8 +29,9 @@ class transcriptionPreProcessNode : public rclcpp::Node {
         std::vector<float> samples_;
         LightweightVAD vad_;
 
-        bool isQuiet_ = false;
-        std::chrono::steady_clock::time_point quietStartTime_;
+        bool isSilent_ = false;
+        std::chrono::steady_clock::time_point silenceStartTime_;
+        std::chrono::milliseconds totalSilenceDuration_{0};
 
         mutable std::mutex state_mutex_;
         

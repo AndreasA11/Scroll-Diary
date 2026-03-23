@@ -1,0 +1,159 @@
+[0.057s] Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg': CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg -- -j4 -l4
+[0.164s] [ 25%] Built target ggml-base
+[0.167s] [ 28%] [32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o[0m
+[0.220s] [ 31%] [32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o[0m
+[0.235s] [ 34%] [32mBuilding CXX object CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o[0m
+[0.273s] [ 77%] Built target ggml-cpu
+[0.377s] [ 82%] Built target ggml
+[0.483s] [ 88%] Built target whisper
+[0.616s] [ 94%] Built target whisper_transcription_node
+[9.174s] In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp:9[m[K,
+[9.174s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:1[m[K:
+[9.176s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In constructor ‘[01m[KLightweightVAD::[01;32m[KLightweightVAD[m[K(float, float, float, float, int)[m[K’:
+[9.176s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:23:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KLightweightVAD[m[K’ does not have any field named ‘[01m[KminSpeechFrames[m[K’
+[9.176s]    23 |           [01;31m[KminSpeechFrames[m[K(minFrames), speechFrameCount(0), silenceFrameCount_(0) {}
+[9.176s]       |           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[9.176s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:23:60:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KLightweightVAD[m[K’ does not have any field named ‘[01m[KsilenceFrameCount_[m[K’
+[9.177s]    23 |           minSpeechFrames(minFrames), speechFrameCount(0), [01;31m[KsilenceFrameCount_[m[K(0) {}
+[9.180s]       |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.181s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KLightweightVAD::noiseAdaptRate[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[9.181s]    11 |     float [01;35m[KnoiseAdaptRate[m[K;
+[9.181s]       |           [01;35m[K^~~~~~~~~~~~~~[m[K
+[9.181s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat LightweightVAD::speechMultiplier[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[9.181s]    10 |     float [01;35m[KspeechMultiplier[m[K;
+[9.181s]       |           [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[9.182s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:19:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[9.183s]    19 |     [01;35m[KLightweightVAD[m[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
+[9.184s]       |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[9.199s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In member function ‘[01m[Kbool LightweightVAD::[01;32m[KdetectSpeech[m[K(const float*, size_t)[m[K’:
+[9.199s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:60:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsilenceFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KsilenceFrameCount[m[K’?
+[9.199s]    60 |             [01;31m[KsilenceFrameCount_[m[K++;
+[9.199s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.199s]       |             [32m[KsilenceFrameCount[m[K
+[9.213s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:61:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspeechFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KspeechFrameCount[m[K’?
+[9.213s]    61 |             [01;31m[KspeechFrameCount_[m[K = 0;
+[9.213s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.213s]       |             [32m[KspeechFrameCount[m[K
+[9.225s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:63:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspeechFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KspeechFrameCount[m[K’?
+[9.226s]    63 |             [01;31m[KspeechFrameCount_[m[K++;
+[9.226s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.226s]       |             [32m[KspeechFrameCount[m[K
+[9.239s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:64:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsilenceFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KsilenceFrameCount[m[K’?
+[9.239s]    64 |             [01;31m[KsilenceFrameCount_[m[K = 0;
+[9.240s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.241s]       |             [32m[KsilenceFrameCount[m[K
+[9.267s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:71:12:[m[K [01;31m[Kerror: [m[K‘[01m[KspeechFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KspeechFrameCount[m[K’?
+[9.270s]    71 |         if([01;31m[KspeechFrameCount_[m[K > 0) return true;
+[9.270s]       |            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.270s]       |            [32m[KspeechFrameCount[m[K
+[9.288s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:72:16:[m[K [01;31m[Kerror: [m[K‘[01m[KsilenceFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KsilenceFrameCount[m[K’?
+[9.289s]    72 |         return [01;31m[KsilenceFrameCount_[m[K >= minSilenceFrames_;
+[9.289s]       |                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.289s]       |                [32m[KsilenceFrameCount[m[K
+[9.303s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:72:38:[m[K [01;31m[Kerror: [m[K‘[01m[KminSilenceFrames_[m[K’ was not declared in this scope; did you mean ‘[01m[KminSilenceFrames[m[K’?
+[9.304s]    72 |         return silenceFrameCount_ >= [01;31m[KminSilenceFrames_[m[K;
+[9.304s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.304s]       |                                      [32m[KminSilenceFrames[m[K
+[9.506s] In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp:10[m[K,
+[9.506s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioCaptureNode.cpp:1[m[K:
+[9.506s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In constructor ‘[01m[KLightweightVAD::[01;32m[KLightweightVAD[m[K(float, float, float, float, int)[m[K’:
+[9.506s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:23:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KLightweightVAD[m[K’ does not have any field named ‘[01m[KminSpeechFrames[m[K’
+[9.506s]    23 |           [01;31m[KminSpeechFrames[m[K(minFrames), speechFrameCount(0), silenceFrameCount_(0) {}
+[9.506s]       |           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[9.510s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:23:60:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KLightweightVAD[m[K’ does not have any field named ‘[01m[KsilenceFrameCount_[m[K’
+[9.510s]    23 |           minSpeechFrames(minFrames), speechFrameCount(0), [01;31m[KsilenceFrameCount_[m[K(0) {}
+[9.510s]       |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.511s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KLightweightVAD::noiseAdaptRate[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[9.511s]    11 |     float [01;35m[KnoiseAdaptRate[m[K;
+[9.511s]       |           [01;35m[K^~~~~~~~~~~~~~[m[K
+[9.511s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat LightweightVAD::speechMultiplier[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[9.511s]    10 |     float [01;35m[KspeechMultiplier[m[K;
+[9.511s]       |           [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[9.511s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:19:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[9.511s]    19 |     [01;35m[KLightweightVAD[m[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
+[9.512s]       |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[9.526s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In member function ‘[01m[Kbool LightweightVAD::[01;32m[KdetectSpeech[m[K(const float*, size_t)[m[K’:
+[9.526s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:60:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsilenceFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KsilenceFrameCount[m[K’?
+[9.526s]    60 |             [01;31m[KsilenceFrameCount_[m[K++;
+[9.527s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.527s]       |             [32m[KsilenceFrameCount[m[K
+[9.547s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:61:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspeechFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KspeechFrameCount[m[K’?
+[9.547s]    61 |             [01;31m[KspeechFrameCount_[m[K = 0;
+[9.547s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.547s]       |             [32m[KspeechFrameCount[m[K
+[9.573s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:63:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspeechFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KspeechFrameCount[m[K’?
+[9.573s]    63 |             [01;31m[KspeechFrameCount_[m[K++;
+[9.573s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.573s]       |             [32m[KspeechFrameCount[m[K
+[9.592s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:64:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsilenceFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KsilenceFrameCount[m[K’?
+[9.593s]    64 |             [01;31m[KsilenceFrameCount_[m[K = 0;
+[9.594s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.594s]       |             [32m[KsilenceFrameCount[m[K
+[9.611s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:71:12:[m[K [01;31m[Kerror: [m[K‘[01m[KspeechFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KspeechFrameCount[m[K’?
+[9.611s]    71 |         if([01;31m[KspeechFrameCount_[m[K > 0) return true;
+[9.611s]       |            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.612s]       |            [32m[KspeechFrameCount[m[K
+[9.629s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:72:16:[m[K [01;31m[Kerror: [m[K‘[01m[KsilenceFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KsilenceFrameCount[m[K’?
+[9.630s]    72 |         return [01;31m[KsilenceFrameCount_[m[K >= minSilenceFrames_;
+[9.630s]       |                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[9.630s]       |                [32m[KsilenceFrameCount[m[K
+[9.646s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:72:38:[m[K [01;31m[Kerror: [m[K‘[01m[KminSilenceFrames_[m[K’ was not declared in this scope; did you mean ‘[01m[KminSilenceFrames[m[K’?
+[9.646s]    72 |         return silenceFrameCount_ >= [01;31m[KminSilenceFrames_[m[K;
+[9.646s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.646s]       |                                      [32m[KminSilenceFrames[m[K
+[11.164s] In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/audioCapture.hpp:10[m[K,
+[11.165s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/audioFunctions.cpp:3[m[K:
+[11.165s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In constructor ‘[01m[KLightweightVAD::[01;32m[KLightweightVAD[m[K(float, float, float, float, int)[m[K’:
+[11.165s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:23:11:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KLightweightVAD[m[K’ does not have any field named ‘[01m[KminSpeechFrames[m[K’
+[11.165s]    23 |           [01;31m[KminSpeechFrames[m[K(minFrames), speechFrameCount(0), silenceFrameCount_(0) {}
+[11.166s]       |           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[11.169s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:23:60:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KLightweightVAD[m[K’ does not have any field named ‘[01m[KsilenceFrameCount_[m[K’
+[11.169s]    23 |           minSpeechFrames(minFrames), speechFrameCount(0), [01;31m[KsilenceFrameCount_[m[K(0) {}
+[11.169s]       |                                                            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.170s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KLightweightVAD::noiseAdaptRate[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.170s]    11 |     float [01;35m[KnoiseAdaptRate[m[K;
+[11.170s]       |           [01;35m[K^~~~~~~~~~~~~~[m[K
+[11.170s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat LightweightVAD::speechMultiplier[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.170s]    10 |     float [01;35m[KspeechMultiplier[m[K;
+[11.170s]       |           [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[11.170s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:19:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.170s]    19 |     [01;35m[KLightweightVAD[m[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
+[11.171s]       |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[11.218s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In member function ‘[01m[Kbool LightweightVAD::[01;32m[KdetectSpeech[m[K(const float*, size_t)[m[K’:
+[11.218s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:60:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsilenceFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KsilenceFrameCount[m[K’?
+[11.218s]    60 |             [01;31m[KsilenceFrameCount_[m[K++;
+[11.218s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.218s]       |             [32m[KsilenceFrameCount[m[K
+[11.252s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:61:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspeechFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KspeechFrameCount[m[K’?
+[11.252s]    61 |             [01;31m[KspeechFrameCount_[m[K = 0;
+[11.252s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[11.252s]       |             [32m[KspeechFrameCount[m[K
+[11.292s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:63:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspeechFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KspeechFrameCount[m[K’?
+[11.294s]    63 |             [01;31m[KspeechFrameCount_[m[K++;
+[11.297s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[11.298s]       |             [32m[KspeechFrameCount[m[K
+[11.339s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:64:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsilenceFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KsilenceFrameCount[m[K’?
+[11.339s]    64 |             [01;31m[KsilenceFrameCount_[m[K = 0;
+[11.340s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.340s]       |             [32m[KsilenceFrameCount[m[K
+[11.374s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:71:12:[m[K [01;31m[Kerror: [m[K‘[01m[KspeechFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KspeechFrameCount[m[K’?
+[11.374s]    71 |         if([01;31m[KspeechFrameCount_[m[K > 0) return true;
+[11.376s]       |            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[11.376s]       |            [32m[KspeechFrameCount[m[K
+[11.425s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:72:16:[m[K [01;31m[Kerror: [m[K‘[01m[KsilenceFrameCount_[m[K’ was not declared in this scope; did you mean ‘[01m[KsilenceFrameCount[m[K’?
+[11.425s]    72 |         return [01;31m[KsilenceFrameCount_[m[K >= minSilenceFrames_;
+[11.425s]       |                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.425s]       |                [32m[KsilenceFrameCount[m[K
+[11.459s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:72:38:[m[K [01;31m[Kerror: [m[K‘[01m[KminSilenceFrames_[m[K’ was not declared in this scope; did you mean ‘[01m[KminSilenceFrames[m[K’?
+[11.459s]    72 |         return silenceFrameCount_ >= [01;31m[KminSilenceFrames_[m[K;
+[11.459s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[11.459s]       |                                      [32m[KminSilenceFrames[m[K
+[11.695s] gmake[2]: *** [CMakeFiles/audio_capture_node.dir/build.make:79: CMakeFiles/audio_capture_node.dir/src/audioCaptureNode.cpp.o] Error 1
+[11.696s] gmake[2]: *** Waiting for unfinished jobs....
+[13.783s] gmake[2]: *** [CMakeFiles/audio_capture_node.dir/build.make:93: CMakeFiles/audio_capture_node.dir/src/audioFunctions.cpp.o] Error 1
+[13.784s] gmake[1]: *** [CMakeFiles/Makefile2:270: CMakeFiles/audio_capture_node.dir/all] Error 2
+[13.784s] gmake[1]: *** Waiting for unfinished jobs....
+[14.694s] gmake[2]: *** [CMakeFiles/transcription_pre_process_node.dir/build.make:79: CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o] Error 1
+[14.695s] gmake[1]: *** [CMakeFiles/Makefile2:302: CMakeFiles/transcription_pre_process_node.dir/all] Error 2
+[14.695s] gmake: *** [Makefile:146: all] Error 2
+[14.698s] Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg' returned '2': CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg -- -j4 -l4

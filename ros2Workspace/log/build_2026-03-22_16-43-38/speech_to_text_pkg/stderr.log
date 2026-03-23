@@ -1,0 +1,51 @@
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:96:42:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   96 |         rclcpp::Publisher<std_msgs::msg::[01;31m[KBool[m[K>::SharedPtr transcriptionStatePublisher_;
+      |                                          [01;31m[K^~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:96:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   96 |         rclcpp::Publisher<std_msgs::msg::Bool[01;31m[K>[m[K::SharedPtr transcriptionStatePublisher_;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:96:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   96 |         rclcpp::Publisher<std_msgs::msg::Bool>::[01;31m[KSharedPtr[m[K transcriptionStatePublisher_;
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                          [32m[K;[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:96:59:[m[K [01;31m[Kerror: [m[K‘[01m[KtranscriptionStatePublisher_[m[K’ does not name a type
+   96 |         rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr [01;31m[KtranscriptionStatePublisher_[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:[m[K In constructor ‘[01m[KwhisperTranscriptionNode::[01;32m[KwhisperTranscriptionNode[m[K()[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[KtranscriptionStatePublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KtranscriptionPublisher_[m[K’?
+   28 |     [01;31m[KtranscriptionStatePublisher_[m[K = create_publisher<std_msgs::msg::Bool>("/transcriptionState", 10);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[KtranscriptionPublisher_[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:28:68:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   28 | nscriptionStatePublisher_ = create_publisher<std_msgs::msg::[01;31m[KBool[m[K>("/transcriptionState", 10);
+      |                                                             [01;31m[K^~~~[m[K
+
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:28:73:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KwhisperTranscriptionNode::create_publisher<<expression error> >(const char [20], int)[m[K’
+   28 | ptionStatePublisher_ = [01;31m[Kcreate_publisher<std_msgs::msg::Bool>("/transcriptionState", 10)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1663[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::[01;32m[Kcreate_publisher[m[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   73 | [01;36m[KNode[m[K::create_publisher(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:28:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   28 | ptionStatePublisher_ = [01;31m[Kcreate_publisher<std_msgs::msg::Bool>("/transcriptionState", 10)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:[m[K In member function ‘[01m[Kvoid whisperTranscriptionNode::[01;32m[KpublishState[m[K()[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:131:31:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+  131 |     auto msg = std_msgs::msg::[01;31m[KBool[m[K();
+      |                               [01;31m[K^~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:133:5:[m[K [01;31m[Kerror: [m[K‘[01m[KtranscriptionStatePublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[KtranscriptionPublisher_[m[K’?
+  133 |     [01;31m[KtranscriptionStatePublisher_[m[K->publish(msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[KtranscriptionPublisher_[m[K
+gmake[2]: *** [CMakeFiles/whisper_transcription_node.dir/build.make:79: CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:337: CMakeFiles/whisper_transcription_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

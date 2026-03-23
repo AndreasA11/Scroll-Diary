@@ -2,6 +2,7 @@
 #include "speech_to_text_interfaces/msg/audio_stamped.hpp"
 #include "circularBuffer.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "std_msgs/msg/bool.hpp"
 #include "rmw/qos_profiles.h"
 #include <string>
 #include <iostream>
