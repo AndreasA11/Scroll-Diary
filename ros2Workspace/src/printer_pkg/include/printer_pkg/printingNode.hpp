@@ -4,13 +4,14 @@
 #include <fcntl.h>
 #include <cstring>
 #include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/string.hpp"
+#include "std_msgs/msg/bool.hpp"
 
 
-
-class PrintingNode : public rclcpp::Node {
-    pubic:
-        explicit PrintingNode();
-    ~PrintingNode() override;
+class printingNode : public rclcpp::Node {
+    public:
+        explicit printingNode();
+        ~printingNode() override;
 
     private:
         bool initPrinter();
@@ -21,9 +22,9 @@ class PrintingNode : public rclcpp::Node {
         
         
         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr transcribedTextSubscriber_;
-        rclcpp::Subscription<std_msgs::msg::Bool>SharedPtr transcriptionStateSubscriber_;
+        rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr transcriptionStateSubscriber_;
 
-        //we are going to append all the trnascribed chunks we received and eventually print this
-        std::String fullTranscription = "";
+        //we are going to append all the transcribed chunks we received and eventually print this
+        std::string fullTranscription = "";
 
 }; 

@@ -115,7 +115,7 @@ void AudioCaptureNode::publishAudio() {
     msg->has_speech = vad_.detectSpeech(msg->data.data(), SAMPLES_PER_CHUNK);
 
 
-    publisher_->publish(std::move(msg));
+    audioPublisher_->publish(std::move(msg));
 
     //DEBUG
     //RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "Audio Capture Running");

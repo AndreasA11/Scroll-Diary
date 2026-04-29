@@ -82,8 +82,8 @@ class AudioCaptureNode : public rclcpp::Node {
         LightweightVAD vad_;
 
         //ROS2 variables
-        rclcpp::TimerBase::SharedPtr publish_timer_;
-        rclcpp::Publisher<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr publisher_;
+        rclcpp::TimerBase::SharedPtr publishTimer_;
+        rclcpp::Publisher<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr audioPublisher_;
     
 }; //AudioCaptureNode{} class end
 

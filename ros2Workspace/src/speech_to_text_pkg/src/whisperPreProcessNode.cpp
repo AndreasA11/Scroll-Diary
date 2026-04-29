@@ -9,11 +9,11 @@ transcriptionPreProcessNode::transcriptionPreProcessNode()
     rclcpp::QoS audio_qos(rclcpp::KeepLast(10));
     audio_qos.best_effort();
 
-    publisher_ = create_publisher<speech_to_text_interfaces::msg::AudioStamped>("/whisper_audio", audio_qos);
-    raw_audio_subscriber_ = create_subscription<speech_to_text_interfaces::msg::AudioStamped>(
+    audioPublisher_ = create_publisher<speech_to_text_interfaces::msg::AudioStamped>("/whisper_audio", audio_qos);
+    rawAudioSubscriber_ = create_subscription<speech_to_text_interfaces::msg::AudioStamped>(
         "/raw_audio", rclcpp::QoS(10).best_effort(), 
         std::bind(&transcriptionPreProcessNode::audioCallback, this, std::placeholders::_1));
-    wake_word_bool_subscription_ = create_subscription<std_msgs::msg::Bool>(
+    wakeWordBoolSubscription_ = create_subscription<std_msgs::msg::Bool>(
         "/wakeState", 10, 
         std::bind(&transcriptionPreProcessNode::boolCallback, this, std::placeholders::_1));
     
@@ -37,7 +37,7 @@ void transcriptionPreProcessNode::publishAudio(size_t numSamples) {
     msg->channels = NUM_CHANNELS;
     msg->data.assign(samples_.begin(), samples_.begin() + numSamples);    
 
-    publisher_->publish(std::move(msg));
+    audioPublisher_->publish(std::move(msg));
 
     RCLCPP_INFO(get_logger(), "Chunk sent");
     
@@ -57,7 +57,9 @@ void transcriptionPreProcessNode::audioCallback(const speech_to_text_interfaces:
     // In audioCallback:
     // In audioCallback:
     if(!vad_.detectSpeech(msg->data.data(), msg->data.size())) {
-        if(currentWakeState == false) return;
+        if(currentWakeState_ == false) {
+            return;
+        }
 
         if(!isSilent_) {
             isSilent_ = true;
@@ -71,10 +73,10 @@ void transcriptionPreProcessNode::audioCallback(const speech_to_text_interfaces:
         silenceStartTime_ = now; // slide forward, not reset
         
         RCLCPP_INFO(get_logger(), "totalSilenceDuration_ %ld ms", 
-    std::chrono::duration_cast<std::chrono::milliseconds>(totalSilenceDuration_).count());
+        std::chrono::duration_cast<std::chrono::milliseconds>(totalSilenceDuration_).count());
 
         if(totalSilenceDuration_ >= std::chrono::seconds(15)) {
-            currentWakeState = false;
+            currentWakeState_ = false;
             isSilent_ = false;
             totalSilenceDuration_ = std::chrono::milliseconds(0);
             if(!samples_.empty()) {
@@ -100,7 +102,7 @@ void transcriptionPreProcessNode::audioCallback(const speech_to_text_interfaces:
         }
     }
 
-    if (currentWakeState) {
+    if (currentWakeState_) {
         samples_.insert(samples_.end(), msg->data.begin(), msg->data.end());      
     } else {
         //do nothing
@@ -125,8 +127,8 @@ void transcriptionPreProcessNode::audioCallback(const speech_to_text_interfaces:
 
 void transcriptionPreProcessNode::boolCallback(const std_msgs::msg::Bool::SharedPtr msg) {
     std::lock_guard<std::mutex> lock(state_mutex_);
-    if(msg->data && !currentWakeState) {
-        currentWakeState = true;
+    if(msg->data && !currentWakeState_) {
+        currentWakeState_ = true;
         auto preRoll = buffer_.peekLast(PRE_ROLL_SIZE);
         samples_.insert(samples_.end(), preRoll.begin(), preRoll.end());
     }

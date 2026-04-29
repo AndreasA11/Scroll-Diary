@@ -10,7 +10,7 @@ AudioCaptureNode::AudioCaptureNode()
     rclcpp::QoS audio_qos(rclcpp::KeepLast(10));
     audio_qos.best_effort();
 
-    publisher_ = create_publisher<speech_to_text_interfaces::msg::AudioStamped>("/raw_audio", audio_qos);
+    audioPublisher_ = create_publisher<speech_to_text_interfaces::msg::AudioStamped>("/raw_audio", audio_qos);
     
 
     ma_uint32 deviceIndex  = listDevices();
@@ -27,7 +27,7 @@ AudioCaptureNode::AudioCaptureNode()
     }
 
     //20ms publish timer
-    publish_timer_ = create_wall_timer(
+    publishTimer_ = create_wall_timer(
         std::chrono::milliseconds(PUBLISH_INTERVAL_MS),
         std::bind(&AudioCaptureNode::publishAudio, this)
     );
@@ -43,7 +43,7 @@ AudioCaptureNode::AudioCaptureNode()
 //DTOR
 
 AudioCaptureNode::~AudioCaptureNode() {
-    publish_timer_->cancel();
+    publishTimer_->cancel();
     stopLiveCapture();
     RCLCPP_INFO(get_logger(), "AudioCaptureNode stopped");
 }

@@ -24,7 +24,7 @@ class transcriptionPreProcessNode : public rclcpp::Node {
         void audioCallback(const speech_to_text_interfaces::msg::AudioStamped::SharedPtr msg);
         void boolCallback(const std_msgs::msg::Bool::SharedPtr msg);
 
-        bool currentWakeState = false;
+        bool currentWakeState_ = false;
         CircularBuffer<float> buffer_;
         std::vector<float> samples_;
         LightweightVAD vad_;
@@ -36,9 +36,9 @@ class transcriptionPreProcessNode : public rclcpp::Node {
         mutable std::mutex state_mutex_;
         
         //ROS2 publishers and subscriptions
-        rclcpp::Publisher<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr publisher_;
-        rclcpp::Subscription<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr raw_audio_subscriber_;
-        rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr wake_word_bool_subscription_;
+        rclcpp::Publisher<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr audioPublisher_;
+        rclcpp::Subscription<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr rawAudioSubscriber_;
+        rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr wakeWordBoolSubscription_;
 
     public:
         explicit transcriptionPreProcessNode();

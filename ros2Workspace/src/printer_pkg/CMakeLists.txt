@@ -17,7 +17,9 @@ add_executable(printing_node
 )
 
 ament_target_dependencies(
+  printing_node
   rclcpp
+  std_msgs
 )
 
 target_include_directories(printing_node PRIVATE

@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
+#include "speech_to_text_interfaces/msg/detail/audio_stamped__type_support.h"
 #include "speech_to_text_interfaces/msg/detail/audio_stamped__functions.h"
 #include "speech_to_text_interfaces/msg/detail/audio_stamped__struct.h"
-#include "speech_to_text_interfaces/msg/detail/audio_stamped__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

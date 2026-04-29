@@ -6,21 +6,20 @@
 
 class LightweightVAD {
 private:
-    float noiseFloor;
-    float speechMultiplier;
-    float noiseAdaptRate;
-    
-    float zcr_threshold;      // Zero-crossing rate
+    float noiseFloor_;
+    float speechMultiplier_;
+    float noiseAdaptRate_;
+    float zcrThreshold_;
     int minSilenceFrames_;      // Min consecutive frames to confirm silence
     int speechFrameCount_;
     int silenceFrameCount_;
     
 public:
     LightweightVAD(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
-        float speechMultiplierIn = 2.0f, float zcrThresh = 0.05f, int minFrames = 8)
-        : noiseFloor(noiseFloorIn), noiseAdaptRate(noiseAdaptRateIn), 
-        speechMultiplier(speechMultiplierIn), zcr_threshold(zcrThresh), 
-          minSilenceFrames_(minFrames), speechFrameCount_(0), silenceFrameCount_(0) {}
+        float speechMultiplierIn = 2.0f, float zcrIn = 0.02, int minFrames = 8)
+        : noiseFloor_(noiseFloorIn), noiseAdaptRate_(noiseAdaptRateIn), 
+            speechMultiplier_(speechMultiplierIn), zcrThreshold_(zcrIn), minSilenceFrames_(minFrames), 
+            speechFrameCount_(0), silenceFrameCount_(0) {}
 
     //no copying
     LightweightVAD(const LightweightVAD&) = delete;
@@ -53,11 +52,11 @@ public:
         }
     
         // 3. Speech detection logic
-        bool isSpeech = (energy > noiseFloor * speechMultiplier) && (zcr > zcr_threshold);
+        bool isSpeech = (energy > noiseFloor_ * speechMultiplier_) && (zcr > zcrThreshold_);
     
         if(!isSpeech) {
             if(silenceFrameCount_ >= minSilenceFrames_) {
-                noiseFloor = (1.0f - noiseAdaptRate) * noiseFloor + noiseAdaptRate * energy;
+                noiseFloor_ = (1.0f - noiseAdaptRate_) * noiseFloor_ + noiseAdaptRate_ * energy;
             }
             silenceFrameCount_++;
             speechFrameCount_ = 0;
@@ -66,7 +65,7 @@ public:
             silenceFrameCount_ = 0;
         }
 
-        noiseFloor = std::max(noiseFloor, 1e-6f);
+        noiseFloor_ = std::max(noiseFloor_, 1e-6f);
 
         // Speech is confirmed immediately — one frame is enough
         // Silence requires minSilenceFrames consecutive frames to avoid mid-word gaps

@@ -27,7 +27,7 @@ whisperTranscriptionNode::whisperTranscriptionNode()
 
     transcriptionStatePublisher_ = create_publisher<std_msgs::msg::Bool>("/transcriptionState", 10);
 
-    cleaned_audio_subscriber_ = create_subscription<speech_to_text_interfaces::msg::AudioStamped>(
+    cleanedAudioSubscriber_ = create_subscription<speech_to_text_interfaces::msg::AudioStamped>(
         "/whisper_audio", rclcpp::QoS(10).best_effort(), 
         std::bind(&whisperTranscriptionNode::audioCallback, this, std::placeholders::_1));
 

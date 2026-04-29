@@ -1,7 +1,8 @@
 #include "printingNode.hpp"
 
 
-PrintingNode::PrintingNode() {
+printingNode::printingNode() 
+: rclcpp::Node("printing_node") {
     transcribedTextSubscriber_ = create_subscription<std_msgs::msg::String>(
         "/transcription", 10, std::bind(&printingNode::transcriptionCallback, this, std::placeholders::_1));
     
@@ -14,23 +15,23 @@ PrintingNode::PrintingNode() {
     }
 }
 
-PrintingNode::~PrintingNode() {
+printingNode::~printingNode() {
     
 }
 
-bool PrintingNode::initPrinter() {
+bool printingNode::initPrinter() {
 
 }
 
-void PrintingNode::transcriptionCallback() {
+void printingNode::transcriptionCallback(const std_msgs::msg::String::SharedPtr msg) {
 
 }
 
-void PrintingNode::transcriptionStateCallback() {
+void printingNode::transcriptionStateCallback() {
     
 }
 
-void PrintingNode::printTranscription() {
+void printingNode::printTranscription() {
 
 }
 
@@ -39,7 +40,7 @@ int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
 
     try {
-        rclcpp::spin(std::make_shared<PrintingNode>());
+        rclcpp::spin(std::make_shared<printingNode>());
     } catch (const std::exception& e) {
         RCLCPP_FATAL(rclcpp::get_logger("main"), "Fatal: %s", e.what());
         rclcpp::shutdown();

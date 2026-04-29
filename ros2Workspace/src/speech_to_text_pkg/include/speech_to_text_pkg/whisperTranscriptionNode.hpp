@@ -95,7 +95,7 @@ class whisperTranscriptionNode : public rclcpp::Node {
 
         rclcpp::Publisher<std_msgs::msg::String>::SharedPtr transcriptionPublisher_;
         rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr transcriptionStatePublisher_;
-        rclcpp::Subscription<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr cleaned_audio_subscriber_;
+        rclcpp::Subscription<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr cleanedAudioSubscriber_;
         
 
     public:
