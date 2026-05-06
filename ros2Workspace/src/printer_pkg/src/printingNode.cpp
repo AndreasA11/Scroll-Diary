@@ -3,36 +3,68 @@
 
 printingNode::printingNode() 
 : rclcpp::Node("printing_node") {
+    this->declare_parameter<std::string>("printer_device", "/dev/usb/lp2");
+    this->get_parameter("printer_device", printerDevice_);
+    
+    if (!initPrinter()) {
+        RCLCPP_FATAL(get_logger(), "Failed to open printer");
+        throw std::runtime_error("Printer open failed");
+    }
+
     transcribedTextSubscriber_ = create_subscription<std_msgs::msg::String>(
         "/transcription", 10, std::bind(&printingNode::transcriptionCallback, this, std::placeholders::_1));
     
     transcriptionStateSubscriber_ = create_subscription<std_msgs::msg::Bool> 
     ("/transcriptionState", 10, std::bind(&printingNode::transcriptionStateCallback, this, std::placeholders::_1));
 
-
-    if(!initPrinter()) {
-        RCLCPP_FATAL(get_logger(), "connection to printer failed");
-    }
+    
+    
 }
 
 printingNode::~printingNode() {
-    
+    if(fd_ >= 0) {
+        close(fd_);
+    }
 }
 
 bool printingNode::initPrinter() {
-
+    fd_ = open(printerDevice_, O_WRONLY);
+    if(fd_ < 0) {
+        RCLCPP_ERROR(get_logger(), "printer failed to connect");
+        return false;
+    }
+    return true;
 }
 
 void printingNode::transcriptionCallback(const std_msgs::msg::String::SharedPtr msg) {
-
+    fullTranscription += msg->data;
+    fullTranscription += "\n";
 }
 
-void printingNode::transcriptionStateCallback() {
-    
+void printingNode::transcriptionStateCallback(const std_msgs::msg::Bool::SharedPtr state) {
+    if(state) {
+        if(!transcriptionStarted_) {
+            transcriptionStarted_ = true;
+        }
+        sendingTranscription_ = true;
+    } else {
+        sendingTranscription_ = false;
+        printTranscription();
+    }
 }
 
 void printingNode::printTranscription() {
-
+    if(transcriptionStarted_ && !sendingTranscription_) {
+        if(!fullTranscription_.empty()) {
+            write(fd_, fullTranscription_.c_str(), fullTranscription.size());
+            write(fd_, "\n\n\n", 3);
+            
+        }
+        fullTranscription_.clear();
+        close(fd_);
+        //send print to make it actually print? or does it print as bytes come in?        
+        transcriptionStarted_ = false;
+    }
 }
 
 

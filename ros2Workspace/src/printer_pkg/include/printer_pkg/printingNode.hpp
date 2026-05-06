@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <cstring>
+#include <atomic>
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "std_msgs/msg/bool.hpp"
@@ -20,11 +21,14 @@ class printingNode : public rclcpp::Node {
         void transcriptionStateCallback();
         void printTranscription();
         
-        
+        bool sendingTranscription_ = false;
+        bool transcriptionStarted_ = false;
+        int fd_;
+
         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr transcribedTextSubscriber_;
         rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr transcriptionStateSubscriber_;
 
         //we are going to append all the transcribed chunks we received and eventually print this
-        std::string fullTranscription = "";
-
+        std::string fullTranscription_ = "";
+        std::string printerDevice_;
 }; 
