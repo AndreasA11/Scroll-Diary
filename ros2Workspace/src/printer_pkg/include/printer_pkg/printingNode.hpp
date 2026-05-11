@@ -17,8 +17,8 @@ class printingNode : public rclcpp::Node {
     private:
         bool initPrinter();
 
-        void transcriptionCallback();
-        void transcriptionStateCallback();
+        void transcriptionCallback(const std_msgs::msg::String::SharedPtr msg);
+        void transcriptionStateCallback(const std_msgs::msg::Bool::SharedPtr msg);
         void printTranscription();
         
         bool sendingTranscription_ = false;

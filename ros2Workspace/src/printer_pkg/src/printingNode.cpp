@@ -14,8 +14,8 @@ printingNode::printingNode()
     transcribedTextSubscriber_ = create_subscription<std_msgs::msg::String>(
         "/transcription", 10, std::bind(&printingNode::transcriptionCallback, this, std::placeholders::_1));
     
-    transcriptionStateSubscriber_ = create_subscription<std_msgs::msg::Bool> 
-    ("/transcriptionState", 10, std::bind(&printingNode::transcriptionStateCallback, this, std::placeholders::_1));
+    transcriptionStateSubscriber_ = create_subscription<std_msgs::msg::Bool>( 
+    "/transcriptionState", 10, std::bind(&printingNode::transcriptionStateCallback, this, std::placeholders::_1));
 
     
     
@@ -28,7 +28,7 @@ printingNode::~printingNode() {
 }
 
 bool printingNode::initPrinter() {
-    fd_ = open(printerDevice_, O_WRONLY);
+    fd_ = open(printerDevice_.c_str(), O_WRONLY);
     if(fd_ < 0) {
         RCLCPP_ERROR(get_logger(), "printer failed to connect");
         return false;
@@ -37,8 +37,8 @@ bool printingNode::initPrinter() {
 }
 
 void printingNode::transcriptionCallback(const std_msgs::msg::String::SharedPtr msg) {
-    fullTranscription += msg->data;
-    fullTranscription += "\n";
+    fullTranscription_ += msg->data;
+    fullTranscription_ += "\n";
 }
 
 void printingNode::transcriptionStateCallback(const std_msgs::msg::Bool::SharedPtr state) {
@@ -56,7 +56,7 @@ void printingNode::transcriptionStateCallback(const std_msgs::msg::Bool::SharedP
 void printingNode::printTranscription() {
     if(transcriptionStarted_ && !sendingTranscription_) {
         if(!fullTranscription_.empty()) {
-            write(fd_, fullTranscription_.c_str(), fullTranscription.size());
+            write(fd_, fullTranscription_.c_str(), fullTranscription_.size());
             write(fd_, "\n\n\n", 3);
             
         }

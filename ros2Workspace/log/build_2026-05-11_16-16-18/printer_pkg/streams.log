@@ -1,0 +1,11 @@
+[0.047s] Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/printer_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/printer_pkg -- -j4 -l4
+[0.146s] [ 50%] [32mBuilding CXX object CMakeFiles/printing_node.dir/src/printingNode.cpp.o[0m
+[5.399s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/printer_pkg/src/printingNode.cpp:[m[K In member function ‘[01m[Kvoid printingNode::[01;32m[KprintTranscription[m[K()[m[K’:
+[5.399s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/printer_pkg/src/printingNode.cpp:59:52:[m[K [01;31m[Kerror: [m[K‘[01m[KfullTranscription[m[K’ was not declared in this scope; did you mean ‘[01m[KfullTranscription_[m[K’?
+[5.399s]    59 |             write(fd_, fullTranscription_.c_str(), [01;31m[KfullTranscription[m[K.size());
+[5.400s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[5.400s]       |                                                    [32m[KfullTranscription_[m[K
+[9.776s] gmake[2]: *** [CMakeFiles/printing_node.dir/build.make:79: CMakeFiles/printing_node.dir/src/printingNode.cpp.o] Error 1
+[9.776s] gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/printing_node.dir/all] Error 2
+[9.776s] gmake: *** [Makefile:146: all] Error 2
+[9.779s] Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/printer_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/printer_pkg -- -j4 -l4
