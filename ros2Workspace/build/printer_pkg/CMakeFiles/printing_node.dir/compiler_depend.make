@@ -794,8 +794,209 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h
 
+printing_node: /lib/aarch64-linux-gnu/libc.so.6 \
+  /lib/aarch64-linux-gnu/libfmt.so.9 \
+  /lib/aarch64-linux-gnu/liblttng-ust-tracepoint.so.1 \
+  /lib/aarch64-linux-gnu/libm.so.6 \
+  /lib/aarch64-linux-gnu/libmvec.so.1 \
+  /lib/aarch64-linux-gnu/libnuma.so.1 \
+  /lib/aarch64-linux-gnu/libspdlog.so.1.12 \
+  /lib/aarch64-linux-gnu/libyaml-0.so.2 \
+  /lib/ld-linux-aarch64.so.1 \
+  /opt/ros/jazzy/lib/libament_index_cpp.so \
+  /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_py.so \
+  /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so \
+  /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so \
+  /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so \
+  /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so \
+  /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so \
+  /opt/ros/jazzy/lib/libfastcdr.so.2.2.5 \
+  /opt/ros/jazzy/lib/liblibstatistics_collector.so \
+  /opt/ros/jazzy/lib/librcl.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_py.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so \
+  /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so \
+  /opt/ros/jazzy/lib/librcl_logging_interface.so \
+  /opt/ros/jazzy/lib/librcl_logging_spdlog.so \
+  /opt/ros/jazzy/lib/librcl_yaml_param_parser.so \
+  /opt/ros/jazzy/lib/librclcpp.so \
+  /opt/ros/jazzy/lib/librcpputils.so \
+  /opt/ros/jazzy/lib/librcutils.so \
+  /opt/ros/jazzy/lib/librmw.so \
+  /opt/ros/jazzy/lib/librmw_implementation.so \
+  /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_generator_py.so \
+  /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_c.so \
+  /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so \
+  /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so \
+  /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so \
+  /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so \
+  /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so \
+  /opt/ros/jazzy/lib/librosidl_runtime_c.so \
+  /opt/ros/jazzy/lib/librosidl_typesupport_c.so \
+  /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so \
+  /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_cpp.so \
+  /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so \
+  /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so \
+  /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_c.so \
+  /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so \
+  /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so \
+  /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so \
+  /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so \
+  /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_py.so \
+  /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_c.so \
+  /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so \
+  /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so \
+  /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so \
+  /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so \
+  /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so \
+  /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so \
+  /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so \
+  /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so \
+  /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so \
+  /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so \
+  /opt/ros/jazzy/lib/libtracetools.so \
+  /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so \
+  /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_py.so \
+  /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so \
+  /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_cpp.so \
+  /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_c.so \
+  /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_cpp.so \
+  /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_c.so \
+  /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_cpp.so \
+  /usr/lib/aarch64-linux-gnu/libc_nonshared.a \
+  /usr/lib/aarch64-linux-gnu/Scrt1.o \
+  /usr/lib/aarch64-linux-gnu/crti.o \
+  /usr/lib/aarch64-linux-gnu/crtn.o \
+  /usr/lib/aarch64-linux-gnu/libc.so \
+  /usr/lib/aarch64-linux-gnu/libdl.a \
+  /usr/lib/aarch64-linux-gnu/libgcc_s.so.1 \
+  /usr/lib/aarch64-linux-gnu/liblttng-ust-common.so \
+  /usr/lib/aarch64-linux-gnu/liblttng-ust.so \
+  /usr/lib/aarch64-linux-gnu/libm.so \
+  /usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o \
+  /usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o \
+  /usr/lib/gcc/aarch64-linux-gnu/13/libatomic.so \
+  /usr/lib/gcc/aarch64-linux-gnu/13/libgcc.a \
+  /usr/lib/gcc/aarch64-linux-gnu/13/libgcc_s.so \
+  /usr/lib/gcc/aarch64-linux-gnu/13/libstdc++.so \
+  CMakeFiles/printing_node.dir/src/printingNode.cpp.o
+
+
+/usr/lib/gcc/aarch64-linux-gnu/13/libstdc++.so:
+
+/usr/lib/gcc/aarch64-linux-gnu/13/libgcc_s.so:
+
+/usr/lib/gcc/aarch64-linux-gnu/13/libgcc.a:
+
+/usr/lib/gcc/aarch64-linux-gnu/13/crtbeginS.o:
+
+/usr/lib/aarch64-linux-gnu/liblttng-ust.so:
+
+/usr/lib/aarch64-linux-gnu/liblttng-ust-common.so:
+
+/usr/lib/aarch64-linux-gnu/libgcc_s.so.1:
+
+/usr/lib/aarch64-linux-gnu/libdl.a:
+
+/usr/lib/aarch64-linux-gnu/crti.o:
+
+/usr/lib/aarch64-linux-gnu/libc_nonshared.a:
+
+/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_cpp.so:
+
+/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_c.so:
+
+/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_c.so:
+
+/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so:
+
+/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so:
+
+/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so:
+
+/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so:
+
+/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so:
+
+/opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so:
+
+/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so:
+
+/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so:
+
+/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_cpp.so:
+
+/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_c.so:
+
+/opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so:
+
+/opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so:
+
+/opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so:
+
+/opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_cpp.so:
+
+/opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so:
+
+/opt/ros/jazzy/lib/librosidl_runtime_c.so:
+
+/opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so:
+
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so:
+
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so:
+
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_cpp.so:
+
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_generator_py.so:
+
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_generator_c.so:
+
+/opt/ros/jazzy/lib/librmw.so:
+
+/opt/ros/jazzy/lib/librcpputils.so:
+
+/opt/ros/jazzy/lib/librcl_yaml_param_parser.so:
+
+/opt/ros/jazzy/lib/librcl_logging_interface.so:
+
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so:
+
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so:
+
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so:
+
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so:
+
+/opt/ros/jazzy/lib/liblibstatistics_collector.so:
+
+CMakeFiles/printing_node.dir/src/printingNode.cpp.o:
+
+/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so:
+
+/lib/ld-linux-aarch64.so.1:
+
+/lib/aarch64-linux-gnu/libyaml-0.so.2:
 
 /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h:
+
+/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so:
 
 /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h:
 
@@ -805,6 +1006,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /usr/lib/gcc/aarch64-linux-gnu/13/include/stdalign.h:
 
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_c.so:
+
 /usr/include/wctype.h:
 
 /usr/include/wchar.h:
@@ -812,6 +1015,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /usr/include/unistd.h:
 
 /usr/include/time.h:
+
+/lib/aarch64-linux-gnu/libc.so.6:
 
 /usr/include/stdlib.h:
 
@@ -822,6 +1027,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /usr/include/locale.h:
 
 /usr/include/linux/types.h:
+
+/opt/ros/jazzy/lib/librcl.so:
 
 /usr/include/linux/stddef.h:
 
@@ -889,15 +1096,23 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /usr/include/c++/13/limits:
 
+/usr/lib/aarch64-linux-gnu/Scrt1.o:
+
 /usr/include/c++/13/iterator:
 
 /usr/include/c++/13/istream:
+
+/usr/lib/gcc/aarch64-linux-gnu/13/crtendS.o:
+
+/usr/lib/aarch64-linux-gnu/libm.so:
 
 /usr/include/c++/13/ios:
 
 /usr/include/c++/13/iomanip:
 
 /usr/include/c++/13/future:
+
+/opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so:
 
 /usr/include/c++/13/functional:
 
@@ -947,21 +1162,33 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /usr/include/c++/13/bits/stringfwd.h:
 
+/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so:
+
 /usr/include/c++/13/bits/string_view.tcc:
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
 /usr/include/c++/13/bits/stream_iterator.h:
 
+/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so:
+
 /usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/c++/13/bits/stl_set.h:
+
+/lib/aarch64-linux-gnu/libnuma.so.1:
 
 /usr/include/c++/13/bits/stl_relops.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
+/lib/aarch64-linux-gnu/libspdlog.so.1.12:
+
 /usr/include/c++/13/bits/stl_queue.h:
+
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so:
+
+/opt/ros/jazzy/lib/libfastcdr.so.2.2.5:
 
 /usr/include/c++/13/bits/stl_multimap.h:
 
@@ -1007,11 +1234,17 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /usr/include/c++/13/bits/ptr_traits.h:
 
+/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_cpp.so:
+
 /usr/include/c++/13/bits/parse_numbers.h:
+
+/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so:
 
 /usr/include/c++/13/bits/ostream.tcc:
 
 /usr/include/c++/13/bits/node_handle.h:
+
+/opt/ros/jazzy/lib/librcutils.so:
 
 /usr/include/c++/13/bits/new_allocator.h:
 
@@ -1043,11 +1276,15 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /usr/include/c++/13/bits/exception_ptr.h:
 
+/usr/lib/aarch64-linux-gnu/libc.so:
+
 /usr/include/c++/13/bits/exception_defines.h:
 
 /usr/include/c++/13/bits/exception.h:
 
 /usr/include/c++/13/bits/deque.tcc:
+
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
@@ -1072,6 +1309,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /usr/include/c++/13/bits/atomic_base.h:
 
 /usr/include/c++/13/bits/allocated_ptr.h:
+
+/opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so:
 
 /usr/include/c++/13/bits/align.h:
 
@@ -1129,6 +1368,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
 
+/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_py.so:
+
 /usr/include/aarch64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/13/bits/unique_lock.h:
@@ -1140,6 +1381,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /opt/ros/jazzy/include/rmw/rmw/get_topic_names_and_types.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
+
+/lib/aarch64-linux-gnu/libmvec.so.1:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_options.hpp:
 
@@ -1177,6 +1420,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_options.hpp:
 
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so:
+
 /usr/include/c++/13/streambuf:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface.hpp:
@@ -1201,7 +1446,11 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
 
+/usr/lib/aarch64-linux-gnu/crtn.o:
+
 /opt/ros/jazzy/include/rcutils/rcutils/allocator.h:
+
+/lib/aarch64-linux-gnu/libfmt.so.9:
 
 /opt/ros/jazzy/include/rmw/rmw/security_options.h:
 
@@ -1233,7 +1482,11 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/time_members.h:
 
+/opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so:
+
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
+
+/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_setting.hpp:
 
@@ -1263,6 +1516,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
+/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/guard_condition.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
@@ -1276,6 +1531,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/types/sigval_t.h:
+
+/opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_c.so:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_notify_waitable.hpp:
 
@@ -1433,6 +1690,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h:
 
+/opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
@@ -1452,6 +1711,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /usr/include/c++/13/bits/chrono.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
+
+/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so:
 
 /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
@@ -1523,6 +1784,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 
+/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so:
+
 /opt/ros/jazzy/include/rcl/rcl/types.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:
@@ -1559,6 +1822,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp:
 
+/usr/lib/gcc/aarch64-linux-gnu/13/libatomic.so:
+
 /usr/include/c++/13/bits/shared_ptr.h:
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/pointer_traits.hpp:
@@ -1592,6 +1857,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_info.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
+
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_base.hpp:
 
@@ -1637,6 +1904,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
 
+/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message_type.hpp:
@@ -1676,6 +1945,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+
+/opt/ros/jazzy/lib/librclcpp.so:
 
 /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -1720,6 +1991,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /usr/include/aarch64-linux-gnu/bits/locale.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp:
+
+/opt/ros/jazzy/lib/librosidl_typesupport_cpp.so:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
@@ -1821,6 +2094,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
 
+/opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_py.so:
+
 /usr/include/c++/13/deque:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
@@ -1885,6 +2160,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/rmw/rmw/event.h:
 
+/lib/aarch64-linux-gnu/libm.so.6:
+
 /opt/ros/jazzy/include/rmw/rmw/qos_profiles.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/logging.h:
@@ -1894,6 +2171,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_lost.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/logging_macros.h:
+
+/opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_py.so:
 
 /opt/ros/jazzy/include/rcutils/rcutils/qsort.h:
 
@@ -1931,6 +2210,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp:
 
+/opt/ros/jazzy/lib/librcl_logging_spdlog.so:
+
 /opt/ros/jazzy/include/rmw/rmw/error_handling.h:
 
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
@@ -1948,6 +2229,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /usr/include/asm-generic/posix_types.h:
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_type.h:
+
+/opt/ros/jazzy/lib/librosidl_typesupport_c.so:
 
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp:
 
@@ -2031,6 +2314,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
+/lib/aarch64-linux-gnu/liblttng-ust-tracepoint.so.1:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_traits.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/types.h:
@@ -2057,9 +2342,13 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /usr/include/aarch64-linux-gnu/bits/sigstksz.h:
 
+/opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so:
+
 /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/types.h:
+
+/opt/ros/jazzy/lib/libament_index_cpp.so:
 
 /opt/ros/jazzy/include/rmw/rmw/topic_endpoint_info.h:
 
@@ -2072,6 +2361,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /usr/include/c++/13/bits/basic_string.tcc:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
+
+/opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_py.so:
 
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
@@ -2098,6 +2389,10 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h:
 
 /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h:
+
+/opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so:
+
+/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so:
 
 /usr/include/c++/13/typeinfo:
 
@@ -2153,6 +2448,10 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_source__struct.h:
 
+/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so:
+
+/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so:
+
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__functions.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/get_type_description.h:
@@ -2195,6 +2494,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /usr/include/aarch64-linux-gnu/bits/environments.h:
 
+/opt/ros/jazzy/lib/librmw_implementation.so:
+
 /usr/include/c++/13/bits/stl_bvector.h:
 
 /usr/include/aarch64-linux-gnu/bits/floatn-common.h:
@@ -2202,6 +2503,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /usr/include/aarch64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdint-intn.h:
+
+/opt/ros/jazzy/lib/libtracetools.so:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__type_support.h:
 
@@ -2257,6 +2560,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 
 /usr/include/aarch64-linux-gnu/bits/sigevent-consts.h:
 
+/opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/siginfo-arch.h:
@@ -2272,6 +2577,8 @@ CMakeFiles/printing_node.dir/src/printingNode.cpp.o: /home/dredre/DevStuff/scrol
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/signum-generic.h:
+
+/opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so:
 
 /usr/include/c++/13/stdexcept:
 

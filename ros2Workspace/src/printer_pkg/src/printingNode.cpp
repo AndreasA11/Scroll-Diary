@@ -33,6 +33,10 @@ bool printingNode::initPrinter() {
         RCLCPP_ERROR(get_logger(), "printer failed to connect");
         return false;
     }
+    std::string test = "printer connected, hello from pi";
+    write(fd_, test.c_str(), test.size());
+    write(fd_, "\n\n\n", 3);
+    RCLCPP_INFO(get_logger(), "printer connected!");
     return true;
 }
 
@@ -58,7 +62,7 @@ void printingNode::printTranscription() {
         if(!fullTranscription_.empty()) {
             write(fd_, fullTranscription_.c_str(), fullTranscription_.size());
             write(fd_, "\n\n\n", 3);
-            
+            RCLCPP_INFO(get_logger(), fullTranscription_.c_str());
         }
         fullTranscription_.clear();
         close(fd_);

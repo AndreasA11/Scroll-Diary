@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(speech_to_text_pkg REQUIRED)
 
 include_directories(include)
 
@@ -27,5 +28,9 @@ target_include_directories(printing_node PRIVATE
   src
 )
 
+install(TARGETS
+  printing_node
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 ament_package()
