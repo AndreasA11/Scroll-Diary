@@ -1,0 +1,99 @@
+[  5%] [32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o[0m
+[ 28%] Built target ggml-base
+[ 37%] Built target audio_capture_node
+[ 80%] Built target ggml-cpu
+[ 85%] Built target ggml
+[ 91%] Built target whisper
+[ 94%] [32mBuilding CXX object CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o[0m
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp:9[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In constructor ‘[01m[KLightweightVAD::[01;32m[KLightweightVAD[m[K(float, float, float, float, int)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KLightweightVAD::noiseAdaptRate_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   11 |     float [01;35m[KnoiseAdaptRate_[m[K;
+      |           [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat LightweightVAD::speechMultiplier_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   10 |     float [01;35m[KspeechMultiplier_[m[K;
+      |           [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:18:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   18 |     [01;35m[KLightweightVAD[m[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
+      |     [01;35m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:86:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsgs[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+   86 |         void listeningStateCallback(const std::[01;31m[Kmsgs[m[K::msg::Bool::SharedPtr msg);
+      |                                                [01;31m[K^~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:86:57:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   86 |         void listeningStateCallback(const std::msgs::msg[01;31m[K::[m[KBool::SharedPtr msg);
+      |                                                         [01;31m[K^~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:86:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   86 |         void listeningStateCallback[34m[K([m[Kconst std::msgs::msg[01;31m[K:[m[K[32m[K:[m[KBool::SharedPtr msg);
+      |                                    [34m[K~[m[K                    [01;31m[K^[m[K[32m[K~[m[K
+      |                                                         [32m[K)[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:86:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   86 |         void listeningStateCallback(const std::msgs::[01;31m[Kmsg[m[K::Bool::SharedPtr msg);
+      |                                                      [01;31m[K^~~[m[K
+      |                                                         [32m[K;[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:86:59:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type; did you mean ‘[01m[Kbool[m[K’?
+   86 |         void listeningStateCallback(const std::msgs::msg::[01;31m[KBool[m[K::SharedPtr msg);
+      |                                                           [01;31m[K^~~~[m[K
+      |                                                           [32m[Kbool[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:[m[K In constructor ‘[01m[KwhisperTranscriptionNode::[01;32m[KwhisperTranscriptionNode[m[K()[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:37:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   37 |     [01;31m[K)[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:[m[K At global scope:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:114:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsgs[m[K’ in namespace ‘[01m[Kstd[m[K’ does not name a type
+  114 | void listeningStateCallback(const std::[01;31m[Kmsgs[m[K::msg::Bool::SharedPtr msg) {
+      |                                        [01;31m[K^~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:114:49:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  114 | void listeningStateCallback(const std::msgs::msg[01;31m[K::[m[KBool::SharedPtr msg) {
+      |                                                 [01;31m[K^~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:114:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  114 | void listeningStateCallback[34m[K([m[Kconst std::msgs::msg[01;31m[K:[m[K[32m[K:[m[KBool::SharedPtr msg) {
+      |                            [34m[K~[m[K                    [01;31m[K^[m[K[32m[K~[m[K
+      |                                                 [32m[K)[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:114:49:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  114 | void listeningStateCallback(const std::msgs::msg[01;31m[K::[m[KBool::SharedPtr msg) {
+      |                                                 [01;31m[K^~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:[m[K In member function ‘[01m[Kvoid whisperTranscriptionNode::[01;32m[KtranscriptionWorker[m[K()[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:185:19:[m[K [01;31m[Kerror: [m[K‘[01m[KdoneListening[m[K’ was not declared in this scope; did you mean ‘[01m[KdoneListening_[m[K’?
+  185 |         } else if([01;31m[KdoneListening[m[K.load() && chunkQueue_.empty()) {
+      |                   [01;31m[K^~~~~~~~~~~~~[m[K
+      |                   [32m[KdoneListening_[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:189:13:[m[K [01;31m[Kerror: [m[K‘[01m[KtrnascriptionSTate_[m[K’ was not declared in this scope; did you mean ‘[01m[KtranscriptionState_[m[K’?
+  189 |             [01;31m[KtrnascriptionSTate_[m[K.store(false);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |             [32m[KtranscriptionState_[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:42[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:1[m[K:
+/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (whisperTranscriptionNode::*(whisperTranscriptionNode*, std::_Placeholder<1>))(...)> >[m[K’:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp:396:25:[m[K   recursively required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT> struct rclcpp::detail::SubscriptionCallbackTypeHelper<MessageT, CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value, void>::type> [35m[K[with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (whisperTranscriptionNode::*(whisperTranscriptionNode*, std::_Placeholder<1>))(...)>][m[K[m[K’
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp:396:25:[m[K   required from ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::[01;32m[Kset[m[K(CallbackT) [35m[K[with CallbackT = std::_Bind<void (whisperTranscriptionNode::*(whisperTranscriptionNode*, std::_Placeholder<1>))(...)>; MessageT = std_msgs::msg::Bool_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:93:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::[01;32m[Kcreate_subscription_factory[m[K(CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<topic_statistics::SubscriptionTopicStatistics>) [35m[K[with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (whisperTranscriptionNode::*(whisperTranscriptionNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = Subscription<std_msgs::msg::Bool_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K[m[K’
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:121:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::[01;32m[Kcreate_subscription[m[K(NodeParametersT&, NodeTopicsT&, const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [35m[K[with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (whisperTranscriptionNode::*(whisperTranscriptionNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K[m[K’
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:190:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::[01;32m[Kcreate_subscription[m[K(NodeT&, const std::string&, const QoS&, CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [35m[K[with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (whisperTranscriptionNode::*(whisperTranscriptionNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = Subscription<std_msgs::msg::Bool_<std::allocator<void> > >; MessageMemoryStrategyT = message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; NodeT = Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K[m[K’
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::[01;32m[Kcreate_subscription[m[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [35m[K[with MessageT = std_msgs::msg::Bool_<std::allocator<void> >; CallbackT = std::_Bind<void (whisperTranscriptionNode::*(whisperTranscriptionNode*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<std_msgs::msg::Bool_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Bool_<std::allocator<void> >, std::allocator<void> > >][m[K[m[K’
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:34:73:[m[K   required from here
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   51 |   using [01;31m[Karguments[m[K = typename tuple_tail<
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   57 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   59 |   using [01;31m[Kreturn_type[m[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/whisper_transcription_node.dir/build.make:79: CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:337: CMakeFiles/whisper_transcription_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 97%] [32m[1mLinking CXX executable transcription_pre_process_node[0m
+[ 97%] Built target transcription_pre_process_node
+gmake: *** [Makefile:146: all] Error 2

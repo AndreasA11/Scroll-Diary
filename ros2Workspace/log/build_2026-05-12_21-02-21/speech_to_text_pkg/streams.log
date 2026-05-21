@@ -1,0 +1,80 @@
+[0.095s] Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg': CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg -- -j4 -l4
+[0.309s] [  2%] [32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o[0m
+[0.336s] [ 28%] Built target ggml-base
+[0.340s] [ 37%] Built target audio_capture_node
+[0.425s] [ 80%] Built target ggml-cpu
+[0.495s] [ 85%] Built target ggml
+[0.603s] [ 91%] Built target whisper
+[0.732s] [ 97%] Built target whisper_transcription_node
+[10.251s] In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp:9[m[K,
+[10.254s]                  from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:1[m[K:
+[10.255s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In constructor ‘[01m[KLightweightVAD::[01;32m[KLightweightVAD[m[K(float, float, float, float, int)[m[K’:
+[10.259s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KLightweightVAD::noiseAdaptRate_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.260s]    11 |     float [01;35m[KnoiseAdaptRate_[m[K;
+[10.260s]       |           [01;35m[K^~~~~~~~~~~~~~~[m[K
+[10.260s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat LightweightVAD::speechMultiplier_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.261s]    10 |     float [01;35m[KspeechMultiplier_[m[K;
+[10.261s]       |           [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[10.261s] [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:18:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.261s]    18 |     [01;35m[KLightweightVAD[m[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
+[10.265s]       |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[37.763s] [100%] [32m[1mLinking CXX executable transcription_pre_process_node[0m
+[38.368s] [100%] Built target transcription_pre_process_node
+[38.401s] Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg' returned '0': CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg -- -j4 -l4
+[38.409s] Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg': CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/local/bin/cmake --install /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg
+[38.414s] -- Install configuration: "Release"
+[38.418s] -- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/transcription_pre_process_node
+[38.426s] -- Set non-toolchain portion of runtime path of "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/transcription_pre_process_node" to ""
+[38.426s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/audio_capture_node
+[38.428s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/whisper_transcription_node
+[38.433s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/wakeWordNode.py
+[38.438s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/ament_index/resource_index/package_run_dependencies/speech_to_text_pkg
+[38.439s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/ament_index/resource_index/parent_prefix_path/speech_to_text_pkg
+[38.439s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/ament_prefix_path.sh
+[38.439s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/ament_prefix_path.dsv
+[38.439s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/path.sh
+[38.440s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/path.dsv
+[38.440s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.bash
+[38.440s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.sh
+[38.440s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.zsh
+[38.444s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.dsv
+[38.448s] -- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/package.dsv
+[38.449s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/ament_index/resource_index/packages/speech_to_text_pkg
+[38.451s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/cmake/speech_to_text_pkgConfig.cmake
+[38.452s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/cmake/speech_to_text_pkgConfig-version.cmake
+[38.452s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/package.xml
+[38.453s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libwhisper.so.1.8.3
+[38.458s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libwhisper.so.1
+[38.459s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libwhisper.so
+[38.460s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/whisper.h
+[38.460s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/whisper/whisper-config.cmake
+[38.460s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/whisper/whisper-version.cmake
+[38.461s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/pkgconfig/whisper.pc
+[38.461s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-cpu.so.0.9.5
+[38.461s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-cpu.so.0
+[38.461s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-cpu.so
+[38.461s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml.so.0.9.5
+[38.461s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml.so.0
+[38.461s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml.so
+[38.462s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml.h
+[38.462s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cpu.h
+[38.462s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-alloc.h
+[38.462s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-backend.h
+[38.462s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-blas.h
+[38.462s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cann.h
+[38.462s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cpp.h
+[38.472s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cuda.h
+[38.475s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-opt.h
+[38.476s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-metal.h
+[38.476s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-rpc.h
+[38.476s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-sycl.h
+[38.476s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-vulkan.h
+[38.477s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-webgpu.h
+[38.484s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-zendnn.h
+[38.484s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/gguf.h
+[38.484s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-base.so.0.9.5
+[38.484s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-base.so.0
+[38.484s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-base.so
+[38.485s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/ggml/ggml-config.cmake
+[38.485s] -- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/ggml/ggml-version.cmake
+[38.485s] Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg' returned '0': CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/local/bin/cmake --install /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg

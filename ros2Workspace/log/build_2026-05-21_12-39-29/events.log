@@ -1,0 +1,963 @@
+[0.000000] (-) TimerEvent: {}
+[0.003310] (speech_to_text_interfaces) JobQueued: {'identifier': 'speech_to_text_interfaces', 'dependencies': OrderedDict()}
+[0.003509] (speech_to_text_pkg) JobQueued: {'identifier': 'speech_to_text_pkg', 'dependencies': OrderedDict({'speech_to_text_interfaces': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces'})}
+[0.003594] (printer_pkg) JobQueued: {'identifier': 'printer_pkg', 'dependencies': OrderedDict({'speech_to_text_interfaces': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces', 'speech_to_text_pkg': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg'})}
+[0.003646] (speech_to_text_interfaces) JobStarted: {'identifier': 'speech_to_text_interfaces'}
+[0.052435] (speech_to_text_interfaces) JobProgress: {'identifier': 'speech_to_text_interfaces', 'progress': 'cmake'}
+[0.054951] (speech_to_text_interfaces) JobProgress: {'identifier': 'speech_to_text_interfaces', 'progress': 'build'}
+[0.056738] (speech_to_text_interfaces) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dredre', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dredre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '25429', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'dredre', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dredre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/dredre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dredre/.local/bin', 'SESSION_MANAGER': 'local/dredre-desktop:@/tmp/.ICE-unix/25400,unix/dredre-desktop:/tmp/.ICE-unix/25400', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2d1761f6_6eea_4a3a_994e_58b34bb31d0d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5Z7NP3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099875] (-) TimerEvent: {}
+[0.200592] (-) TimerEvent: {}
+[0.221061] (speech_to_text_interfaces) StdoutLine: {'line': b'[  2%] Built target speech_to_text_interfaces__rosidl_generator_type_description\n'}
+[0.300757] (-) TimerEvent: {}
+[0.314850] (speech_to_text_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_speech_to_text_interfaces\n'}
+[0.385155] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 17%] Built target speech_to_text_interfaces__rosidl_generator_c\n'}
+[0.400924] (-) TimerEvent: {}
+[0.506362] (-) TimerEvent: {}
+[0.611070] (-) TimerEvent: {}
+[0.715642] (-) TimerEvent: {}
+[0.819317] (-) TimerEvent: {}
+[0.920015] (-) TimerEvent: {}
+[1.021528] (-) TimerEvent: {}
+[1.131631] (-) TimerEvent: {}
+[1.232547] (-) TimerEvent: {}
+[1.336017] (-) TimerEvent: {}
+[1.438216] (-) TimerEvent: {}
+[1.539181] (-) TimerEvent: {}
+[1.617792] (speech_to_text_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.639294] (-) TimerEvent: {}
+[1.659219] (speech_to_text_interfaces) StdoutLine: {'line': b'writing speech_to_text_interfaces.egg-info/PKG-INFO\n'}
+[1.660119] (speech_to_text_interfaces) StdoutLine: {'line': b'writing dependency_links to speech_to_text_interfaces.egg-info/dependency_links.txt\n'}
+[1.662389] (speech_to_text_interfaces) StdoutLine: {'line': b'writing top-level names to speech_to_text_interfaces.egg-info/top_level.txt\n'}
+[1.739441] (-) TimerEvent: {}
+[1.812281] (speech_to_text_interfaces) StdoutLine: {'line': b"reading manifest file 'speech_to_text_interfaces.egg-info/SOURCES.txt'\n"}
+[1.813927] (speech_to_text_interfaces) StdoutLine: {'line': b"writing manifest file 'speech_to_text_interfaces.egg-info/SOURCES.txt'\n"}
+[1.840419] (-) TimerEvent: {}
+[1.922778] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 17%] Built target ament_cmake_python_build_speech_to_text_interfaces_egg\n'}
+[1.940637] (-) TimerEvent: {}
+[1.950975] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 26%] Built target speech_to_text_interfaces__rosidl_typesupport_introspection_c\n'}
+[1.981614] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 35%] Built target speech_to_text_interfaces__rosidl_typesupport_c\n'}
+[2.019250] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 44%] Built target speech_to_text_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[2.040726] (-) TimerEvent: {}
+[2.047971] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 47%] Built target speech_to_text_interfaces__cpp\n'}
+[2.081608] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 55%] Built target speech_to_text_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[2.113380] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 64%] Built target speech_to_text_interfaces__rosidl_typesupport_cpp\n'}
+[2.141036] (-) TimerEvent: {}
+[2.145740] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 73%] Built target speech_to_text_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[2.173145] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 73%] Built target speech_to_text_interfaces\n'}
+[2.201607] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 76%] Built target speech_to_text_interfaces__py\n'}
+[2.234633] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 82%] Built target speech_to_text_interfaces__rosidl_generator_py\n'}
+[2.241123] (-) TimerEvent: {}
+[2.266855] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 88%] Built target speech_to_text_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[2.294296] (speech_to_text_interfaces) StdoutLine: {'line': b'[ 94%] Built target speech_to_text_interfaces_s__rosidl_typesupport_c\n'}
+[2.339531] (speech_to_text_interfaces) StdoutLine: {'line': b'[100%] Built target speech_to_text_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[2.341560] (-) TimerEvent: {}
+[2.370757] (speech_to_text_interfaces) CommandEnded: {'returncode': 0}
+[2.372056] (speech_to_text_interfaces) JobProgress: {'identifier': 'speech_to_text_interfaces', 'progress': 'install'}
+[2.382065] (speech_to_text_interfaces) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces'], 'cwd': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dredre', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dredre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '25429', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'dredre', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dredre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/dredre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dredre/.local/bin', 'SESSION_MANAGER': 'local/dredre-desktop:@/tmp/.ICE-unix/25400,unix/dredre-desktop:/tmp/.ICE-unix/25400', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2d1761f6_6eea_4a3a_994e_58b34bb31d0d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5Z7NP3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.416946] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.417523] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/ament_index/resource_index/rosidl_interfaces/speech_to_text_interfaces\n'}
+[2.417710] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/msg/AudioStamped.json\n'}
+[2.417838] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces\n'}
+[2.417959] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg\n'}
+[2.418079] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/audio_stamped.h\n'}
+[2.418244] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.418358] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail\n'}
+[2.418562] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__struct.h\n'}
+[2.418706] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__description.c\n'}
+[2.418821] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__functions.c\n'}
+[2.418943] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__functions.h\n'}
+[2.419052] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__type_support.c\n'}
+[2.430783] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__type_support.h\n'}
+[2.431376] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/environment/library_path.sh\n'}
+[2.434736] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/environment/library_path.dsv\n'}
+[2.438606] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_generator_c.so\n'}
+[2.438922] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces\n'}
+[2.439655] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg\n'}
+[2.441251] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.442203] (-) TimerEvent: {}
+[2.445318] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail\n'}
+[2.446236] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[2.446597] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[2.446942] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces\n'}
+[2.447185] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg\n'}
+[2.447395] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.447635] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail\n'}
+[2.447811] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__rosidl_typesupport_introspection_c.h\n'}
+[2.448086] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__type_support.c\n'}
+[2.448395] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[2.448628] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_typesupport_c.so\n'}
+[2.448829] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces\n'}
+[2.449002] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg\n'}
+[2.453064] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[2.453563] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/audio_stamped.hpp\n'}
+[2.453774] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail\n'}
+[2.453994] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__builder.hpp\n'}
+[2.456544] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__struct.hpp\n'}
+[2.456911] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__traits.hpp\n'}
+[2.457074] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__type_support.hpp\n'}
+[2.457293] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces\n'}
+[2.457475] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg\n'}
+[2.459405] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.460386] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail\n'}
+[2.461087] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.464822] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/dds_fastrtps\n'}
+[2.465000] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.465174] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces\n'}
+[2.465344] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg\n'}
+[2.465467] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail\n'}
+[2.465575] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.465684] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/include/speech_to_text_interfaces/speech_to_text_interfaces/msg/detail/audio_stamped__type_support.cpp\n'}
+[2.465795] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[2.465902] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_typesupport_cpp.so\n'}
+[2.466010] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/environment/pythonpath.sh\n'}
+[2.466184] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/environment/pythonpath.dsv\n'}
+[2.469221] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces-0.0.0-py3.12.egg-info\n'}
+[2.470533] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[2.470800] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[2.470975] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[2.471173] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[2.474178] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces\n'}
+[2.474657] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/_speech_to_text_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.474854] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/_speech_to_text_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.475017] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/speech_to_text_interfaces_s__rosidl_typesupport_c.so\n'}
+[2.476903] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/msg\n'}
+[2.478010] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/msg/_audio_stamped_s.c\n'}
+[2.482450] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/msg/__init__.py\n'}
+[2.482791] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/msg/_audio_stamped.py\n'}
+[2.482954] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/__init__.py\n'}
+[2.483059] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/speech_to_text_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[2.483327] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/speech_to_text_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[2.483601] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/_speech_to_text_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[2.545170] (-) TimerEvent: {}
+[2.598554] (speech_to_text_interfaces) StdoutLine: {'line': b"Listing '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces'...\n"}
+[2.598847] (speech_to_text_interfaces) StdoutLine: {'line': b"Listing '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/msg'...\n"}
+[2.620460] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/speech_to_text_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[2.621190] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/speech_to_text_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[2.624750] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages/speech_to_text_interfaces/speech_to_text_interfaces_s__rosidl_typesupport_c.so\n'}
+[2.625927] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/libspeech_to_text_interfaces__rosidl_generator_py.so\n'}
+[2.626846] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/msg/AudioStamped.idl\n'}
+[2.630423] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/msg/AudioStamped.msg\n'}
+[2.630570] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/ament_index/resource_index/package_run_dependencies/speech_to_text_interfaces\n'}
+[2.630669] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/ament_index/resource_index/parent_prefix_path/speech_to_text_interfaces\n'}
+[2.630763] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/environment/ament_prefix_path.sh\n'}
+[2.630854] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/environment/ament_prefix_path.dsv\n'}
+[2.631175] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/environment/path.sh\n'}
+[2.631331] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/environment/path.dsv\n'}
+[2.631437] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/local_setup.bash\n'}
+[2.631535] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/local_setup.sh\n'}
+[2.631654] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/local_setup.zsh\n'}
+[2.631761] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/local_setup.dsv\n'}
+[2.631856] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.dsv\n'}
+[2.631950] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/ament_index/resource_index/packages/speech_to_text_interfaces\n'}
+[2.632043] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/export_speech_to_text_interfaces__rosidl_generator_cExport.cmake\n'}
+[2.632216] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/export_speech_to_text_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.632325] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/export_speech_to_text_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.632425] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/export_speech_to_text_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.632536] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/speech_to_text_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.632635] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/speech_to_text_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.632799] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/speech_to_text_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[2.632962] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/speech_to_text_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.633113] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/export_speech_to_text_interfaces__rosidl_generator_cppExport.cmake\n'}
+[2.633264] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/export_speech_to_text_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.633490] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/export_speech_to_text_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.633610] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/speech_to_text_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.633739] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/speech_to_text_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.633848] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/speech_to_text_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[2.633964] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/speech_to_text_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.636655] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/export_speech_to_text_interfaces__rosidl_generator_pyExport.cmake\n'}
+[2.636927] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/export_speech_to_text_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.637044] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[2.637180] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.637287] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.637376] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.637463] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.637551] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.637647] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.637744] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/speech_to_text_interfacesConfig.cmake\n'}
+[2.637841] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/cmake/speech_to_text_interfacesConfig-version.cmake\n'}
+[2.637992] (speech_to_text_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.xml\n'}
+[2.638149] (speech_to_text_interfaces) CommandEnded: {'returncode': 0}
+[2.647878] (-) TimerEvent: {}
+[2.720785] (speech_to_text_interfaces) JobEnded: {'identifier': 'speech_to_text_interfaces', 'rc': 0}
+[2.731517] (speech_to_text_pkg) JobStarted: {'identifier': 'speech_to_text_pkg'}
+[2.750208] (-) TimerEvent: {}
+[2.787151] (speech_to_text_pkg) JobProgress: {'identifier': 'speech_to_text_pkg', 'progress': 'cmake'}
+[2.800724] (speech_to_text_pkg) JobProgress: {'identifier': 'speech_to_text_pkg', 'progress': 'build'}
+[2.809413] (speech_to_text_pkg) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg', '--', '-j4', '-l4'], 'cwd': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dredre', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dredre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '25429', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'dredre', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dredre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/dredre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dredre/.local/bin', 'SESSION_MANAGER': 'local/dredre-desktop:@/tmp/.ICE-unix/25400,unix/dredre-desktop:/tmp/.ICE-unix/25400', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2d1761f6_6eea_4a3a_994e_58b34bb31d0d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5Z7NP3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.850515] (-) TimerEvent: {}
+[2.954673] (-) TimerEvent: {}
+[2.959208] (speech_to_text_pkg) StdoutLine: {'line': b'[  8%] Built target audio_capture_node\n'}
+[3.028497] (speech_to_text_pkg) StdoutLine: {'line': b'[ 34%] Built target ggml-base\n'}
+[3.059008] (-) TimerEvent: {}
+[3.092477] (speech_to_text_pkg) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o\x1b[0m\n'}
+[3.161219] (-) TimerEvent: {}
+[3.264338] (-) TimerEvent: {}
+[3.372752] (-) TimerEvent: {}
+[3.473565] (-) TimerEvent: {}
+[3.574588] (-) TimerEvent: {}
+[3.679261] (-) TimerEvent: {}
+[3.783018] (-) TimerEvent: {}
+[3.883698] (-) TimerEvent: {}
+[3.984458] (-) TimerEvent: {}
+[4.089783] (-) TimerEvent: {}
+[4.190217] (-) TimerEvent: {}
+[4.290857] (-) TimerEvent: {}
+[4.392854] (-) TimerEvent: {}
+[4.493361] (-) TimerEvent: {}
+[4.594819] (-) TimerEvent: {}
+[4.698503] (-) TimerEvent: {}
+[4.799269] (-) TimerEvent: {}
+[4.902246] (-) TimerEvent: {}
+[5.005288] (-) TimerEvent: {}
+[5.106002] (-) TimerEvent: {}
+[5.206744] (-) TimerEvent: {}
+[5.310890] (-) TimerEvent: {}
+[5.411551] (-) TimerEvent: {}
+[5.514329] (-) TimerEvent: {}
+[5.614920] (-) TimerEvent: {}
+[5.716497] (-) TimerEvent: {}
+[5.819211] (-) TimerEvent: {}
+[5.921333] (-) TimerEvent: {}
+[6.023610] (-) TimerEvent: {}
+[6.125872] (-) TimerEvent: {}
+[6.227542] (-) TimerEvent: {}
+[6.329364] (-) TimerEvent: {}
+[6.433298] (-) TimerEvent: {}
+[6.533924] (-) TimerEvent: {}
+[6.639449] (-) TimerEvent: {}
+[6.739881] (-) TimerEvent: {}
+[6.840312] (-) TimerEvent: {}
+[6.940768] (-) TimerEvent: {}
+[7.047395] (-) TimerEvent: {}
+[7.147759] (-) TimerEvent: {}
+[7.248182] (-) TimerEvent: {}
+[7.351624] (-) TimerEvent: {}
+[7.452467] (-) TimerEvent: {}
+[7.553862] (-) TimerEvent: {}
+[7.656060] (-) TimerEvent: {}
+[7.760232] (-) TimerEvent: {}
+[7.861044] (-) TimerEvent: {}
+[7.967264] (-) TimerEvent: {}
+[8.070959] (-) TimerEvent: {}
+[8.173876] (-) TimerEvent: {}
+[8.274842] (-) TimerEvent: {}
+[8.376778] (-) TimerEvent: {}
+[8.478795] (-) TimerEvent: {}
+[8.579213] (-) TimerEvent: {}
+[8.679757] (-) TimerEvent: {}
+[8.780150] (-) TimerEvent: {}
+[8.880618] (-) TimerEvent: {}
+[8.981322] (-) TimerEvent: {}
+[9.082364] (-) TimerEvent: {}
+[9.183090] (-) TimerEvent: {}
+[9.284318] (-) TimerEvent: {}
+[9.385182] (-) TimerEvent: {}
+[9.486770] (-) TimerEvent: {}
+[9.589270] (-) TimerEvent: {}
+[9.696173] (-) TimerEvent: {}
+[9.796736] (-) TimerEvent: {}
+[9.897275] (-) TimerEvent: {}
+[9.997625] (-) TimerEvent: {}
+[10.097986] (-) TimerEvent: {}
+[10.198364] (-) TimerEvent: {}
+[10.298706] (-) TimerEvent: {}
+[10.399049] (-) TimerEvent: {}
+[10.499413] (-) TimerEvent: {}
+[10.599826] (-) TimerEvent: {}
+[10.700208] (-) TimerEvent: {}
+[10.800639] (-) TimerEvent: {}
+[10.901176] (-) TimerEvent: {}
+[11.002230] (-) TimerEvent: {}
+[11.102840] (-) TimerEvent: {}
+[11.206533] (-) TimerEvent: {}
+[11.306896] (-) TimerEvent: {}
+[11.389103] (speech_to_text_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp:9\x1b[m\x1b[K,\n'}
+[11.389542] (speech_to_text_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:1\x1b[m\x1b[K:\n'}
+[11.389679] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KLightweightVAD::\x1b[01;32m\x1b[KLightweightVAD\x1b[m\x1b[K(float, float, float, float, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.389798] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLightweightVAD::noiseAdaptRate_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.389915] (speech_to_text_pkg) StderrLine: {'line': b'   11 |     float \x1b[01;35m\x1b[KnoiseAdaptRate_\x1b[m\x1b[K;\n'}
+[11.390018] (speech_to_text_pkg) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.390143] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kfloat LightweightVAD::speechMultiplier_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.390276] (speech_to_text_pkg) StderrLine: {'line': b'   10 |     float \x1b[01;35m\x1b[KspeechMultiplier_\x1b[m\x1b[K;\n'}
+[11.390384] (speech_to_text_pkg) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.390487] (speech_to_text_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.390597] (speech_to_text_pkg) StderrLine: {'line': b'   18 |     \x1b[01;35m\x1b[KLightweightVAD\x1b[m\x1b[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,\n'}
+[11.390814] (speech_to_text_pkg) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.407008] (-) TimerEvent: {}
+[11.507367] (-) TimerEvent: {}
+[11.607765] (-) TimerEvent: {}
+[11.708156] (-) TimerEvent: {}
+[11.808578] (-) TimerEvent: {}
+[11.908934] (-) TimerEvent: {}
+[12.009346] (-) TimerEvent: {}
+[12.109705] (-) TimerEvent: {}
+[12.210118] (-) TimerEvent: {}
+[12.310491] (-) TimerEvent: {}
+[12.410926] (-) TimerEvent: {}
+[12.511348] (-) TimerEvent: {}
+[12.611874] (-) TimerEvent: {}
+[12.712277] (-) TimerEvent: {}
+[12.812660] (-) TimerEvent: {}
+[12.913028] (-) TimerEvent: {}
+[13.013437] (-) TimerEvent: {}
+[13.113789] (-) TimerEvent: {}
+[13.214166] (-) TimerEvent: {}
+[13.314513] (-) TimerEvent: {}
+[13.414882] (-) TimerEvent: {}
+[13.515265] (-) TimerEvent: {}
+[13.615617] (-) TimerEvent: {}
+[13.715979] (-) TimerEvent: {}
+[13.816352] (-) TimerEvent: {}
+[13.916737] (-) TimerEvent: {}
+[14.017089] (-) TimerEvent: {}
+[14.117457] (-) TimerEvent: {}
+[14.217842] (-) TimerEvent: {}
+[14.320724] (-) TimerEvent: {}
+[14.421262] (-) TimerEvent: {}
+[14.522233] (-) TimerEvent: {}
+[14.622833] (-) TimerEvent: {}
+[14.723950] (-) TimerEvent: {}
+[14.824657] (-) TimerEvent: {}
+[14.925375] (-) TimerEvent: {}
+[15.025763] (-) TimerEvent: {}
+[15.126325] (-) TimerEvent: {}
+[15.226671] (-) TimerEvent: {}
+[15.327055] (-) TimerEvent: {}
+[15.427422] (-) TimerEvent: {}
+[15.527803] (-) TimerEvent: {}
+[15.628174] (-) TimerEvent: {}
+[15.728574] (-) TimerEvent: {}
+[15.828929] (-) TimerEvent: {}
+[15.929356] (-) TimerEvent: {}
+[16.029834] (-) TimerEvent: {}
+[16.130379] (-) TimerEvent: {}
+[16.230737] (-) TimerEvent: {}
+[16.331206] (-) TimerEvent: {}
+[16.431545] (-) TimerEvent: {}
+[16.531920] (-) TimerEvent: {}
+[16.632285] (-) TimerEvent: {}
+[16.732659] (-) TimerEvent: {}
+[16.833026] (-) TimerEvent: {}
+[16.933378] (-) TimerEvent: {}
+[17.033721] (-) TimerEvent: {}
+[17.134062] (-) TimerEvent: {}
+[17.234455] (-) TimerEvent: {}
+[17.334855] (-) TimerEvent: {}
+[17.435246] (-) TimerEvent: {}
+[17.535593] (-) TimerEvent: {}
+[17.635950] (-) TimerEvent: {}
+[17.736433] (-) TimerEvent: {}
+[17.836787] (-) TimerEvent: {}
+[17.939337] (-) TimerEvent: {}
+[18.039696] (-) TimerEvent: {}
+[18.140076] (-) TimerEvent: {}
+[18.240473] (-) TimerEvent: {}
+[18.340959] (-) TimerEvent: {}
+[18.441890] (-) TimerEvent: {}
+[18.542459] (-) TimerEvent: {}
+[18.643442] (-) TimerEvent: {}
+[18.744077] (-) TimerEvent: {}
+[18.845167] (-) TimerEvent: {}
+[18.945595] (-) TimerEvent: {}
+[19.046130] (-) TimerEvent: {}
+[19.146485] (-) TimerEvent: {}
+[19.246888] (-) TimerEvent: {}
+[19.347263] (-) TimerEvent: {}
+[19.447725] (-) TimerEvent: {}
+[19.548188] (-) TimerEvent: {}
+[19.648701] (-) TimerEvent: {}
+[19.752904] (-) TimerEvent: {}
+[19.853325] (-) TimerEvent: {}
+[19.953681] (-) TimerEvent: {}
+[20.054049] (-) TimerEvent: {}
+[20.154421] (-) TimerEvent: {}
+[20.254824] (-) TimerEvent: {}
+[20.355248] (-) TimerEvent: {}
+[20.455727] (-) TimerEvent: {}
+[20.556087] (-) TimerEvent: {}
+[20.656451] (-) TimerEvent: {}
+[20.756806] (-) TimerEvent: {}
+[20.857162] (-) TimerEvent: {}
+[20.957514] (-) TimerEvent: {}
+[21.057897] (-) TimerEvent: {}
+[21.161662] (-) TimerEvent: {}
+[21.263511] (-) TimerEvent: {}
+[21.363954] (-) TimerEvent: {}
+[21.467336] (-) TimerEvent: {}
+[21.568688] (-) TimerEvent: {}
+[21.669068] (-) TimerEvent: {}
+[21.772502] (-) TimerEvent: {}
+[21.872884] (-) TimerEvent: {}
+[21.973289] (-) TimerEvent: {}
+[22.073657] (-) TimerEvent: {}
+[22.174115] (-) TimerEvent: {}
+[22.274469] (-) TimerEvent: {}
+[22.374807] (-) TimerEvent: {}
+[22.475162] (-) TimerEvent: {}
+[22.575499] (-) TimerEvent: {}
+[22.675857] (-) TimerEvent: {}
+[22.776198] (-) TimerEvent: {}
+[22.876545] (-) TimerEvent: {}
+[22.976905] (-) TimerEvent: {}
+[23.077271] (-) TimerEvent: {}
+[23.177624] (-) TimerEvent: {}
+[23.277973] (-) TimerEvent: {}
+[23.378342] (-) TimerEvent: {}
+[23.478690] (-) TimerEvent: {}
+[23.579042] (-) TimerEvent: {}
+[23.679401] (-) TimerEvent: {}
+[23.779782] (-) TimerEvent: {}
+[23.880192] (-) TimerEvent: {}
+[23.980630] (-) TimerEvent: {}
+[24.081760] (-) TimerEvent: {}
+[24.182357] (-) TimerEvent: {}
+[24.283524] (-) TimerEvent: {}
+[24.384299] (-) TimerEvent: {}
+[24.488673] (-) TimerEvent: {}
+[24.589043] (-) TimerEvent: {}
+[24.689533] (-) TimerEvent: {}
+[24.789908] (-) TimerEvent: {}
+[24.896305] (-) TimerEvent: {}
+[24.996675] (-) TimerEvent: {}
+[25.097031] (-) TimerEvent: {}
+[25.197427] (-) TimerEvent: {}
+[25.297783] (-) TimerEvent: {}
+[25.398162] (-) TimerEvent: {}
+[25.498516] (-) TimerEvent: {}
+[25.598866] (-) TimerEvent: {}
+[25.699213] (-) TimerEvent: {}
+[25.799559] (-) TimerEvent: {}
+[25.900041] (-) TimerEvent: {}
+[26.000501] (-) TimerEvent: {}
+[26.101391] (-) TimerEvent: {}
+[26.202913] (-) TimerEvent: {}
+[26.303513] (-) TimerEvent: {}
+[26.408573] (-) TimerEvent: {}
+[26.508950] (-) TimerEvent: {}
+[26.609419] (-) TimerEvent: {}
+[26.709799] (-) TimerEvent: {}
+[26.810190] (-) TimerEvent: {}
+[26.910570] (-) TimerEvent: {}
+[27.010988] (-) TimerEvent: {}
+[27.111426] (-) TimerEvent: {}
+[27.211917] (-) TimerEvent: {}
+[27.312366] (-) TimerEvent: {}
+[27.412877] (-) TimerEvent: {}
+[27.513300] (-) TimerEvent: {}
+[27.613687] (-) TimerEvent: {}
+[27.714034] (-) TimerEvent: {}
+[27.814413] (-) TimerEvent: {}
+[27.914755] (-) TimerEvent: {}
+[28.015122] (-) TimerEvent: {}
+[28.115455] (-) TimerEvent: {}
+[28.215798] (-) TimerEvent: {}
+[28.316153] (-) TimerEvent: {}
+[28.416503] (-) TimerEvent: {}
+[28.516861] (-) TimerEvent: {}
+[28.617319] (-) TimerEvent: {}
+[28.717762] (-) TimerEvent: {}
+[28.818187] (-) TimerEvent: {}
+[28.918622] (-) TimerEvent: {}
+[29.019008] (-) TimerEvent: {}
+[29.119377] (-) TimerEvent: {}
+[29.219747] (-) TimerEvent: {}
+[29.320136] (-) TimerEvent: {}
+[29.420534] (-) TimerEvent: {}
+[29.521347] (-) TimerEvent: {}
+[29.621893] (-) TimerEvent: {}
+[29.722889] (-) TimerEvent: {}
+[29.823408] (-) TimerEvent: {}
+[29.924786] (-) TimerEvent: {}
+[30.025269] (-) TimerEvent: {}
+[30.125841] (-) TimerEvent: {}
+[30.226261] (-) TimerEvent: {}
+[30.326759] (-) TimerEvent: {}
+[30.427137] (-) TimerEvent: {}
+[30.527570] (-) TimerEvent: {}
+[30.627950] (-) TimerEvent: {}
+[30.728369] (-) TimerEvent: {}
+[30.828728] (-) TimerEvent: {}
+[30.929128] (-) TimerEvent: {}
+[31.029503] (-) TimerEvent: {}
+[31.129927] (-) TimerEvent: {}
+[31.230330] (-) TimerEvent: {}
+[31.330811] (-) TimerEvent: {}
+[31.431228] (-) TimerEvent: {}
+[31.531992] (-) TimerEvent: {}
+[31.632418] (-) TimerEvent: {}
+[31.732807] (-) TimerEvent: {}
+[31.833176] (-) TimerEvent: {}
+[31.933646] (-) TimerEvent: {}
+[32.034132] (-) TimerEvent: {}
+[32.134554] (-) TimerEvent: {}
+[32.234984] (-) TimerEvent: {}
+[32.335405] (-) TimerEvent: {}
+[32.435888] (-) TimerEvent: {}
+[32.536248] (-) TimerEvent: {}
+[32.636592] (-) TimerEvent: {}
+[32.736933] (-) TimerEvent: {}
+[32.837304] (-) TimerEvent: {}
+[32.937645] (-) TimerEvent: {}
+[33.038001] (-) TimerEvent: {}
+[33.138392] (-) TimerEvent: {}
+[33.238755] (-) TimerEvent: {}
+[33.339122] (-) TimerEvent: {}
+[33.439493] (-) TimerEvent: {}
+[33.539869] (-) TimerEvent: {}
+[33.640249] (-) TimerEvent: {}
+[33.740731] (-) TimerEvent: {}
+[33.841644] (-) TimerEvent: {}
+[33.942218] (-) TimerEvent: {}
+[34.043315] (-) TimerEvent: {}
+[34.143934] (-) TimerEvent: {}
+[34.245162] (-) TimerEvent: {}
+[34.345608] (-) TimerEvent: {}
+[34.446145] (-) TimerEvent: {}
+[34.546543] (-) TimerEvent: {}
+[34.646950] (-) TimerEvent: {}
+[34.747345] (-) TimerEvent: {}
+[34.847828] (-) TimerEvent: {}
+[34.948197] (-) TimerEvent: {}
+[35.048602] (-) TimerEvent: {}
+[35.148988] (-) TimerEvent: {}
+[35.249415] (-) TimerEvent: {}
+[35.349843] (-) TimerEvent: {}
+[35.450562] (-) TimerEvent: {}
+[35.551138] (-) TimerEvent: {}
+[35.655710] (-) TimerEvent: {}
+[35.756127] (-) TimerEvent: {}
+[35.856472] (-) TimerEvent: {}
+[35.956880] (-) TimerEvent: {}
+[36.031306] (speech_to_text_pkg) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX executable transcription_pre_process_node\x1b[0m\n'}
+[36.057065] (-) TimerEvent: {}
+[36.157530] (-) TimerEvent: {}
+[36.259402] (-) TimerEvent: {}
+[36.360289] (-) TimerEvent: {}
+[36.463605] (-) TimerEvent: {}
+[36.564346] (-) TimerEvent: {}
+[36.633943] (speech_to_text_pkg) StdoutLine: {'line': b'[ 40%] Built target transcription_pre_process_node\n'}
+[36.668377] (-) TimerEvent: {}
+[36.737645] (speech_to_text_pkg) StdoutLine: {'line': b'[ 82%] Built target ggml-cpu\n'}
+[36.769452] (-) TimerEvent: {}
+[36.833530] (speech_to_text_pkg) StdoutLine: {'line': b'[ 88%] Built target ggml\n'}
+[36.871858] (-) TimerEvent: {}
+[36.899326] (speech_to_text_pkg) StdoutLine: {'line': b'[ 94%] Built target whisper\n'}
+[36.972182] (-) TimerEvent: {}
+[37.019501] (speech_to_text_pkg) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o\x1b[0m\n'}
+[37.073247] (-) TimerEvent: {}
+[37.174284] (-) TimerEvent: {}
+[37.277353] (-) TimerEvent: {}
+[37.378192] (-) TimerEvent: {}
+[37.478744] (-) TimerEvent: {}
+[37.581539] (-) TimerEvent: {}
+[37.687753] (-) TimerEvent: {}
+[37.788215] (-) TimerEvent: {}
+[37.888831] (-) TimerEvent: {}
+[37.989464] (-) TimerEvent: {}
+[38.090272] (-) TimerEvent: {}
+[38.192351] (-) TimerEvent: {}
+[38.293836] (-) TimerEvent: {}
+[38.395280] (-) TimerEvent: {}
+[38.498643] (-) TimerEvent: {}
+[38.599325] (-) TimerEvent: {}
+[38.700526] (-) TimerEvent: {}
+[38.801714] (-) TimerEvent: {}
+[38.903895] (-) TimerEvent: {}
+[39.005437] (-) TimerEvent: {}
+[39.105884] (-) TimerEvent: {}
+[39.206555] (-) TimerEvent: {}
+[39.306985] (-) TimerEvent: {}
+[39.407553] (-) TimerEvent: {}
+[39.508176] (-) TimerEvent: {}
+[39.608624] (-) TimerEvent: {}
+[39.709510] (-) TimerEvent: {}
+[39.810024] (-) TimerEvent: {}
+[39.910466] (-) TimerEvent: {}
+[40.010918] (-) TimerEvent: {}
+[40.111337] (-) TimerEvent: {}
+[40.211868] (-) TimerEvent: {}
+[40.312303] (-) TimerEvent: {}
+[40.412817] (-) TimerEvent: {}
+[40.513302] (-) TimerEvent: {}
+[40.613852] (-) TimerEvent: {}
+[40.714243] (-) TimerEvent: {}
+[40.814610] (-) TimerEvent: {}
+[40.915011] (-) TimerEvent: {}
+[41.015373] (-) TimerEvent: {}
+[41.115722] (-) TimerEvent: {}
+[41.216123] (-) TimerEvent: {}
+[41.316488] (-) TimerEvent: {}
+[41.416903] (-) TimerEvent: {}
+[41.517348] (-) TimerEvent: {}
+[41.617720] (-) TimerEvent: {}
+[41.718136] (-) TimerEvent: {}
+[41.818526] (-) TimerEvent: {}
+[41.918895] (-) TimerEvent: {}
+[42.019277] (-) TimerEvent: {}
+[42.119637] (-) TimerEvent: {}
+[42.220046] (-) TimerEvent: {}
+[42.320496] (-) TimerEvent: {}
+[42.420977] (-) TimerEvent: {}
+[42.521875] (-) TimerEvent: {}
+[42.622448] (-) TimerEvent: {}
+[42.726382] (-) TimerEvent: {}
+[42.826734] (-) TimerEvent: {}
+[42.927150] (-) TimerEvent: {}
+[43.027514] (-) TimerEvent: {}
+[43.127902] (-) TimerEvent: {}
+[43.228305] (-) TimerEvent: {}
+[43.328704] (-) TimerEvent: {}
+[43.429057] (-) TimerEvent: {}
+[43.529471] (-) TimerEvent: {}
+[43.629837] (-) TimerEvent: {}
+[43.730295] (-) TimerEvent: {}
+[43.830648] (-) TimerEvent: {}
+[43.931133] (-) TimerEvent: {}
+[44.031500] (-) TimerEvent: {}
+[44.131878] (-) TimerEvent: {}
+[44.232267] (-) TimerEvent: {}
+[44.332656] (-) TimerEvent: {}
+[44.433003] (-) TimerEvent: {}
+[44.533434] (-) TimerEvent: {}
+[44.636418] (-) TimerEvent: {}
+[44.739315] (-) TimerEvent: {}
+[44.839689] (-) TimerEvent: {}
+[44.940071] (-) TimerEvent: {}
+[45.040487] (-) TimerEvent: {}
+[45.140959] (-) TimerEvent: {}
+[45.241781] (-) TimerEvent: {}
+[45.342345] (-) TimerEvent: {}
+[45.443363] (-) TimerEvent: {}
+[45.543957] (-) TimerEvent: {}
+[45.645108] (-) TimerEvent: {}
+[45.748445] (-) TimerEvent: {}
+[45.848841] (-) TimerEvent: {}
+[45.951464] (-) TimerEvent: {}
+[46.052456] (-) TimerEvent: {}
+[46.155171] (-) TimerEvent: {}
+[46.255649] (-) TimerEvent: {}
+[46.356528] (-) TimerEvent: {}
+[46.456879] (-) TimerEvent: {}
+[46.557256] (-) TimerEvent: {}
+[46.657650] (-) TimerEvent: {}
+[46.757992] (-) TimerEvent: {}
+[46.858364] (-) TimerEvent: {}
+[46.958699] (-) TimerEvent: {}
+[47.059040] (-) TimerEvent: {}
+[47.159403] (-) TimerEvent: {}
+[47.259811] (-) TimerEvent: {}
+[47.360215] (-) TimerEvent: {}
+[47.460669] (-) TimerEvent: {}
+[47.561532] (-) TimerEvent: {}
+[47.662045] (-) TimerEvent: {}
+[47.763130] (-) TimerEvent: {}
+[47.863751] (-) TimerEvent: {}
+[47.965059] (-) TimerEvent: {}
+[48.065522] (-) TimerEvent: {}
+[48.166016] (-) TimerEvent: {}
+[48.266446] (-) TimerEvent: {}
+[48.366874] (-) TimerEvent: {}
+[48.467372] (-) TimerEvent: {}
+[48.567752] (-) TimerEvent: {}
+[48.668135] (-) TimerEvent: {}
+[48.768525] (-) TimerEvent: {}
+[48.868889] (-) TimerEvent: {}
+[48.969333] (-) TimerEvent: {}
+[49.069699] (-) TimerEvent: {}
+[49.170089] (-) TimerEvent: {}
+[49.270494] (-) TimerEvent: {}
+[49.370992] (-) TimerEvent: {}
+[49.471456] (-) TimerEvent: {}
+[49.572038] (-) TimerEvent: {}
+[49.672534] (-) TimerEvent: {}
+[49.773083] (-) TimerEvent: {}
+[49.873686] (-) TimerEvent: {}
+[49.974161] (-) TimerEvent: {}
+[50.074522] (-) TimerEvent: {}
+[50.174875] (-) TimerEvent: {}
+[50.275249] (-) TimerEvent: {}
+[50.375600] (-) TimerEvent: {}
+[50.475958] (-) TimerEvent: {}
+[50.576336] (-) TimerEvent: {}
+[50.676718] (-) TimerEvent: {}
+[50.777067] (-) TimerEvent: {}
+[50.877465] (-) TimerEvent: {}
+[50.977830] (-) TimerEvent: {}
+[51.078187] (-) TimerEvent: {}
+[51.178538] (-) TimerEvent: {}
+[51.278894] (-) TimerEvent: {}
+[51.379281] (-) TimerEvent: {}
+[51.479653] (-) TimerEvent: {}
+[51.583724] (-) TimerEvent: {}
+[51.685855] (-) TimerEvent: {}
+[51.786246] (-) TimerEvent: {}
+[51.889445] (-) TimerEvent: {}
+[51.989822] (-) TimerEvent: {}
+[52.090215] (-) TimerEvent: {}
+[52.190609] (-) TimerEvent: {}
+[52.291057] (-) TimerEvent: {}
+[52.391466] (-) TimerEvent: {}
+[52.491994] (-) TimerEvent: {}
+[52.592378] (-) TimerEvent: {}
+[52.692767] (-) TimerEvent: {}
+[52.793155] (-) TimerEvent: {}
+[52.893546] (-) TimerEvent: {}
+[52.993940] (-) TimerEvent: {}
+[53.094356] (-) TimerEvent: {}
+[53.197205] (-) TimerEvent: {}
+[53.299881] (-) TimerEvent: {}
+[53.400352] (-) TimerEvent: {}
+[53.500922] (-) TimerEvent: {}
+[53.601909] (-) TimerEvent: {}
+[53.702467] (-) TimerEvent: {}
+[53.803444] (-) TimerEvent: {}
+[53.903969] (-) TimerEvent: {}
+[54.004890] (-) TimerEvent: {}
+[54.105475] (-) TimerEvent: {}
+[54.206080] (-) TimerEvent: {}
+[54.306454] (-) TimerEvent: {}
+[54.406929] (-) TimerEvent: {}
+[54.507314] (-) TimerEvent: {}
+[54.607737] (-) TimerEvent: {}
+[54.708076] (-) TimerEvent: {}
+[54.808533] (-) TimerEvent: {}
+[54.908896] (-) TimerEvent: {}
+[55.012410] (-) TimerEvent: {}
+[55.112788] (-) TimerEvent: {}
+[55.213180] (-) TimerEvent: {}
+[55.313568] (-) TimerEvent: {}
+[55.413958] (-) TimerEvent: {}
+[55.514328] (-) TimerEvent: {}
+[55.614706] (-) TimerEvent: {}
+[55.715048] (-) TimerEvent: {}
+[55.815423] (-) TimerEvent: {}
+[55.915775] (-) TimerEvent: {}
+[56.016155] (-) TimerEvent: {}
+[56.116563] (-) TimerEvent: {}
+[56.216979] (-) TimerEvent: {}
+[56.317466] (-) TimerEvent: {}
+[56.417851] (-) TimerEvent: {}
+[56.518230] (-) TimerEvent: {}
+[56.618612] (-) TimerEvent: {}
+[56.718974] (-) TimerEvent: {}
+[56.819353] (-) TimerEvent: {}
+[56.919750] (-) TimerEvent: {}
+[57.020145] (-) TimerEvent: {}
+[57.120541] (-) TimerEvent: {}
+[57.221035] (-) TimerEvent: {}
+[57.322059] (-) TimerEvent: {}
+[57.425341] (-) TimerEvent: {}
+[57.525963] (-) TimerEvent: {}
+[57.626380] (-) TimerEvent: {}
+[57.726826] (-) TimerEvent: {}
+[57.827190] (-) TimerEvent: {}
+[57.927579] (-) TimerEvent: {}
+[58.027951] (-) TimerEvent: {}
+[58.128385] (-) TimerEvent: {}
+[58.228769] (-) TimerEvent: {}
+[58.329166] (-) TimerEvent: {}
+[58.429563] (-) TimerEvent: {}
+[58.530008] (-) TimerEvent: {}
+[58.630422] (-) TimerEvent: {}
+[58.730969] (-) TimerEvent: {}
+[58.831477] (-) TimerEvent: {}
+[58.934380] (-) TimerEvent: {}
+[59.034770] (-) TimerEvent: {}
+[59.135141] (-) TimerEvent: {}
+[59.235506] (-) TimerEvent: {}
+[59.335894] (-) TimerEvent: {}
+[59.436519] (-) TimerEvent: {}
+[59.537801] (-) TimerEvent: {}
+[59.638163] (-) TimerEvent: {}
+[59.738549] (-) TimerEvent: {}
+[59.838964] (-) TimerEvent: {}
+[59.939345] (-) TimerEvent: {}
+[60.039714] (-) TimerEvent: {}
+[60.140147] (-) TimerEvent: {}
+[60.240542] (-) TimerEvent: {}
+[60.341047] (-) TimerEvent: {}
+[60.441934] (-) TimerEvent: {}
+[60.542514] (-) TimerEvent: {}
+[60.643549] (-) TimerEvent: {}
+[60.744183] (-) TimerEvent: {}
+[60.845396] (-) TimerEvent: {}
+[60.945824] (-) TimerEvent: {}
+[61.046363] (-) TimerEvent: {}
+[61.146729] (-) TimerEvent: {}
+[61.247144] (-) TimerEvent: {}
+[61.347528] (-) TimerEvent: {}
+[61.447923] (-) TimerEvent: {}
+[61.548333] (-) TimerEvent: {}
+[61.648745] (-) TimerEvent: {}
+[61.749174] (-) TimerEvent: {}
+[61.849952] (-) TimerEvent: {}
+[61.950399] (-) TimerEvent: {}
+[62.051233] (-) TimerEvent: {}
+[62.151666] (-) TimerEvent: {}
+[62.252206] (-) TimerEvent: {}
+[62.352577] (-) TimerEvent: {}
+[62.452974] (-) TimerEvent: {}
+[62.553341] (-) TimerEvent: {}
+[62.653697] (-) TimerEvent: {}
+[62.754032] (-) TimerEvent: {}
+[62.854402] (-) TimerEvent: {}
+[62.954751] (-) TimerEvent: {}
+[63.055124] (-) TimerEvent: {}
+[63.155478] (-) TimerEvent: {}
+[63.255842] (-) TimerEvent: {}
+[63.356199] (-) TimerEvent: {}
+[63.456563] (-) TimerEvent: {}
+[63.556919] (-) TimerEvent: {}
+[63.657299] (-) TimerEvent: {}
+[63.757663] (-) TimerEvent: {}
+[63.858022] (-) TimerEvent: {}
+[63.958406] (-) TimerEvent: {}
+[64.058779] (-) TimerEvent: {}
+[64.159164] (-) TimerEvent: {}
+[64.259516] (-) TimerEvent: {}
+[64.362609] (-) TimerEvent: {}
+[64.463231] (-) TimerEvent: {}
+[64.564237] (-) TimerEvent: {}
+[64.664869] (-) TimerEvent: {}
+[64.765529] (-) TimerEvent: {}
+[64.866043] (-) TimerEvent: {}
+[64.969544] (-) TimerEvent: {}
+[65.069936] (-) TimerEvent: {}
+[65.170348] (-) TimerEvent: {}
+[65.270742] (-) TimerEvent: {}
+[65.371282] (-) TimerEvent: {}
+[65.471737] (-) TimerEvent: {}
+[65.572414] (-) TimerEvent: {}
+[65.672772] (-) TimerEvent: {}
+[65.773185] (-) TimerEvent: {}
+[65.873542] (-) TimerEvent: {}
+[65.973930] (-) TimerEvent: {}
+[66.074302] (-) TimerEvent: {}
+[66.174650] (-) TimerEvent: {}
+[66.275037] (-) TimerEvent: {}
+[66.375400] (-) TimerEvent: {}
+[66.475750] (-) TimerEvent: {}
+[66.576146] (-) TimerEvent: {}
+[66.676553] (-) TimerEvent: {}
+[66.776943] (-) TimerEvent: {}
+[66.877326] (-) TimerEvent: {}
+[66.977702] (-) TimerEvent: {}
+[67.078135] (-) TimerEvent: {}
+[67.178509] (-) TimerEvent: {}
+[67.278877] (-) TimerEvent: {}
+[67.379287] (-) TimerEvent: {}
+[67.479657] (-) TimerEvent: {}
+[67.583535] (-) TimerEvent: {}
+[67.688481] (-) TimerEvent: {}
+[67.788853] (-) TimerEvent: {}
+[67.889322] (-) TimerEvent: {}
+[67.989712] (-) TimerEvent: {}
+[68.090168] (-) TimerEvent: {}
+[68.190562] (-) TimerEvent: {}
+[68.290990] (-) TimerEvent: {}
+[68.391367] (-) TimerEvent: {}
+[68.492197] (-) TimerEvent: {}
+[68.566742] (speech_to_text_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable whisper_transcription_node\x1b[0m\n'}
+[68.592358] (-) TimerEvent: {}
+[68.693028] (-) TimerEvent: {}
+[68.793646] (-) TimerEvent: {}
+[68.895296] (-) TimerEvent: {}
+[68.998160] (-) TimerEvent: {}
+[69.102396] (-) TimerEvent: {}
+[69.210230] (-) TimerEvent: {}
+[69.272526] (speech_to_text_pkg) StdoutLine: {'line': b'[100%] Built target whisper_transcription_node\n'}
+[69.293214] (speech_to_text_pkg) CommandEnded: {'returncode': 0}
+[69.294572] (speech_to_text_pkg) JobProgress: {'identifier': 'speech_to_text_pkg', 'progress': 'install'}
+[69.295196] (speech_to_text_pkg) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg'], 'cwd': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dredre', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dredre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '25429', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'dredre', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dredre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/dredre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dredre/.local/bin', 'SESSION_MANAGER': 'local/dredre-desktop:@/tmp/.ICE-unix/25400,unix/dredre-desktop:/tmp/.ICE-unix/25400', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2d1761f6_6eea_4a3a_994e_58b34bb31d0d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5Z7NP3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[69.310588] (-) TimerEvent: {}
+[69.315159] (speech_to_text_pkg) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[69.320226] (speech_to_text_pkg) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/transcription_pre_process_node\n'}
+[69.329265] (speech_to_text_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/transcription_pre_process_node" to ""\n'}
+[69.329858] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/audio_capture_node\n'}
+[69.330350] (speech_to_text_pkg) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/whisper_transcription_node\n'}
+[69.336942] (speech_to_text_pkg) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/whisper_transcription_node" to ""\n'}
+[69.337787] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/speech_to_text_pkg/wakeWordNode.py\n'}
+[69.337958] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/ament_index/resource_index/package_run_dependencies/speech_to_text_pkg\n'}
+[69.340270] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/ament_index/resource_index/parent_prefix_path/speech_to_text_pkg\n'}
+[69.340621] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/ament_prefix_path.sh\n'}
+[69.340907] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/ament_prefix_path.dsv\n'}
+[69.341166] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/path.sh\n'}
+[69.341453] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/environment/path.dsv\n'}
+[69.341719] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.bash\n'}
+[69.342022] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.sh\n'}
+[69.342423] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.zsh\n'}
+[69.342899] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/local_setup.dsv\n'}
+[69.343892] (speech_to_text_pkg) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/package.dsv\n'}
+[69.347876] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/ament_index/resource_index/packages/speech_to_text_pkg\n'}
+[69.348539] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/cmake/speech_to_text_pkgConfig.cmake\n'}
+[69.348996] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/cmake/speech_to_text_pkgConfig-version.cmake\n'}
+[69.349365] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/share/speech_to_text_pkg/package.xml\n'}
+[69.349568] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libwhisper.so.1.8.3\n'}
+[69.350024] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libwhisper.so.1\n'}
+[69.350677] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libwhisper.so\n'}
+[69.350966] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/whisper.h\n'}
+[69.351173] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/whisper/whisper-config.cmake\n'}
+[69.351371] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/whisper/whisper-version.cmake\n'}
+[69.351537] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/pkgconfig/whisper.pc\n'}
+[69.351663] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-cpu.so.0.9.5\n'}
+[69.351773] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-cpu.so.0\n'}
+[69.351885] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-cpu.so\n'}
+[69.351999] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml.so.0.9.5\n'}
+[69.352128] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml.so.0\n'}
+[69.352305] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml.so\n'}
+[69.352445] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml.h\n'}
+[69.352556] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cpu.h\n'}
+[69.352682] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-alloc.h\n'}
+[69.352790] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-backend.h\n'}
+[69.352975] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-blas.h\n'}
+[69.357128] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cann.h\n'}
+[69.357470] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cpp.h\n'}
+[69.357819] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-cuda.h\n'}
+[69.358140] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-opt.h\n'}
+[69.358442] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-metal.h\n'}
+[69.358707] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-rpc.h\n'}
+[69.358822] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-sycl.h\n'}
+[69.358918] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-vulkan.h\n'}
+[69.359013] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-webgpu.h\n'}
+[69.360350] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/ggml-zendnn.h\n'}
+[69.363011] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/include/gguf.h\n'}
+[69.363221] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-base.so.0.9.5\n'}
+[69.363368] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-base.so.0\n'}
+[69.363463] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/libggml-base.so\n'}
+[69.363553] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/ggml/ggml-config.cmake\n'}
+[69.363641] (speech_to_text_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib/cmake/ggml/ggml-version.cmake\n'}
+[69.363765] (speech_to_text_pkg) CommandEnded: {'returncode': 0}
+[69.402220] (speech_to_text_pkg) JobEnded: {'identifier': 'speech_to_text_pkg', 'rc': 0}
+[69.403075] (printer_pkg) JobStarted: {'identifier': 'printer_pkg'}
+[69.410887] (-) TimerEvent: {}
+[69.438400] (printer_pkg) JobProgress: {'identifier': 'printer_pkg', 'progress': 'cmake'}
+[69.440888] (printer_pkg) JobProgress: {'identifier': 'printer_pkg', 'progress': 'build'}
+[69.442055] (printer_pkg) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/printer_pkg', '--', '-j4', '-l4'], 'cwd': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/printer_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dredre', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dredre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '25429', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'dredre', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dredre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/dredre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dredre/.local/bin', 'SESSION_MANAGER': 'local/dredre-desktop:@/tmp/.ICE-unix/25400,unix/dredre-desktop:/tmp/.ICE-unix/25400', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2d1761f6_6eea_4a3a_994e_58b34bb31d0d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5Z7NP3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/printer_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[69.513268] (-) TimerEvent: {}
+[69.605274] (printer_pkg) StdoutLine: {'line': b'[100%] Built target printing_node\n'}
+[69.617202] (-) TimerEvent: {}
+[69.632019] (printer_pkg) CommandEnded: {'returncode': 0}
+[69.643286] (printer_pkg) JobProgress: {'identifier': 'printer_pkg', 'progress': 'install'}
+[69.643532] (printer_pkg) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/printer_pkg'], 'cwd': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/printer_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dredre', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dredre', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '25429', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'dredre', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dredre', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/dredre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dredre/.local/bin', 'SESSION_MANAGER': 'local/dredre-desktop:@/tmp/.ICE-unix/25400,unix/dredre-desktop:/tmp/.ICE-unix/25400', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2d1761f6_6eea_4a3a_994e_58b34bb31d0d', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5Z7NP3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/printer_pkg', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/speech_to_text_interfaces:/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[69.696387] (printer_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[69.700784] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/lib/printer_pkg/printing_node\n'}
+[69.701138] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/ament_index/resource_index/package_run_dependencies/printer_pkg\n'}
+[69.701330] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/ament_index/resource_index/parent_prefix_path/printer_pkg\n'}
+[69.701480] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/environment/ament_prefix_path.sh\n'}
+[69.701618] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/environment/ament_prefix_path.dsv\n'}
+[69.705266] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/environment/path.sh\n'}
+[69.705671] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/environment/path.dsv\n'}
+[69.711444] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/local_setup.bash\n'}
+[69.711595] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/local_setup.sh\n'}
+[69.711698] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/local_setup.zsh\n'}
+[69.711804] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/local_setup.dsv\n'}
+[69.711896] (printer_pkg) StdoutLine: {'line': b'-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/package.dsv\n'}
+[69.711994] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/ament_index/resource_index/packages/printer_pkg\n'}
+[69.712171] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/cmake/printer_pkgConfig.cmake\n'}
+[69.712306] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/cmake/printer_pkgConfig-version.cmake\n'}
+[69.712408] (printer_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/install/printer_pkg/share/printer_pkg/package.xml\n'}
+[69.724253] (printer_pkg) CommandEnded: {'returncode': 0}
+[69.740547] (-) TimerEvent: {}
+[69.809024] (printer_pkg) JobEnded: {'identifier': 'printer_pkg', 'rc': 0}
+[69.818268] (-) EventReactorShutdown: {}

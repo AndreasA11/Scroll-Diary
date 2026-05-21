@@ -1,0 +1,48 @@
+[ 34%] Built target ggml-base
+[ 34%] Built target audio_capture_node
+[ 37%] [32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o[0m
+[ 80%] Built target ggml-cpu
+[ 85%] Built target ggml
+[ 91%] Built target whisper
+[ 94%] [32mBuilding CXX object CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o[0m
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp:9[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In constructor ‘[01m[KLightweightVAD::[01;32m[KLightweightVAD[m[K(float, float, float, float, int)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KLightweightVAD::noiseAdaptRate_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   11 |     float [01;35m[KnoiseAdaptRate_[m[K;
+      |           [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat LightweightVAD::speechMultiplier_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   10 |     float [01;35m[KspeechMultiplier_[m[K;
+      |           [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:18:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   18 |     [01;35m[KLightweightVAD[m[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
+      |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:[m[K In member function ‘[01m[Kvoid transcriptionPreProcessNode::[01;32m[KaudioCallback[m[K(speech_to_text_interfaces::msg::AudioStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:120:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksamples[m[K’ was not declared in this scope; did you mean ‘[01m[Ksamples_[m[K’?
+  120 |             [01;31m[Ksamples[m[K.clear();
+      |             [01;31m[K^~~~~~~[m[K
+      |             [32m[Ksamples_[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K listeningStateCallback[m[K(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:116:9:[m[K [01;31m[Kerror: [m[K‘[01m[KdoneListening_[m[K’ was not declared in this scope
+  116 |         [01;31m[KdoneListening_[m[K.store(true);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperTranscriptionNode.hpp:1[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:117:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+  117 |         RCLCPP_INFO([01;31m[Kget_logger[m[K(), "Listening sesion ended, draining queue...");
+      |                     [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:26[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:107:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+  107 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+      |                 [01;36m[K^~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:117:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  117 |         [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Listening sesion ended, draining queue...");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/transcription_pre_process_node.dir/build.make:79: CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:302: CMakeFiles/transcription_pre_process_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/whisper_transcription_node.dir/build.make:79: CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:337: CMakeFiles/whisper_transcription_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

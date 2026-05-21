@@ -83,9 +83,12 @@ class whisperTranscriptionNode : public rclcpp::Node {
         void audioCallback(
             const speech_to_text_interfaces::msg::AudioStamped::SharedPtr msg);
 
+        void listeningStateCallback(const std_msgs::msg::Bool::SharedPtr msg);
+
         std::atomic<bool> running_;
         std::thread transcriptionThread_;
         std::atomic<bool> transcriptionState_;
+        std::atomic<bool> doneListening_{false};
         //whisper context
         whisper_context *ctx_;
         whisper_context_params cparams_;
@@ -96,7 +99,7 @@ class whisperTranscriptionNode : public rclcpp::Node {
         rclcpp::Publisher<std_msgs::msg::String>::SharedPtr transcriptionPublisher_;
         rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr transcriptionStatePublisher_;
         rclcpp::Subscription<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr cleanedAudioSubscriber_;
-        
+        rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr listeningStateSubscriber_;
 
     public:
         explicit whisperTranscriptionNode();

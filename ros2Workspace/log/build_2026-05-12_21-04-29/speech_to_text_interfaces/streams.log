@@ -1,0 +1,54 @@
+[0.051s] Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces -- -j4 -l4
+[0.189s] [  2%] Built target speech_to_text_interfaces__rosidl_generator_type_description
+[0.213s] [  2%] Built target ament_cmake_python_copy_speech_to_text_interfaces
+[0.292s] [  5%] Built target speech_to_text_interfaces__cpp
+[0.310s] [ 20%] Built target speech_to_text_interfaces__rosidl_generator_c
+[0.419s] [ 29%] Built target speech_to_text_interfaces__rosidl_typesupport_introspection_c
+[0.435s] [ 38%] Built target speech_to_text_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.436s] [ 47%] Built target speech_to_text_interfaces__rosidl_typesupport_fastrtps_c
+[0.511s] [ 55%] Built target speech_to_text_interfaces__rosidl_typesupport_c
+[0.534s] [ 64%] Built target speech_to_text_interfaces__rosidl_typesupport_introspection_cpp
+[0.553s] [ 73%] Built target speech_to_text_interfaces__rosidl_typesupport_cpp
+[0.608s] [ 73%] Built target speech_to_text_interfaces
+[0.664s] [ 76%] Built target speech_to_text_interfaces__py
+[0.736s] [ 82%] Built target speech_to_text_interfaces__rosidl_generator_py
+[0.843s] [ 88%] Built target speech_to_text_interfaces_s__rosidl_typesupport_fastrtps_c
+[0.850s] [ 94%] Built target speech_to_text_interfaces_s__rosidl_typesupport_introspection_c
+[0.863s] [100%] Built target speech_to_text_interfaces_s__rosidl_typesupport_c
+[1.492s] Traceback (most recent call last):
+[1.493s]   File "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces/ament_cmake_python/speech_to_text_interfaces/setup.py", line 4, in <module>
+[1.494s]     setup(
+[1.494s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 107, in setup
+[1.500s]     return distutils.core.setup(**attrs)
+[1.500s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.500s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 147, in setup
+[1.504s]     _setup_distribution = dist = klass(attrs)
+[1.504s]                                  ^^^^^^^^^^^^
+[1.504s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 485, in __init__
+[1.505s]     _Distribution.__init__(
+[1.505s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 283, in __init__
+[1.505s]     self.finalize_options()
+[1.505s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 926, in finalize_options
+[1.509s]     ep(self)
+[1.510s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 943, in _finalize_setup_keywords
+[1.510s]     for ep in metadata.entry_points(group='distutils.setup_keywords'):
+[1.510s]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.511s]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 913, in entry_points
+[1.511s]     return EntryPoints(eps).select(**params)
+[1.511s]            ^^^^^^^^^^^^^^^^
+[1.511s]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 911, in <genexpr>
+[1.511s]     dist.entry_points for dist in _unique(distributions())
+[1.520s]     ^^^^^^^^^^^^^^^^^
+[1.526s]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 471, in entry_points
+[1.529s]     return EntryPoints._from_text_for(self.read_text('entry_points.txt'), self)
+[1.529s]                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.531s]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 819, in read_text
+[1.531s]     return self._path.joinpath(filename).read_text(encoding='utf-8')
+[1.532s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.532s]   File "/usr/lib/python3.12/pathlib.py", line 1029, in read_text
+[1.532s]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[1.532s] KeyboardInterrupt
+[1.761s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_speech_to_text_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_speech_to_text_interfaces_egg] Interrupt
+[1.764s] gmake[1]: *** [CMakeFiles/Makefile2:584: CMakeFiles/ament_cmake_python_build_speech_to_text_interfaces_egg.dir/all] Interrupt
+[1.765s] gmake: *** [Makefile:146: all] Interrupt
+[1.772s] Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces -- -j4 -l4

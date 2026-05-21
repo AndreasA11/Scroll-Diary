@@ -10,6 +10,7 @@ transcriptionPreProcessNode::transcriptionPreProcessNode()
     audio_qos.best_effort();
 
     audioPublisher_ = create_publisher<speech_to_text_interfaces::msg::AudioStamped>("/whisper_audio", audio_qos);
+    listeningStatePublisher_ = create_publisher<std_msgs::msg::Bool>("/listeningState", 10);
     rawAudioSubscriber_ = create_subscription<speech_to_text_interfaces::msg::AudioStamped>(
         "/raw_audio", rclcpp::QoS(10).best_effort(), 
         std::bind(&transcriptionPreProcessNode::audioCallback, this, std::placeholders::_1));
@@ -75,12 +76,16 @@ void transcriptionPreProcessNode::audioCallback(const speech_to_text_interfaces:
         RCLCPP_INFO(get_logger(), "totalSilenceDuration_ %ld ms", 
         std::chrono::duration_cast<std::chrono::milliseconds>(totalSilenceDuration_).count());
 
-        if(totalSilenceDuration_ >= std::chrono::seconds(15)) {
+        if(totalSilenceDuration_ >= std::chrono::seconds(10)) {
             currentWakeState_ = false;
             isSilent_ = false;
             totalSilenceDuration_ = std::chrono::milliseconds(0);
             if(!samples_.empty()) {
                 publishAudio(samples_.size());
+                auto stateMsg = std_msgs::msg::Bool();
+                stateMsg.data = false;
+                listeningStatePublisher_->publish(stateMsg);
+                RCLCPP_INFO(get_logger(), "silence for 15 seconds, state is: %d", stateMsg.data );
                 samples_.clear();
             }
             return;
@@ -106,10 +111,10 @@ void transcriptionPreProcessNode::audioCallback(const speech_to_text_interfaces:
         samples_.insert(samples_.end(), msg->data.begin(), msg->data.end());      
     } else {
         //do nothing
-        RCLCPP_INFO(get_logger(), "SPEECH");
+        RCLCPP_INFO(get_logger(), "silence");
         return;
-    }
-
+    } 
+    
     if(isSilent_ && (now - silenceStartTime_ >= std::chrono::milliseconds(1500))) {
         if(samples_.size() >= MIN_CHUNK_SIZE) {
             publishAudio(samples_.size());

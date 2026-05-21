@@ -1,0 +1,35 @@
+[  2%] [32mBuilding C object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o[0m
+[  5%] [32mBuilding C object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o[0m
+[ 14%] Built target audio_capture_node
+[ 17%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o[0m
+[ 22%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o[0m
+[ 25%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o[0m
+[ 28%] [32mBuilding CXX object _deps/whisper-build/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o[0m
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/include/speech_to_text_pkg/whisperPreProcess.hpp:9[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:[m[K In constructor ‘[01m[KLightweightVAD::[01;32m[KLightweightVAD[m[K(float, float, float, float, int)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:11:11:[m[K [01;35m[Kwarning: [m[K‘[01m[KLightweightVAD::noiseAdaptRate_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   11 |     float [01;35m[KnoiseAdaptRate_[m[K;
+      |           [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:10:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kfloat LightweightVAD::speechMultiplier_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   10 |     float [01;35m[KspeechMultiplier_[m[K;
+      |           [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/vad.hpp:18:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   18 |     [01;35m[KLightweightVAD[m[K(float noiseFloorIn = 0.01f, float noiseAdaptRateIn = 0.01f,
+      |     [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:[m[K In member function ‘[01m[Kvoid transcriptionPreProcessNode::[01;32m[KaudioCallback[m[K(speech_to_text_interfaces::msg::AudioStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:115:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  115 |     } [01;31m[Kelse[m[K if (samples_.size() >= CHUNK_SIZE) {
+      |       [01;31m[K^~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:[m[K In member function ‘[01m[Kvoid transcriptionPreProcessNode::[01;32m[KboolCallback[m[K(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperPreProcessNode.cpp:128:33:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+  128 |         auto stateMsg = std_msgs[01;31m[K:[m[Kmsg::Bool();
+      |                                 [01;31m[K^[m[K
+      |                                 [32m[K::[m[K
+[ 31%] [32m[1mLinking CXX shared library libggml-base.so[0m
+gmake[2]: *** [CMakeFiles/transcription_pre_process_node.dir/build.make:79: CMakeFiles/transcription_pre_process_node.dir/src/whisperPreProcessNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:302: CMakeFiles/transcription_pre_process_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 37%] Built target ggml-base
+gmake: *** [Makefile:146: all] Error 2

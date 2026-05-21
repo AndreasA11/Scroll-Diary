@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces/ament_cmake_python/speech_to_text_interfaces/setup.py", line 4, in <module>
+    setup(
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 107, in setup
+    return distutils.core.setup(**attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 147, in setup
+    _setup_distribution = dist = klass(attrs)
+                                 ^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 485, in __init__
+    _Distribution.__init__(
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 283, in __init__
+    self.finalize_options()
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 926, in finalize_options
+    ep(self)
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 943, in _finalize_setup_keywords
+    for ep in metadata.entry_points(group='distutils.setup_keywords'):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 913, in entry_points
+    return EntryPoints(eps).select(**params)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 911, in <genexpr>
+    dist.entry_points for dist in _unique(distributions())
+    ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 471, in entry_points
+    return EntryPoints._from_text_for(self.read_text('entry_points.txt'), self)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 819, in read_text
+    return self._path.joinpath(filename).read_text(encoding='utf-8')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1029, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_speech_to_text_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_speech_to_text_interfaces_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:584: CMakeFiles/ament_cmake_python_build_speech_to_text_interfaces_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

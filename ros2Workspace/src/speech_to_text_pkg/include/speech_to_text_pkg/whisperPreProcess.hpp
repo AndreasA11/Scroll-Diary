@@ -37,9 +37,10 @@ class transcriptionPreProcessNode : public rclcpp::Node {
         
         //ROS2 publishers and subscriptions
         rclcpp::Publisher<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr audioPublisher_;
+        rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr listeningStatePublisher_;
         rclcpp::Subscription<speech_to_text_interfaces::msg::AudioStamped>::SharedPtr rawAudioSubscriber_;
         rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr wakeWordBoolSubscription_;
-
+        
     public:
         explicit transcriptionPreProcessNode();
         ~transcriptionPreProcessNode() override;

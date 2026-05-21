@@ -31,6 +31,11 @@ whisperTranscriptionNode::whisperTranscriptionNode()
         "/whisper_audio", rclcpp::QoS(10).best_effort(), 
         std::bind(&whisperTranscriptionNode::audioCallback, this, std::placeholders::_1));
 
+    listeningStateSubscriber_ = create_subscription<std_msgs::msg::Bool>(
+        "/listeningState", 10,
+        std::bind(&whisperTranscriptionNode::listeningStateCallback, this, std::placeholders::_1));
+    
+
     RCLCPP_INFO(get_logger(), "[INFO] Whisper model loaded successfully");
 
     liveCapture();
@@ -106,6 +111,14 @@ std::string whisperTranscriptionNode::transcribeBuffer(std::vector<float>& sampl
     return fullText;
 }
 
+void whisperTranscriptionNode::listeningStateCallback(const std_msgs::msg::Bool::SharedPtr msg) {
+    RCLCPP_INFO(get_logger(), "in listeningStateCallback");
+    if(!msg->data) {
+        doneListening_.store(true);
+        RCLCPP_INFO(get_logger(), "Listening sesion ended, draining queue...");
+    }
+}
+
 void whisperTranscriptionNode::audioCallback(
     const speech_to_text_interfaces::msg::AudioStamped::SharedPtr msg) {
     chunkQueue_.push(std::vector<float>(msg->data.begin(), msg->data.end()));
@@ -145,15 +158,21 @@ void whisperTranscriptionNode::publishTranscription(const std::string &transcrib
 
 void whisperTranscriptionNode::transcriptionWorker() {
     RCLCPP_INFO(get_logger(), "[INFO] Processor thread started");
-    transcriptionState_.store(true);
-    publishState();
+    transcriptionState_.store(false);
     
     
-    while(running_.load() || !chunkQueue_.empty()) {
+    
+    while(running_.load()) {
         std::vector<float> chunk;
         
         // Wait for chunk with timeout
+        RCLCPP_INFO(get_logger(), "doneListening state: %d", doneListening_.load());
         if(chunkQueue_.pop(chunk, 200)) {
+            if(!transcriptionState_.load()) {
+                transcriptionState_.store(true);
+                publishState();
+            }
+
             RCLCPP_INFO(get_logger(), "[PROCESSOR] Processing chunk: %zu samples", chunk.size());
             
             auto start = std::chrono::high_resolution_clock::now();
@@ -163,11 +182,19 @@ void whisperTranscriptionNode::transcriptionWorker() {
             
             auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
             RCLCPP_INFO(get_logger(), "[PROCESSOR] Transcription took %ld ms", duration.count());
-        }
+            RCLCPP_INFO(get_logger(), "Chunk queue size is : %ld", chunkQueue_.size());
+        
+        } else if(doneListening_.load() && chunkQueue_.empty()) {
+            //session complete, queue fully drained after pre processing signalled done
+            RCLCPP_INFO(get_logger(), "Queue drained, session complete. Awaiting next wake word instance.");
+            doneListening_.store(false);
+            transcriptionState_.store(false);
+            publishState();
+
+        } 
     }
     
     RCLCPP_INFO(get_logger(), "Processor thread stopped");
-
     transcriptionState_.store(false);
     publishState();
 }

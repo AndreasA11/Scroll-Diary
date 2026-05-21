@@ -33,10 +33,9 @@ bool printingNode::initPrinter() {
         RCLCPP_ERROR(get_logger(), "printer failed to connect");
         return false;
     }
-    std::string test = "printer connected, hello from pi";
-    write(fd_, test.c_str(), test.size());
     write(fd_, "\n\n\n", 3);
-    RCLCPP_INFO(get_logger(), "printer connected!");
+    RCLCPP_INFO(get_logger(), "printer connected");
+
     return true;
 }
 
