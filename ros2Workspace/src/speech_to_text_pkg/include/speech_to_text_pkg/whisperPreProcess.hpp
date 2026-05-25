@@ -30,6 +30,7 @@ class transcriptionPreProcessNode : public rclcpp::Node {
         LightweightVAD vad_;
 
         bool isSilent_ = false;
+        bool phraseFlushed_ = false;
         std::chrono::steady_clock::time_point silenceStartTime_;
         std::chrono::milliseconds totalSilenceDuration_{0};
 

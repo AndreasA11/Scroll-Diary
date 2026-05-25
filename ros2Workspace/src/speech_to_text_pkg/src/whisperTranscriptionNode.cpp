@@ -21,14 +21,15 @@ whisperTranscriptionNode::whisperTranscriptionNode()
     }
 
     rclcpp::QoS audio_qos(rclcpp::KeepLast(10));
-    audio_qos.best_effort();
+    audio_qos.reliable();
+    audio_qos.transient_local();
     
     transcriptionPublisher_ = create_publisher<std_msgs::msg::String>("/transcription", 10);
 
     transcriptionStatePublisher_ = create_publisher<std_msgs::msg::Bool>("/transcriptionState", 10);
 
     cleanedAudioSubscriber_ = create_subscription<speech_to_text_interfaces::msg::AudioStamped>(
-        "/whisper_audio", rclcpp::QoS(10).best_effort(), 
+        "/whisper_audio", audio_qos, 
         std::bind(&whisperTranscriptionNode::audioCallback, this, std::placeholders::_1));
 
     listeningStateSubscriber_ = create_subscription<std_msgs::msg::Bool>(
@@ -57,6 +58,12 @@ bool whisperTranscriptionNode::whisperInit(std::string &modelPath) {
         RCLCPP_FATAL(get_logger(), "Failed to load whisper model");
         return false;
     }
+    // Warm up GGML compute buffers so first real chunk isn't penalised
+    std::vector<float> dummy(whisper_n_len_from_state(whisper_init_state(ctx_)), 0.0f);
+    whisper_full_params warmup = whisper_full_default_params(WHISPER_SAMPLING_GREEDY);
+    warmup.print_progress = false;
+    warmup.print_realtime = false;
+    whisper_full(ctx_, warmup, dummy.data(), dummy.size());
     return true;
 }
 
@@ -102,6 +109,7 @@ std::string whisperTranscriptionNode::transcribeBuffer(std::vector<float>& sampl
     //loop through every segment, transcribe each segment and append to final string, then return final string
     for (int i = 0; i < n_segments; ++i) {
         const char* txt = whisper_full_get_segment_text(ctx_, i);
+        RCLCPP_INFO(get_logger(), "Segment [%d]: '%s'", i, txt ? txt : "null");
         if(txt) {
             fullText += txt; //append transcribed chunk onto full string
         }
@@ -112,7 +120,6 @@ std::string whisperTranscriptionNode::transcribeBuffer(std::vector<float>& sampl
 }
 
 void whisperTranscriptionNode::listeningStateCallback(const std_msgs::msg::Bool::SharedPtr msg) {
-    RCLCPP_INFO(get_logger(), "in listeningStateCallback");
     if(!msg->data) {
         doneListening_.store(true);
         RCLCPP_INFO(get_logger(), "Listening sesion ended, draining queue...");
@@ -121,6 +128,9 @@ void whisperTranscriptionNode::listeningStateCallback(const std_msgs::msg::Bool:
 
 void whisperTranscriptionNode::audioCallback(
     const speech_to_text_interfaces::msg::AudioStamped::SharedPtr msg) {
+    if (!running_.load()) {
+        return; 
+    }
     chunkQueue_.push(std::vector<float>(msg->data.begin(), msg->data.end()));
     RCLCPP_INFO(get_logger(), "Chunk enqueued, queue depth: %zu", chunkQueue_.size());
 }

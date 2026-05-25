@@ -1,0 +1,15 @@
+[ 25%] Built target ggml-base
+[ 31%] Built target transcription_pre_process_node
+[ 40%] Built target audio_capture_node
+[ 82%] Built target ggml-cpu
+[ 88%] Built target ggml
+[ 94%] Built target whisper
+[ 97%] [32mBuilding CXX object CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o[0m
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:[m[K In member function ‘[01m[Kstd::string whisperTranscriptionNode::[01;32m[KtranscribeBuffer[m[K(std::vector<float>&)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg/src/whisperTranscriptionNode.cpp:92:25:[m[K [01;31m[Kerror: [m[K‘[01m[KisFirstChuinkl_[m[K’ was not declared in this scope; did you mean ‘[01m[KisFirstChunk_[m[K’?
+   92 |     params.no_context = [01;31m[KisFirstChuinkl_[m[K.load();  // Use context from previous chunks
+      |                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                         [32m[KisFirstChunk_[m[K
+gmake[2]: *** [CMakeFiles/whisper_transcription_node.dir/build.make:79: CMakeFiles/whisper_transcription_node.dir/src/whisperTranscriptionNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:337: CMakeFiles/whisper_transcription_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

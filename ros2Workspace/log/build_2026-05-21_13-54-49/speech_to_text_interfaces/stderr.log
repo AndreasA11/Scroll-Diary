@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/build/speech_to_text_interfaces/ament_cmake_python/speech_to_text_interfaces/setup.py", line 1, in <module>
+    from setuptools import find_packages
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 17, in <module>
+    from setuptools.dist import Distribution
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 37, in <module>
+    from setuptools.config import setupcfg, pyprojecttoml
+  File "/usr/lib/python3/dist-packages/setuptools/config/__init__.py", line 8, in <module>
+    from . import setupcfg
+  File "/usr/lib/python3/dist-packages/setuptools/config/setupcfg.py", line 33, in <module>
+    from ..extern.packaging.markers import default_environment as marker_env
+  File "/usr/lib/python3/dist-packages/setuptools/_vendor/packaging/markers.py", line 11, in <module>
+    from ._parser import (
+  File "/usr/lib/python3/dist-packages/setuptools/_vendor/packaging/_parser.py", line 10, in <module>
+    from ._tokenizer import DEFAULT_RULES, Tokenizer
+  File "/usr/lib/python3/dist-packages/setuptools/_vendor/packaging/_tokenizer.py", line 6, in <module>
+    from .specifiers import Specifier
+  File "/usr/lib/python3/dist-packages/setuptools/_vendor/packaging/specifiers.py", line 107, in <module>
+    class Specifier(BaseSpecifier):
+  File "/usr/lib/python3/dist-packages/setuptools/_vendor/packaging/specifiers.py", line 514, in Specifier
+    def __contains__(self, item: Union[str, Version]) -> bool:
+                                 ~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 395, in inner
+    return _caches[func](*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 508, in __getitem__
+    @_tp_cache
+
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_speech_to_text_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_speech_to_text_interfaces_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:584: CMakeFiles/ament_cmake_python_build_speech_to_text_interfaces_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
