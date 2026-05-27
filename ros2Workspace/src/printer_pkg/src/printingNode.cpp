@@ -45,7 +45,8 @@ void printingNode::transcriptionCallback(const std_msgs::msg::String::SharedPtr 
 }
 
 void printingNode::transcriptionStateCallback(const std_msgs::msg::Bool::SharedPtr state) {
-    if(state) {
+    RCLCPP_INFO(get_logger(), "state is: %d", state->data);
+    if(state->data) {
         if(!transcriptionStarted_) {
             transcriptionStarted_ = true;
         }
@@ -57,15 +58,18 @@ void printingNode::transcriptionStateCallback(const std_msgs::msg::Bool::SharedP
 }
 
 void printingNode::printTranscription() {
+    RCLCPP_INFO(get_logger(), "We are inside printTranscription");
     if(transcriptionStarted_ && !sendingTranscription_) {
+            RCLCPP_INFO(get_logger(), "We are inside printTranscription 2");
+
         if(!fullTranscription_.empty()) {
             write(fd_, fullTranscription_.c_str(), fullTranscription_.size());
-            write(fd_, "\n\n\n", 3);
+            const char cutCmd[] = {0x1D, 0x56, 0x41, 0x00}; // GS V A - full cut with feed
+            write(fd_, cutCmd, sizeof(cutCmd));
             RCLCPP_INFO(get_logger(), fullTranscription_.c_str());
         }
         fullTranscription_.clear();
         close(fd_);
-        //send print to make it actually print? or does it print as bytes come in?        
         transcriptionStarted_ = false;
     }
 }
