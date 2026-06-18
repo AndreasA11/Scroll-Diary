@@ -64,8 +64,10 @@ void printingNode::printTranscription() {
 
         if(!fullTranscription_.empty()) {
             write(fd_, fullTranscription_.c_str(), fullTranscription_.size());
+            write(fd_, "\n\n\n\n\n", 5);
             const char cutCmd[] = {0x1D, 0x56, 0x41, 0x00}; // GS V A - full cut with feed
             write(fd_, cutCmd, sizeof(cutCmd));
+            write(fd_, "\n\n\n\n\n", 5);
             RCLCPP_INFO(get_logger(), fullTranscription_.c_str());
         }
         fullTranscription_.clear();
