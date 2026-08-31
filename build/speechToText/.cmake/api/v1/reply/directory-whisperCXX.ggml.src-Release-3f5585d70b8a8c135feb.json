@@ -1,0 +1,75 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ggml_add_backend_library",
+			"ggml_add_cpu_backend_variant_impl"
+		],
+		"files" : 
+		[
+			"whisperCXX/ggml/src/CMakeLists.txt",
+			"whisperCXX/ggml/src/ggml-cpu/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 444,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 22,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 261,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"whisperCXX/ggml/src/libggml-cpu.so.0.9.5",
+				"whisperCXX/ggml/src/libggml-cpu.so.0"
+			],
+			"targetId" : "ggml-cpu::@e7bf8767c94aaa638b17",
+			"targetIndex" : 30,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"whisperCXX/ggml/src/libggml-cpu.so"
+			],
+			"targetId" : "ggml-cpu::@e7bf8767c94aaa638b17",
+			"targetIndex" : 30,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "whisperCXX/ggml/src",
+		"source" : "whisperCXX/ggml/src"
+	}
+}

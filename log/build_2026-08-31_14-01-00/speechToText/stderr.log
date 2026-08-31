@@ -1,0 +1,33 @@
+[0mCMake Deprecation Warning at whisperCXX/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/src/speechToText.cpp:[m[K In constructor ‘[01m[KSpeechToTextManager::[01;32m[KSpeechToTextManager[m[K(const std::string&)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/src/speechToText.cpp:8:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kwhisper_context*[01;32m[K whisper_init_from_file[m[K(const char*)[m[K’ is deprecated: use whisper_init_from_file_with_params instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+    8 |     ctx = [01;35m[Kwhisper_init_from_file(modelPath.c_str())[m[K;
+      |           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/include/speechToText.hpp:3[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/src/speechToText.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/include/whisper.h:217:46:[m[K [01;36m[Knote: [m[Kdeclared here
+  217 |         WHISPER_API struct whisper_context * [01;36m[Kwhisper_init_from_file[m[K(const char * path_model),
+      |                                              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/include/whisper.h:12:44:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KWHISPER_DEPRECATED[m[K’
+   12 | #    define WHISPER_DEPRECATED(func, hint) [01;36m[Kfunc[m[K __attribute__((deprecated(hint)))
+      |                                            [01;36m[K^~~~[m[K
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/src/audio.cpp:4[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/examples/miniaudio.h:[m[K In function ‘[01m[Kvoid[01;32m[K ma_engine_node_process_pcm_frames__sound[m[K(ma_node*, const float**, ma_uint32*, float**, ma_uint32*)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/examples/miniaudio.h:14862:84:[m[K [01;35m[Kwarning: [m[K‘[01m[Klong unsigned int[01;32m[K __atomic_load_8[m[K(const volatile void*, int)[m[K’ writing 8 bytes into a region of size 0 overflows the destination [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wstringop-overflow=-Wstringop-overflow=]8;;[m[K]
+14862 |     #define ma_atomic_load_explicit_64(dst, order)                  [01;35m[K__atomic_load_n(dst, order)[m[K
+      |                                                                     [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/examples/miniaudio.h:15630:73:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kma_atomic_load_explicit_64[m[K’
+15630 | #define ma_atomic_load_64(ptr)                                          [01;36m[Kma_atomic_load_explicit_64[m[K(ptr, ma_atomic_memory_order_seq_cst)
+      |                                                                         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/examples/miniaudio.h:75146:18:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kma_atomic_load_64[m[K’
+75146 |     seekTarget = [01;36m[Kma_atomic_load_64[m[K(&pSound->seekTarget);
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kcc1plus:[m[K [01;36m[Knote: [m[Kdestination object is likely at address zero

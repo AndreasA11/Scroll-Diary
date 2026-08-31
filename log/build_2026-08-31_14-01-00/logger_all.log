@@ -1,0 +1,414 @@
+[0.160s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.160s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff84011e20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff836588f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff836588f0>>, mixin_verb=('build',))
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.218s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dredre/DevStuff/scrollDiary/speechToText'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extension 'ros'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extensions ['cmake', 'python']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extension 'cmake'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extension 'python'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extensions ['python_setup_py']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace) by extension 'python_setup_py'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/build) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/build) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/build) ignored
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/install) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/install) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/install) ignored
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/log) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/log) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/log) ignored
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extension 'ros'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extensions ['cmake', 'python']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extension 'cmake'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extension 'python'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extensions ['python_setup_py']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src) by extension 'python_setup_py'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/motor_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/motor_pkg) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/motor_pkg) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/motor_pkg) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/motor_pkg) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/motor_pkg) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/motor_pkg) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/motor_pkg) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/motor_pkg) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2Workspace/src/motor_pkg' with type 'ros.ament_cmake' and name 'motor_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/printer_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/printer_pkg) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/printer_pkg) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/printer_pkg) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/printer_pkg) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/printer_pkg) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/printer_pkg) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/printer_pkg) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/printer_pkg) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2Workspace/src/printer_pkg' with type 'ros.ament_cmake' and name 'printer_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_interfaces) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_interfaces) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_interfaces) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_interfaces) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_interfaces) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_interfaces) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_interfaces) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_interfaces) by extension 'ros'
+[0.272s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2Workspace/src/speech_to_text_interfaces' with type 'ros.ament_cmake' and name 'speech_to_text_interfaces'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_pkg) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_pkg) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_pkg) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_pkg) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_pkg) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_pkg) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_pkg) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(ros2Workspace/src/speech_to_text_pkg) by extension 'ros'
+[0.273s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2Workspace/src/speech_to_text_pkg' with type 'ros.ament_cmake' and name 'speech_to_text_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extension 'ros'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extensions ['cmake', 'python']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extension 'cmake'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(speechToText) by extension 'python'
+[0.325s] DEBUG:colcon.colcon_core.package_identification:Package 'speechToText' with type 'cmake' and name 'speechToText'
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.354s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 342 installed packages in /opt/ros/jazzy
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speechToText' build argument 'cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speechToText' build argument 'cmake_target' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speechToText' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speechToText' build argument 'cmake_clean_cache' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speechToText' build argument 'cmake_clean_first' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speechToText' build argument 'cmake_force_configure' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speechToText' build argument 'ament_cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speechToText' build argument 'catkin_cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speechToText' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.428s] DEBUG:colcon.colcon_core.verb:Building package 'speechToText' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText', 'merge_install': False, 'path': '/home/dredre/DevStuff/scrollDiary/speechToText/speechToText', 'symlink_install': False, 'test_result_base': None}
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.428s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.429s] DEBUG:colcon.colcon_core.verb:Building package 'speech_to_text_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces', 'merge_install': False, 'path': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_pkg' build argument 'cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_pkg' build argument 'cmake_target' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.429s] Level 5:colcon.colcon_core.verb:set package 'speech_to_text_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.429s] DEBUG:colcon.colcon_core.verb:Building package 'speech_to_text_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg', 'merge_install': False, 'path': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'printer_pkg' build argument 'cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'printer_pkg' build argument 'cmake_target' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'printer_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'printer_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'printer_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'printer_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'printer_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'printer_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'printer_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.430s] DEBUG:colcon.colcon_core.verb:Building package 'printer_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg', 'merge_install': False, 'path': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/printer_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'motor_pkg' build argument 'cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'motor_pkg' build argument 'cmake_target' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'motor_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'motor_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'motor_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'motor_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'motor_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'motor_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.430s] Level 5:colcon.colcon_core.verb:set package 'motor_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.430s] DEBUG:colcon.colcon_core.verb:Building package 'motor_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dredre/DevStuff/scrollDiary/speechToText/build/motor_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg', 'merge_install': False, 'path': '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/motor_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.430s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.432s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.433s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_interfaces' with build type 'ament_cmake'
+[0.433s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_interfaces'
+[0.439s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.439s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.439s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.451s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dredre/DevStuff/scrollDiary/speechToText/speechToText'
+[0.452s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.452s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_interfaces -DCMAKE_INSTALL_PREFIX=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces
+[0.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake /home/dredre/DevStuff/scrollDiary/speechToText/speechToText -DCMAKE_INSTALL_PREFIX=/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText
+[5.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake /home/dredre/DevStuff/scrollDiary/speechToText/speechToText -DCMAKE_INSTALL_PREFIX=/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText
+[5.092s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText -- -j4 -l4
+[8.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_interfaces -DCMAKE_INSTALL_PREFIX=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces
+[8.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces -- -j4 -l4
+[19.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces -- -j4 -l4
+[19.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --install /home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces
+[19.306s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(speech_to_text_interfaces)
+[19.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --install /home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_interfaces
+[19.327s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces' for CMake module files
+[19.328s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces' for CMake config files
+[19.329s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_to_text_interfaces', 'cmake_prefix_path')
+[19.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/cmake_prefix_path.ps1'
+[19.330s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/cmake_prefix_path.dsv'
+[19.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/cmake_prefix_path.sh'
+[19.332s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib'
+[19.333s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_to_text_interfaces', 'ld_library_path_lib')
+[19.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/ld_library_path_lib.ps1'
+[19.334s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/ld_library_path_lib.dsv'
+[19.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/ld_library_path_lib.sh'
+[19.335s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/bin'
+[19.335s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/pkgconfig/speech_to_text_interfaces.pc'
+[19.336s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages'
+[19.336s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_to_text_interfaces', 'pythonpath')
+[19.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/pythonpath.ps1'
+[19.337s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/pythonpath.dsv'
+[19.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/pythonpath.sh'
+[19.338s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/bin'
+[19.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.ps1'
+[19.340s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.dsv'
+[19.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.sh'
+[19.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.bash'
+[19.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.zsh'
+[19.346s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/colcon-core/packages/speech_to_text_interfaces)
+[19.347s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(speech_to_text_interfaces)
+[19.348s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces' for CMake module files
+[19.349s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces' for CMake config files
+[19.349s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_to_text_interfaces', 'cmake_prefix_path')
+[19.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/cmake_prefix_path.ps1'
+[19.351s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/cmake_prefix_path.dsv'
+[19.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/cmake_prefix_path.sh'
+[19.353s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib'
+[19.353s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_to_text_interfaces', 'ld_library_path_lib')
+[19.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/ld_library_path_lib.ps1'
+[19.354s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/ld_library_path_lib.dsv'
+[19.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/ld_library_path_lib.sh'
+[19.355s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/bin'
+[19.356s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/pkgconfig/speech_to_text_interfaces.pc'
+[19.356s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages'
+[19.356s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_to_text_interfaces', 'pythonpath')
+[19.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/pythonpath.ps1'
+[19.357s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/pythonpath.dsv'
+[19.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/hook/pythonpath.sh'
+[19.359s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/bin'
+[19.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.ps1'
+[19.361s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.dsv'
+[19.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.sh'
+[19.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.bash'
+[19.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/speech_to_text_interfaces/package.zsh'
+[19.369s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/share/colcon-core/packages/speech_to_text_interfaces)
+[19.372s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg' with build type 'ament_cmake'
+[19.373s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg'
+[19.373s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[19.377s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.412s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg -DCMAKE_INSTALL_PREFIX=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg
+[46.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg' returned '0': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/speech_to_text_pkg -DCMAKE_INSTALL_PREFIX=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg
+[46.612s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg -- -j4 -l4
+[169.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText -- -j4 -l4
+[169.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --install /home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText
+[169.337s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(speechToText)
+[169.337s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText' for CMake module files
+[169.338s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText' for CMake config files
+[169.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('speechToText', 'cmake_prefix_path')
+[169.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/hook/cmake_prefix_path.ps1'
+[169.340s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/local/bin/cmake --install /home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText
+[169.340s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/hook/cmake_prefix_path.dsv'
+[169.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/hook/cmake_prefix_path.sh'
+[169.342s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib'
+[169.342s] Level 1:colcon.colcon_core.shell:create_environment_hook('speechToText', 'ld_library_path_lib')
+[169.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/hook/ld_library_path_lib.ps1'
+[169.343s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/hook/ld_library_path_lib.dsv'
+[169.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/hook/ld_library_path_lib.sh'
+[169.345s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/bin'
+[169.346s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/pkgconfig/speechToText.pc'
+[169.346s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/python3.12/site-packages'
+[169.346s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/bin'
+[169.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/package.ps1'
+[169.348s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/package.dsv'
+[169.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/package.sh'
+[169.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/package.bash'
+[169.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/speechToText/package.zsh'
+[169.350s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/share/colcon-core/packages/speechToText)
+[231.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg' returned '0': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg -- -j4 -l4
+[231.176s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg
+[231.214s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(speech_to_text_pkg)
+[231.214s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg' for CMake module files
+[231.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg' returned '0': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/dredre/DevStuff/scrollDiary/speechToText/build/speech_to_text_pkg
+[231.215s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg' for CMake config files
+[231.216s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_to_text_pkg', 'cmake_prefix_path')
+[231.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/cmake_prefix_path.ps1'
+[231.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/cmake_prefix_path.dsv'
+[231.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/cmake_prefix_path.sh'
+[231.219s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib'
+[231.220s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_to_text_pkg', 'ld_library_path_lib')
+[231.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/ld_library_path_lib.ps1'
+[231.221s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/ld_library_path_lib.dsv'
+[231.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/ld_library_path_lib.sh'
+[231.222s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/bin'
+[231.222s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib/pkgconfig/speech_to_text_pkg.pc'
+[231.222s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib/python3.12/site-packages'
+[231.223s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/bin'
+[231.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/package.ps1'
+[231.224s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/package.dsv'
+[231.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/package.sh'
+[231.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/package.bash'
+[231.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/package.zsh'
+[231.226s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/colcon-core/packages/speech_to_text_pkg)
+[231.227s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(speech_to_text_pkg)
+[231.227s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg' for CMake module files
+[231.228s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg' for CMake config files
+[231.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_to_text_pkg', 'cmake_prefix_path')
+[231.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/cmake_prefix_path.ps1'
+[231.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/cmake_prefix_path.dsv'
+[231.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/cmake_prefix_path.sh'
+[231.235s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib'
+[231.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_to_text_pkg', 'ld_library_path_lib')
+[231.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/ld_library_path_lib.ps1'
+[231.239s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/ld_library_path_lib.dsv'
+[231.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/hook/ld_library_path_lib.sh'
+[231.241s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/bin'
+[231.241s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib/pkgconfig/speech_to_text_pkg.pc'
+[231.241s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib/python3.12/site-packages'
+[231.242s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/bin'
+[231.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/package.ps1'
+[231.245s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/package.dsv'
+[231.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/package.sh'
+[231.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/package.bash'
+[231.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/speech_to_text_pkg/package.zsh'
+[231.256s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/share/colcon-core/packages/speech_to_text_pkg)
+[231.257s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/printer_pkg' with build type 'ament_cmake'
+[231.258s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/printer_pkg'
+[231.258s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[231.259s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[231.292s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/printer_pkg -DCMAKE_INSTALL_PREFIX=/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg
+[233.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg' returned '0': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/printer_pkg -DCMAKE_INSTALL_PREFIX=/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg
+[233.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg -- -j4 -l4
+[250.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg' returned '0': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg -- -j4 -l4
+[250.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg
+[250.799s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(printer_pkg)
+[250.799s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg' for CMake module files
+[250.800s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg' returned '0': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/dredre/DevStuff/scrollDiary/speechToText/build/printer_pkg
+[250.800s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg' for CMake config files
+[250.800s] Level 1:colcon.colcon_core.shell:create_environment_hook('printer_pkg', 'cmake_prefix_path')
+[250.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/hook/cmake_prefix_path.ps1'
+[250.801s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/hook/cmake_prefix_path.dsv'
+[250.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/hook/cmake_prefix_path.sh'
+[250.802s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/lib'
+[250.803s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/bin'
+[250.803s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/lib/pkgconfig/printer_pkg.pc'
+[250.803s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/lib/python3.12/site-packages'
+[250.803s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/bin'
+[250.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/package.ps1'
+[250.804s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/package.dsv'
+[250.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/package.sh'
+[250.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/package.bash'
+[250.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/package.zsh'
+[250.806s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/colcon-core/packages/printer_pkg)
+[250.807s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(printer_pkg)
+[250.807s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg' for CMake module files
+[250.808s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg' for CMake config files
+[250.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('printer_pkg', 'cmake_prefix_path')
+[250.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/hook/cmake_prefix_path.ps1'
+[250.809s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/hook/cmake_prefix_path.dsv'
+[250.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/hook/cmake_prefix_path.sh'
+[250.811s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/lib'
+[250.811s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/bin'
+[250.811s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/lib/pkgconfig/printer_pkg.pc'
+[250.811s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/lib/python3.12/site-packages'
+[250.812s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/bin'
+[250.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/package.ps1'
+[250.813s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/package.dsv'
+[250.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/package.sh'
+[250.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/package.bash'
+[250.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/printer_pkg/package.zsh'
+[250.820s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg/share/colcon-core/packages/printer_pkg)
+[250.820s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/motor_pkg' with build type 'ament_cmake'
+[250.821s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/motor_pkg'
+[250.822s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[250.823s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[250.855s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/motor_pkg': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/motor_pkg -DCMAKE_INSTALL_PREFIX=/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg
+[252.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dredre/DevStuff/scrollDiary/speechToText/build/motor_pkg' returned '1': AMENT_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/printer_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_pkg/lib:/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dredre/DevStuff/scrollDiary/speechToText/install/speech_to_text_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/local/bin/cmake /home/dredre/DevStuff/scrollDiary/speechToText/ros2Workspace/src/motor_pkg -DCMAKE_INSTALL_PREFIX=/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg
+[252.745s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_pkg)
+[252.745s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg' for CMake module files
+[252.746s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg' for CMake config files
+[252.746s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg/bin'
+[252.746s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg/lib/pkgconfig/motor_pkg.pc'
+[252.746s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg/lib/python3.12/site-packages'
+[252.747s] Level 1:colcon.colcon_core.environment:checking '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg/bin'
+[252.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg/share/motor_pkg/package.ps1'
+[252.748s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg/share/motor_pkg/package.dsv'
+[252.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg/share/motor_pkg/package.sh'
+[252.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg/share/motor_pkg/package.bash'
+[252.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg/share/motor_pkg/package.zsh'
+[252.750s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dredre/DevStuff/scrollDiary/speechToText/install/motor_pkg/share/colcon-core/packages/motor_pkg)
+[252.760s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[252.764s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[252.764s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[252.764s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[252.803s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[252.803s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[252.803s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[252.834s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[252.834s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dredre/DevStuff/scrollDiary/speechToText/install/local_setup.ps1'
+[252.836s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dredre/DevStuff/scrollDiary/speechToText/install/_local_setup_util_ps1.py'
+[252.837s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dredre/DevStuff/scrollDiary/speechToText/install/setup.ps1'
+[252.839s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dredre/DevStuff/scrollDiary/speechToText/install/local_setup.sh'
+[252.840s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dredre/DevStuff/scrollDiary/speechToText/install/_local_setup_util_sh.py'
+[252.841s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dredre/DevStuff/scrollDiary/speechToText/install/setup.sh'
+[252.844s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dredre/DevStuff/scrollDiary/speechToText/install/local_setup.bash'
+[252.846s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dredre/DevStuff/scrollDiary/speechToText/install/setup.bash'
+[252.849s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dredre/DevStuff/scrollDiary/speechToText/install/local_setup.zsh'
+[252.850s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dredre/DevStuff/scrollDiary/speechToText/install/setup.zsh'

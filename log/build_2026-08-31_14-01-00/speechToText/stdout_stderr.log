@@ -1,0 +1,180 @@
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[0mCMake Deprecation Warning at whisperCXX/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+-- Found Git: /usr/bin/git (found version "2.43.0")
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: aarch64
+-- GGML_SYSTEM_ARCH: ARM
+-- Including CPU backend
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- ARM detected
+-- Performing Test GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E
+-- Performing Test GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E - Failed
+-- ARM detected flags: -mcpu=cortex-a76+crc+crypto
+-- Performing Test GGML_MACHINE_SUPPORTS_dotprod
+-- Performing Test GGML_MACHINE_SUPPORTS_dotprod - Failed
+-- Performing Test GGML_MACHINE_SUPPORTS_nodotprod
+-- Performing Test GGML_MACHINE_SUPPORTS_nodotprod - Success
+-- Performing Test GGML_MACHINE_SUPPORTS_i8mm
+-- Performing Test GGML_MACHINE_SUPPORTS_i8mm - Failed
+-- Performing Test GGML_MACHINE_SUPPORTS_noi8mm
+-- Performing Test GGML_MACHINE_SUPPORTS_noi8mm - Success
+-- Performing Test GGML_MACHINE_SUPPORTS_sve
+-- Performing Test GGML_MACHINE_SUPPORTS_sve - Failed
+-- Performing Test GGML_MACHINE_SUPPORTS_nosve
+-- Performing Test GGML_MACHINE_SUPPORTS_nosve - Success
+-- Performing Test GGML_MACHINE_SUPPORTS_sme
+-- Performing Test GGML_MACHINE_SUPPORTS_sme - Failed
+-- Performing Test GGML_MACHINE_SUPPORTS_nosme
+-- Performing Test GGML_MACHINE_SUPPORTS_nosme - Failed
+-- Checking for ARM features using flags:
+--   -U__ARM_FEATURE_DOTPROD
+--   -U__ARM_FEATURE_MATMUL_INT8
+--   -U__ARM_FEATURE_SVE
+--   -mcpu=cortex-a76+crc+crypto+nodotprod+noi8mm+nosve
+-- Performing Test HAVE_DOTPROD
+-- Performing Test HAVE_DOTPROD - Failed
+-- Performing Test HAVE_SVE
+-- Performing Test HAVE_SVE - Failed
+-- Performing Test HAVE_MATMUL_INT8
+-- Performing Test HAVE_MATMUL_INT8 - Failed
+-- Performing Test HAVE_FMA
+-- Performing Test HAVE_FMA - Success
+-- Performing Test HAVE_FP16_VECTOR_ARITHMETIC
+-- Performing Test HAVE_FP16_VECTOR_ARITHMETIC - Success
+-- Performing Test HAVE_SME
+-- Performing Test HAVE_SME - Failed
+-- Adding CPU backend variant ggml-cpu: -U__ARM_FEATURE_DOTPROD;-U__ARM_FEATURE_MATMUL_INT8;-U__ARM_FEATURE_SVE;-mcpu=cortex-a76+crc+crypto+nodotprod+noi8mm+nosve 
+-- ggml version: 0.9.5
+-- ggml commit:  8846cff
+-- Configuring done (4.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/dredre/DevStuff/scrollDiary/speechToText/build/speechToText
+[  5%] [32mBuilding CXX object CMakeFiles/transcribeTest.dir/src/transcribeTester.cpp.o[0m
+[  5%] [32mBuilding C object whisperCXX/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o[0m
+[  8%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o[0m
+[ 11%] [32mBuilding C object whisperCXX/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o[0m
+[ 14%] [32m[1mLinking CXX executable transcribeTest[0m
+[ 17%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o[0m
+[ 17%] Built target transcribeTest
+[ 20%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o[0m
+[ 22%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o[0m
+[ 25%] [32mBuilding C object whisperCXX/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o[0m
+[ 28%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o[0m
+[ 31%] [32m[1mLinking CXX shared library libggml-base.so[0m
+[ 31%] Built target ggml-base
+[ 37%] [32mBuilding C object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o[0m
+[ 37%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o[0m
+[ 40%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o[0m
+[ 42%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o[0m
+[ 45%] [32mBuilding C object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o[0m
+[ 48%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o[0m
+[ 51%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o[0m
+[ 54%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o[0m
+[ 57%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o[0m
+[ 60%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o[0m
+[ 62%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o[0m
+[ 65%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o[0m
+[ 68%] [32mBuilding C object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/quants.c.o[0m
+[ 71%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/repack.cpp.o[0m
+[ 74%] [32m[1mLinking CXX shared library libggml-cpu.so[0m
+[ 74%] Built target ggml-cpu
+[ 77%] [32mBuilding CXX object whisperCXX/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o[0m
+[ 80%] [32m[1mLinking CXX shared library libggml.so[0m
+[ 80%] Built target ggml
+[ 82%] [32mBuilding CXX object whisperCXX/src/CMakeFiles/whisper.dir/whisper.cpp.o[0m
+[ 85%] [32m[1mLinking CXX shared library libwhisper.so[0m
+[ 85%] Built target whisper
+[ 88%] [32mBuilding CXX object CMakeFiles/speechToText.dir/src/main.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/speechToText.dir/src/speechToText.cpp.o[0m
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/src/speechToText.cpp:[m[K In constructor ‘[01m[KSpeechToTextManager::[01;32m[KSpeechToTextManager[m[K(const std::string&)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/src/speechToText.cpp:8:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kwhisper_context*[01;32m[K whisper_init_from_file[m[K(const char*)[m[K’ is deprecated: use whisper_init_from_file_with_params instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+    8 |     ctx = [01;35m[Kwhisper_init_from_file(modelPath.c_str())[m[K;
+      |           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/include/speechToText.hpp:3[m[K,
+                 from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/src/speechToText.cpp:1[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/include/whisper.h:217:46:[m[K [01;36m[Knote: [m[Kdeclared here
+  217 |         WHISPER_API struct whisper_context * [01;36m[Kwhisper_init_from_file[m[K(const char * path_model),
+      |                                              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/include/whisper.h:12:44:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KWHISPER_DEPRECATED[m[K’
+   12 | #    define WHISPER_DEPRECATED(func, hint) [01;36m[Kfunc[m[K __attribute__((deprecated(hint)))
+      |                                            [01;36m[K^~~~[m[K
+[ 94%] [32mBuilding CXX object CMakeFiles/speechToText.dir/src/transcription.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/speechToText.dir/src/audio.cpp.o[0m
+In file included from [01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/src/audio.cpp:4[m[K:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/examples/miniaudio.h:[m[K In function ‘[01m[Kvoid[01;32m[K ma_engine_node_process_pcm_frames__sound[m[K(ma_node*, const float**, ma_uint32*, float**, ma_uint32*)[m[K’:
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/examples/miniaudio.h:14862:84:[m[K [01;35m[Kwarning: [m[K‘[01m[Klong unsigned int[01;32m[K __atomic_load_8[m[K(const volatile void*, int)[m[K’ writing 8 bytes into a region of size 0 overflows the destination [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wstringop-overflow=-Wstringop-overflow=]8;;[m[K]
+14862 |     #define ma_atomic_load_explicit_64(dst, order)                  [01;35m[K__atomic_load_n(dst, order)[m[K
+      |                                                                     [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/examples/miniaudio.h:15630:73:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kma_atomic_load_explicit_64[m[K’
+15630 | #define ma_atomic_load_64(ptr)                                          [01;36m[Kma_atomic_load_explicit_64[m[K(ptr, ma_atomic_memory_order_seq_cst)
+      |                                                                         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dredre/DevStuff/scrollDiary/speechToText/speechToText/whisperCXX/examples/miniaudio.h:75146:18:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kma_atomic_load_64[m[K’
+75146 |     seekTarget = [01;36m[Kma_atomic_load_64[m[K(&pSound->seekTarget);
+      |                  [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kcc1plus:[m[K [01;36m[Knote: [m[Kdestination object is likely at address zero
+[100%] [32m[1mLinking CXX executable speechToText[0m
+[100%] Built target speechToText
+-- Install configuration: "Release"
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libwhisper.so.1.8.3
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libwhisper.so.1
+-- Set non-toolchain portion of runtime path of "/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libwhisper.so.1.8.3" to ""
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libwhisper.so
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/whisper.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/cmake/whisper/whisper-config.cmake
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/cmake/whisper/whisper-version.cmake
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/pkgconfig/whisper.pc
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml-cpu.so.0.9.5
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml-cpu.so.0
+-- Set non-toolchain portion of runtime path of "/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml-cpu.so.0.9.5" to ""
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml-cpu.so
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml.so.0.9.5
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml.so.0
+-- Set non-toolchain portion of runtime path of "/home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml.so.0.9.5" to ""
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml.so
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-cpu.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-alloc.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-backend.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-blas.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-cann.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-cpp.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-cuda.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-opt.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-metal.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-rpc.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-sycl.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-vulkan.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-webgpu.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/ggml-zendnn.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/include/gguf.h
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml-base.so.0.9.5
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml-base.so.0
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/libggml-base.so
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/cmake/ggml/ggml-config.cmake
+-- Installing: /home/dredre/DevStuff/scrollDiary/speechToText/install/speechToText/lib/cmake/ggml/ggml-version.cmake
